@@ -1,51 +1,25 @@
 .minichimp {
-  position: absolute;
-  top: 5em;
-  left: 5em;
-  right: 0;
-  height: 4.5em;
+  position: relative;
   label, .hidden { display: none; }
-  .email-signup-form {
+  .email-field {
     position: absolute;
     top: 0;
     left: 0;
-    right: 3em;
-    .email-field {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 4em;
-      input {
-        width: 100%;
-        background: $base-border-color;
-        border-top-left-radius: $base-border-radius;
-        border-bottom-left-radius: $base-border-radius;
-      }
-    }
-    .action-field {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 60px;
-      input {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-      }
+    right: 20%;
+    input {
+      border-top-left-radius: $base-border-radius;
+      border-bottom-left-radius:  $base-border-radius;
     }
   }
-  .donate {
+  .action-field {
     position: absolute;
     top: 0;
-    right: 1em;
+    left: 80%;
+    right: 0;
     .btn {
-      background-color: $brand-muted-blue;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
     }
   }
-  input, .btn {
-    font-size: 11px;
-    padding: 0 5px;
-    box-sizing: border-box;
-    height: 30px;
-    line-height: 30px;
-  }
+
 }

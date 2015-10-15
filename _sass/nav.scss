@@ -1,20 +1,65 @@
+body {
+  padding-top: 4em;
+}
+
 .primary-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4em;
+  width: 100%;
   border-bottom: 1px solid $base-border-color;
   background: white;
-  overflow: hidden;
   text-align: center;
-  display: table;
-  section {
-    border-collapse: collapse;
-    display: table-cell;
-    padding: 1em .5em;
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 4em;
+    width: 4em;
+    margin-left: -2em;
+    overflow: hidden;
+    text-indent: -9999em;
+    background-size: contain;
+    background-position: center center;
+    background-image: url(/img/logo.png);
+  }
+  .menu {
+    display: none;
+  }
+  .menu-trigger, .donate {
+    position: absolute;
+    top: 0;
+    margin: 1em .66667em;
+    display: block;
+    width: 6em;
+    height: 2em;
+    line-height: 2;
+  }
+  .menu-trigger {
+    left: 0;
+  }
+  .donate {
+    right: 0;
+    background-color: $brand-muted-blue;
   }
   .sub-nav {
     display: none;
   }
   .top-level-link {
-    font-size: 10px;
     font-weight: bold;
     color: $base-bold-color;
+  }
+}
+.menu {
+  font-weight: bold;
+  section {
+    border-collapse: collapse;
+    display: table-cell;
+    padding: 1em .5em;
+  }
+  .top-level-link {
+    margin-bottom: .66667em;
+    display: block;
   }
 }

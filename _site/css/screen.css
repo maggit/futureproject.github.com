@@ -53,7 +53,7 @@ body {
 a {
   text-decoration: none; }
 
-input, .btn, select, textarea, button {
+input, select, textarea, button {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -61,9 +61,16 @@ input, .btn, select, textarea, button {
   appearance: none;
   display: block;
   border: none;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  padding: .33333em; }
+  input:focus, select:focus, textarea:focus, button:focus {
+    outline: none; }
 
 .btn {
+  /*@extend input;*/
   display: block;
   text-align: center;
   font-weight: bold;
@@ -72,88 +79,99 @@ input, .btn, select, textarea, button {
   color: white; }
 
 body {
-  padding-top: 9em; }
-
-.site-name {
-  position: absolute;
-  top: 3.5em;
-  left: 0;
-  height: 5em;
-  width: 5em;
-  overflow: hidden;
-  text-indent: -9999em;
-  background-size: contain;
-  background-position: center center;
-  background-image: url(/img/logo.png); }
+  padding-top: 4em; }
 
 .primary-nav {
   position: absolute;
   top: 0;
   left: 0;
-  height: 3em;
-  width: 100%; }
-
-.primary-nav {
+  height: 4em;
+  width: 100%;
   border-bottom: 1px solid #f0f0f0;
   background: white;
-  overflow: hidden;
-  text-align: center;
-  display: table; }
-  .primary-nav section {
-    border-collapse: collapse;
-    display: table-cell;
-    padding: 1em .5em; }
+  text-align: center; }
+  .primary-nav .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 4em;
+    width: 4em;
+    margin-left: -2em;
+    overflow: hidden;
+    text-indent: -9999em;
+    background-size: contain;
+    background-position: center center;
+    background-image: url(/img/logo.png); }
+  .primary-nav .menu {
+    display: none; }
+  .primary-nav .menu-trigger, .primary-nav .donate {
+    position: absolute;
+    top: 0;
+    margin: 1em .66667em;
+    display: block;
+    width: 6em;
+    height: 2em;
+    line-height: 2; }
+  .primary-nav .menu-trigger {
+    left: 0; }
+  .primary-nav .donate {
+    right: 0;
+    background-color: #10a0ff; }
   .primary-nav .sub-nav {
     display: none; }
   .primary-nav .top-level-link {
-    font-size: 10px;
     font-weight: bold;
     color: black; }
 
+.menu {
+  font-weight: bold; }
+  .menu section {
+    border-collapse: collapse;
+    display: table-cell;
+    padding: 1em .5em; }
+  .menu .top-level-link {
+    margin-bottom: .66667em;
+    display: block; }
+
 .minichimp {
-  position: absolute;
-  top: 5em;
-  left: 5em;
-  right: 0;
-  height: 4.5em; }
+  position: relative; }
   .minichimp label, .minichimp .hidden {
     display: none; }
-  .minichimp .email-signup-form {
+  .minichimp .email-field {
     position: absolute;
     top: 0;
     left: 0;
-    right: 3em; }
-    .minichimp .email-signup-form .email-field {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 4em; }
-      .minichimp .email-signup-form .email-field input, .minichimp .email-signup-form .email-field .btn {
-        width: 100%;
-        background: #f0f0f0;
-        border-top-left-radius: 0.33333em;
-        border-bottom-left-radius: 0.33333em; }
-    .minichimp .email-signup-form .action-field {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 60px; }
-      .minichimp .email-signup-form .action-field input, .minichimp .email-signup-form .action-field .btn {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0; }
-  .minichimp .donate {
+    right: 20%; }
+    .minichimp .email-field input {
+      border-top-left-radius: 0.33333em;
+      border-bottom-left-radius: 0.33333em; }
+  .minichimp .action-field {
     position: absolute;
     top: 0;
-    right: 1em; }
-    .minichimp .donate .btn {
-      background-color: #10a0ff; }
-  .minichimp input, .minichimp .btn, .minichimp .btn {
-    font-size: 11px;
-    padding: 0 5px;
-    box-sizing: border-box;
-    height: 30px;
-    line-height: 30px; }
+    left: 80%;
+    right: 0; }
+    .minichimp .action-field .btn {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
 
 .primary-footer {
   min-height: 44px;
-  background: #2b2b35; }
+  background: #2b2b35;
+  color: white; }
+  .primary-footer .menu {
+    display: table;
+    width: 100%; }
+  .primary-footer .menu section:last-child {
+    display: none; }
+  .primary-footer a {
+    color: white; }
+  .primary-footer .sub-nav a {
+    display: block;
+    margin: .3333em 0;
+    color: rgba(255, 255, 255, 0.75); }
+
+.article {
+  padding: 1em;
+  height: 0;
+  padding-bottom: 100%;
+  background: #f0f0f0; }

@@ -1,4 +1,20 @@
 .primary-footer {
   min-height: 44px;
   background: $brand-dark-purple;
+  color: white;
+  .menu {
+    display: table;
+    width: 100%;
+  }
+  .menu section:last-child {
+    display: none;
+  }
+  a {
+    color: white;
+  }
+  .sub-nav a {
+    display: block;
+    margin: .3333em 0;
+    color: rgba(255,255,255,.75);
+  }
 }

@@ -3,5 +3,12 @@ input, select, textarea, button {
   display: block;
   border: none;
   font-family: $base-font-family;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  padding: .33333em;
+  &:focus {
+    outline: none;
+  }
 }
 
