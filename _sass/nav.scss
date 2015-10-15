@@ -1,0 +1,20 @@
+.primary-nav {
+  border-bottom: 1px solid $base-border-color;
+  background: white;
+  overflow: hidden;
+  text-align: center;
+  display: table;
+  section {
+    border-collapse: collapse;
+    display: table-cell;
+    padding: 1em .5em;
+  }
+  .sub-nav {
+    display: none;
+  }
+  .top-level-link {
+    font-size: 10px;
+    font-weight: bold;
+    color: $base-bold-color;
+  }
+}

@@ -1,0 +1,7 @@
+input, select, textarea, button {
+  @include appearance(none);
+  display: block;
+  border: none;
+  font-family: $base-font-family;
+}
+

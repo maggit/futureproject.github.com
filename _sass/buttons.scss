@@ -1,0 +1,9 @@
+.btn {
+  @extend input;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  background-color: $brand-blue;
+  border-radius: $base-border-radius;
+  color: white;
+}
