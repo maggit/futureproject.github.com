@@ -186,7 +186,8 @@ body {
 
 .primary-footer {
   color: white;
-  font-size: .8em; }
+  font-size: .8em;
+  padding: 1em; }
   .primary-footer .menu {
     display: table;
     width: 100%;
