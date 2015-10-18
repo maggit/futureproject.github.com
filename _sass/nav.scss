@@ -1,47 +1,35 @@
 body {
-  padding-top: 4em;
+  padding-top: 60px;
 }
 
 .primary-nav {
   position: absolute;
   top: 0;
   left: 0;
-  height: 4em;
+  height: 60px;
   width: 100%;
   border-bottom: 1px solid $base-border-color;
   background: white;
   text-align: center;
-  .logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    height: 4em;
-    width: 4em;
-    margin-left: -2em;
-    overflow: hidden;
-    text-indent: -9999em;
-    background-size: contain;
-    background-position: center center;
-    background-image: url(/img/logo.png);
-  }
+  box-sizing: border-box;
   .menu {
     display: none;
   }
-  .menu-trigger, .donate {
+  .menu-trigger, .donate-trigger {
     position: absolute;
     top: 0;
-    margin: 1em .66667em;
+    margin: 15px;
     display: block;
-    width: 6em;
-    height: 2em;
-    line-height: 2;
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
   }
   .menu-trigger {
     left: 0;
   }
-  .donate {
+  .donate-trigger{
     right: 0;
-    background-color: $brand-muted-blue;
   }
   .sub-nav {
     display: none;
@@ -50,6 +38,21 @@ body {
     font-weight: bold;
     color: $base-bold-color;
   }
+}
+.primary-nav-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  margin-left: -30px;
+  @include hide-text;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(/img/logo.png);
+}
+.donate-trigger {
+  background: $medium-blue;
 }
 .menu {
   font-weight: bold;

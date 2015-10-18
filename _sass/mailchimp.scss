@@ -1,25 +1,27 @@
 .minichimp {
-  position: relative;
+  margin: 1em auto;
+  @include clearfix;
   label, .hidden { display: none; }
+  form {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .fields {
+    display: table-cell;
+  }
   .email-field {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 20%;
+    width: 80%;
     input {
       border-top-left-radius: $base-border-radius;
       border-bottom-left-radius:  $base-border-radius;
     }
   }
   .action-field {
-    position: absolute;
-    top: 0;
-    left: 80%;
-    right: 0;
+    width: 20%;
     .btn {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
   }
-
 }

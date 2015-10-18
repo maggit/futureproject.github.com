@@ -3,7 +3,11 @@
   display: block;
   text-align: center;
   font-weight: bold;
-  background-color: $brand-blue;
+  background-color: $future-blue;
   border-radius: $base-border-radius;
   color: white;
+  @include transition(background 1s);
+  &:hover {
+    background-color: $hover-blue;
+  }
 }

@@ -1,9 +1,24 @@
 body {
   font-family: $base-font-family;
+  font-weight: 400;
   font-size: 15px;
   line-height: 1;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+@media (min-width: 680px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 a {
   text-decoration: none;
+}
+
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
 }

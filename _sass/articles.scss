@@ -1,6 +1,14 @@
 .article {
-  padding: 1em;
-  height: 0;
-  padding-bottom: 100%;
-  background: $base-border-color;
+  padding: 2em 1em;
+  background-color: $base-border-color;
+  line-height: 1.2;
+  &.purple {
+    background: $purple;
+    color: white;
+  }
 }
+.article-title {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
