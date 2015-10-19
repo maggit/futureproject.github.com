@@ -1,6 +1,6 @@
 .btn {
   /*@extend input;*/
-  display: block;
+  display: inline-block;
   text-align: center;
   font-weight: bold;
   background-color: $future-blue;
@@ -9,5 +9,12 @@
   @include transition(background 1s);
   &:hover {
     background-color: $hover-blue;
+  }
+}
+.call-to-action {
+  margin: 2em auto;
+  text-align: center;
+  .btn {
+    padding: .5em;
   }
 }
