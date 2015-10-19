@@ -209,6 +209,8 @@ body {
   .article.purple {
     background: #5e5dff;
     color: white; }
+  .article p:not(:last-child) {
+    margin: 1.2em 0; }
 
 .article-title {
   font-weight: 700;

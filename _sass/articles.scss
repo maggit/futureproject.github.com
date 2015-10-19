@@ -6,6 +6,9 @@
     background: $purple;
     color: white;
   }
+  p:not(:last-child) {
+    margin: 1.2em 0;
+  }
 }
 .article-title {
   font-weight: 700;
