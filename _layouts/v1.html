@@ -10,15 +10,18 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="shortcut icon" href="/img/favicon.png" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="css/screen.css">
-    <link rel="stylesheet" href="//cloud.typography.com/7365874/729708/css/fonts.css" />
   </head>
   <body>
+    <div id="container">
 
     {{ content }}
 
     {% include nav.html %}
     {% include footer.html %}
 
+    </div>
+
+    <link rel="stylesheet" href="//cloud.typography.com/7365874/729708/css/fonts.css" />
     <script>
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-35246062-1']);

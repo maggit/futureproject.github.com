@@ -1,0 +1,13 @@
+html, body {
+  height: 100%;
+  background-color: $base-border-color;
+}
+#container {
+  max-width: 555px;
+  margin: 0 auto;
+  box-shadow: 0 1px 1px rgba(0,0,0,.5);
+  position: relative;
+  height: 100%;
+  padding-top: 60px;
+  background: $dark-blue;
+}

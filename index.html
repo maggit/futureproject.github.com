@@ -3,7 +3,9 @@ layout: v1
 ---
 {% for post in site.categories.homepage %}
   <article class="article {{ post.css_classes }}" id="homepage-{{ post.title | slugify }}">
-    <div class="article-title">{{ post.title }}</div>
-    <div class="article-content">{{ post.content }}</div>
+    <div class="article-copy">
+      <div class="article-title">{{ post.title }}</div>
+      <div class="article-content">{{ post.content }}</div>
+    </div>
   </article>
 {% endfor %}

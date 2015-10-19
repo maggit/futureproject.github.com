@@ -1,12 +1,8 @@
-#homepage-photo-placeholder {
-  @include hide-text;
-  text-indent: -1111em;
-  @extend .bg;
-  background-image: url(/img/home/homepage-header.jpg);
-}
-
 #homepage-take-a-stand {
   padding-top: 10em;
-  /*padding-left: 15%;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(/img/home/homepage-header.jpg);
 }
 
