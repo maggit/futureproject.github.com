@@ -6,7 +6,7 @@ body {
   letter-spacing: -0.01em;
   font-weight: 400;
 }
-@media (min-width: 680px) {
+@media (min-width: 480px) {
   body {
     font-size: 20px;
   }
@@ -22,3 +22,16 @@ em {
 strong {
   font-weight: bold;
 }
+hr {
+  height: 0;
+  border: none;
+  border-top: 1px solid rgba(255,255,255,.5);
+  margin: 2em auto;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: 700; }
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.66667em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.25em; }

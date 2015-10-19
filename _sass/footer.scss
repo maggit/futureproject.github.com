@@ -1,24 +1,55 @@
 .primary-footer {
   background: $dark-blue;
+  @include linear-gradient(#2b2b35, $dark-blue);
   color: white;
   font-size: .8em;
   padding: 1em;
   .menu {
-    display: table;
+    @include clearfix;
     width: 100%;
     font-weight: 500;
   }
-  .menu section:last-child {
+  .menu-item {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    a {
+      color: #8c92a8;
+    }
+    .top-level-link, a:hover {
+      color: #dfe4ef;
+    }
+  }
+  .shop-menu-item {
     display: none;
-  }
-  a {
-    color: #8c92a8;
-  }
-  .top-level-link, a:hover {
-    color: #dfe4ef;
   }
   .sub-nav a {
     display: block;
     margin: .8em 0;
+  }
+  .social-menu-item {
+    display: block;
+    clear: both;
+    width: 100%;
+    float: none;
+    text-align: center;
+    .top-level-link {
+      display: none;
+    }
+    border-top: 1px solid rgba(255,255,255,.5);
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    .sub-nav {
+      li, a {
+        display: inline-block;
+        margin: 0;
+      }
+      a {
+        padding: 1em;
+      }
+      .social-insta { color: red; }
+    }
+  }
+  .contact-callout {
+    padding: 2em 1em;
   }
 }

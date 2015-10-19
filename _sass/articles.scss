@@ -14,8 +14,15 @@
 .centered {
   text-align: center;
 }
+.article-sans-title {
+  .article-title { display: none; }
+}
 .bg--photo {
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(/img/home/homepage-header.jpg);
   &:after {
     display: block;
     content: '';
