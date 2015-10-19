@@ -240,8 +240,8 @@ body {
   text-indent: 101%;
   white-space: nowrap;
   text-indent: -1111em;
-  background-image: url(/img/home/homepage-header.jpg);
-  background-position: right center; }
+  background-image: url(/img/home/homepage-header.jpg); }
 
 #homepage-take-a-stand {
-  padding-top: 4em; }
+  padding-top: 10em;
+  /*padding-left: 15%;*/ }
