@@ -22,7 +22,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(/img/home/homepage-header.jpg);
   &:after {
     display: block;
     content: '';
@@ -52,13 +51,5 @@
     font-size: 1.5em;
     font-weight: 700;
   }
-}
-.bg {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
 }
 

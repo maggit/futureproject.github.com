@@ -124,6 +124,8 @@ input, select, textarea, button {
   text-align: center; }
   .call-to-action .btn {
     padding: .5em; }
+  .call-to-action:last-child {
+    margin-bottom: 0; }
 
 html, body {
   height: 100%;
@@ -132,9 +134,8 @@ html, body {
 #container {
   max-width: 680px;
   margin: 0 auto;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   position: relative;
-  height: 100%;
+  min-height: 100%;
   padding-top: 60px;
   background: #212e47; }
 
@@ -292,8 +293,7 @@ html, body {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  background-image: url(/img/home/homepage-header.jpg); }
+  background-position: center center; }
   .bg--photo:after {
     display: block;
     content: '';
@@ -323,16 +323,11 @@ html, body {
   font-size: 1.5em;
   font-weight: 700; }
 
-.bg {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%; }
-
 #homepage-take-a-stand {
-  padding-top: 10em; }
+  padding-top: 10em;
+  background-image: url(/img/homepage/homepage-header.jpg); }
 
 #homepage-join-and-donate {
-  background: #129fff; }
+  background-color: #129fff;
+  /*background-image: url(/img/homepage/join-and-donate.jpg);*/
+  color: white; }

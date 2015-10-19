@@ -17,4 +17,7 @@
   .btn {
     padding: .5em;
   }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
