@@ -1,0 +1,12 @@
+#homepage-photo-placeholder {
+  @include hide-text;
+  text-indent: -1111em;
+  @extend .bg;
+  background-image: url(/img/home/homepage-header.jpg);
+  background-position: right center;
+}
+
+#homepage-take-a-stand {
+  padding-top: 4em;
+}
+
