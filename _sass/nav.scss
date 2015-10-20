@@ -37,7 +37,7 @@
 .primary-nav-content {
   position: relative;
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1280px;
 }
 .primary-nav-logo {
   position: absolute;
@@ -46,10 +46,15 @@
   height: 60px;
   width: 60px;
   margin-left: -30px;
-  @include hide-text;
-  background-size: contain;
-  background-position: center center;
-  background-image: url(/img/logo.png);
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    @include hide-text;
+    background-size: contain;
+    background-position: center center;
+    background-image: url(/img/logo.png);
+  }
 }
 .donate-trigger {
   background: $medium-blue;
@@ -67,5 +72,70 @@
   }
   .unfinished {
     border-left: 1px solid red;
+  }
+  .draft {
+    border-left: 1px solid $brand-yellow;
+  }
+}
+
+@media(min-width: 780px) {
+  .primary-nav {
+    height: 60px;
+    .menu {
+      display: block;
+      padding-left: 8em;
+    }
+    .top-level-link {
+      font-size: 15px;
+      line-height: 19px;
+      margin-bottom: 0;
+    }
+    .menu-item {
+      padding: 1em 1.5em;
+      position: relative;
+      text-align: left;
+    }
+    .sub-nav {
+      position: absolute;
+      width: 100%;
+      background: rgba(255,255,255,.9);
+      padding-bottom: .75rem;
+      border-radius: $base-border-radius;
+      z-index: 100;
+      .unfinished {
+        border-left: none;
+        color: red;
+      }
+      .draft {
+        border-left: none;
+        color: $brand-yellow;
+      }
+      a {
+        font-weight: 500;
+        color: $base-font-color;
+        font-size: 12px;
+        display: block;
+        padding: .5rem;
+      }
+    }
+    .menu-item:hover {
+      .sub-nav {
+        display: block;
+      }
+    }
+    .menu-trigger { display: none; }
+    .social-menu-item { display: none; }
+
+  }
+  .primary-nav-logo {
+    top: -5px;
+    left: 0;
+    margin: 0;
+    width: 160px;
+    a {
+      width: 2.5em;
+      height: 2.5em;
+      margin: 0 auto;
+    }
   }
 }

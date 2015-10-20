@@ -1,16 +1,16 @@
 .bg--grey {
-  background-color: #e0e0e0;
+  background-color: #e0e0e0 !important;
   color: $base-font-color;
 }
 .bg--purple {
-  background-color: $purple;
+  background-color: $purple !important;
   color: white;
 }
 .bg--light-blue {
-  background-color: #d4e6f4;
+  background-color: $light-blue !important;
   color: $base-font-color;
 }
 .bg--blue {
-  background-color: $medium-blue;
+  background-color: $medium-blue !important;
   color: white;
 }

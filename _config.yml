@@ -1,0 +1,13 @@
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "v1"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "v1"

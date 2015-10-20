@@ -1,14 +1,10 @@
 .article {
+  background-color: $base-border-color;
   position: relative;
   padding: 3em 1em;
-  /*color: white;*/
   line-height: 1.2;
-  &.purple {
-    background: $purple;
-    color: white;
-  }
-  p:not(:last-child) {
-    margin: 1.2em 0;
+  &:nth-child(even) {
+    background-color: $light-blue;
   }
 }
 .centered {
@@ -42,12 +38,8 @@
 }
 .article-title {
   font-weight: 700;
-  font-size: 2em;
+  font-size: 2.5em;
 }
-.article-content {
-  h2 {
-    font-size: 1.5em;
-    font-weight: 700;
-  }
+.article-copy {
 }
 

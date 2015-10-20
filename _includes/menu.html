@@ -2,13 +2,11 @@
   <section class="menu-item">
     <a class='top-level-link' href="/about">About</a>
     <ul class="sub-nav">
-      <li><a href="#" class="unfinished">The Problem</a></li>
-      <li><a href="#" class="unfinished">Our Mission</a></li>
-      <li><a href="#" class="unfinished">Our Values</a></li>
-      <li><a href="#" class="unfinished">Team</a></li>
-      <li><a href="#" class="unfinished">Press</a></li>
-      <li><a href="#" class="unfinished">FAQ</a></li>
-      <li><a href="#" class="unfinished">Downloads</a></li>
+      {% for post in site.categories.about %}
+        {% if forloop.index0 != 0 %}
+        <li class='sub-nav-item'><a href="/about/#about-{{ post.title | slugify }}" class="{{ post.status }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
     </ul>
   </section>
   <section class="menu-item">
