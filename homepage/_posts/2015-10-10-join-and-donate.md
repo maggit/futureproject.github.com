@@ -1,5 +1,5 @@
 ---
-css_classes: centered article-sans-title
+css_classes: centered article-sans-title bg--blue
 ---
 
 ## Join the Movement

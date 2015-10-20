@@ -8,6 +8,8 @@
     @include clearfix;
     width: 100%;
     font-weight: 500;
+    max-width: 960px;
+    margin: 0 auto;
   }
   .menu-item {
     float: left;

@@ -4,7 +4,6 @@
   left: 0;
   height: 60px;
   width: 100%;
-  border-bottom: 1px solid $base-border-color;
   background: white;
   text-align: center;
   box-sizing: border-box;
@@ -34,6 +33,11 @@
     font-weight: bold;
     color: $base-bold-color;
   }
+}
+.primary-nav-content {
+  position: relative;
+  margin: 0 auto;
+  max-width: 960px;
 }
 .primary-nav-logo {
   position: absolute;
