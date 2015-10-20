@@ -81,6 +81,8 @@
 @media(min-width: 780px) {
   .primary-nav {
     height: 60px;
+    position: fixed;
+    z-index: 100;
     .menu {
       display: block;
       padding-left: 8em;
@@ -97,10 +99,13 @@
     }
     .sub-nav {
       position: absolute;
+      top: 60px;
       width: 100%;
       background: rgba(255,255,255,.9);
       padding-bottom: .75rem;
       border-radius: $base-border-radius;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
       z-index: 100;
       .unfinished {
         border-left: none;
@@ -115,7 +120,7 @@
         color: $base-font-color;
         font-size: 12px;
         display: block;
-        padding: .5rem;
+        padding: .75rem;
       }
     }
     .menu-item:hover {

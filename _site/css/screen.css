@@ -224,7 +224,9 @@ html, body {
 
 @media (min-width: 780px) {
   .primary-nav {
-    height: 60px; }
+    height: 60px;
+    position: fixed;
+    z-index: 100; }
     .primary-nav .menu {
       display: block;
       padding-left: 8em; }
@@ -238,10 +240,13 @@ html, body {
       text-align: left; }
     .primary-nav .sub-nav {
       position: absolute;
+      top: 60px;
       width: 100%;
       background: rgba(255, 255, 255, 0.9);
       padding-bottom: .75rem;
       border-radius: 0.33333em;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
       z-index: 100; }
       .primary-nav .sub-nav .unfinished {
         border-left: none;
@@ -254,7 +259,7 @@ html, body {
         color: #191919;
         font-size: 12px;
         display: block;
-        padding: .5rem; }
+        padding: .75rem; }
     .primary-nav .menu-item:hover .sub-nav {
       display: block; }
     .primary-nav .menu-trigger {
@@ -345,8 +350,6 @@ html, body {
       margin: 0; }
     .primary-footer .social-menu-item .sub-nav a {
       padding: 1em; }
-    .primary-footer .social-menu-item .sub-nav .social-insta {
-      color: red; }
   .primary-footer .article.contact-callout {
     padding: 2em 1em;
     background: transparent; }
