@@ -1,5 +1,6 @@
 ---
 status: draft
+theme: medium-blue
 ---
 
 America’s education system calibrates – really, programs – young people to pursue a vision of success that has nothing to do with real success in life, at least life in the 21st Century.

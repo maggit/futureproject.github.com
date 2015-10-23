@@ -38,6 +38,14 @@ h4 { font-size: 1.5em; }
 h5 { font-size: 1.25em; }
 
 .prose {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  img {
+    max-width: 100%;
+    display: block;
+    margin: 1em auto;
+  }
   ul {
     list-style-position: inside;
     list-style-type: disc;

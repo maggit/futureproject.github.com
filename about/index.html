@@ -1,11 +1,6 @@
 ---
 title: About
 ---
-{% for post in site.categories.about %}
-  <article class="article {{ post.css_classes }}" id="about-{{ post.title | slugify }}">
-    <div class="article-copy prose">
-      <div class="article-title">{{ post.title }}</div>
-      <div class="article-content">{{ post.content }}</div>
-    </div>
-  </article>
-{% endfor %}
+{% assign cat = 'about' %}
+{% include articles-list.html %}
+{% assign cat = nil %}

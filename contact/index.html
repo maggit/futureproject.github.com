@@ -1,0 +1,11 @@
+---
+title: Contact
+---
+{% for post in site.categories.contact %}
+  <article class="article {{ post.css_classes }}" id="contact-{{ post.title | slugify }}">
+    <div class="article-copy prose">
+      <div class="article-title">{{ post.title }}</div>
+      <div class="article-content">{{ post.content }}</div>
+    </div>
+  </article>
+{% endfor %}

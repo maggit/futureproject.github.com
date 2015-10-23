@@ -1,16 +1,24 @@
-.bg--grey {
-  background-color: #e0e0e0 !important;
-  color: $base-font-color;
+.theme--light-blue {
+  background: $light-blue;
+  @include linear-gradient(darken($light-blue, 7%), $light-blue);
 }
-.bg--purple {
-  background-color: $purple !important;
+.theme--sky-blue {
+  background: $sky-blue;
+  @include linear-gradient(darken($sky-blue, 7%), $sky-blue);
+}
+.theme--purple {
+  background: $purple;
+  @include linear-gradient(darken($purple, 7%), $purple);
   color: white;
+  a { color: white; }
 }
-.bg--light-blue {
-  background-color: $light-blue !important;
-  color: $base-font-color;
+.theme--green {
+  background: $brand-green;
+  @include linear-gradient(darken($brand-green, 7%), $brand-green);
+  a { color: white; }
 }
-.bg--blue {
-  background-color: $medium-blue !important;
+.theme--medium-blue {
+  background-color: $medium-blue;
+  @include linear-gradient(darken($medium-blue, 7%), $medium-blue);
   color: white;
 }

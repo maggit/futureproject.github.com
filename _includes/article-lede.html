@@ -1,0 +1,23 @@
+<article class="article article--leade theme--{{ post.theme }}">
+  <header class="article-headline">
+    <h2>{{ post.title }}<h2>
+  </header>
+  <section class="prose">
+    {{ post.content }}
+  </section>
+  <nav class="article-nav">
+    <div class="article-nav-inner">
+    {% assign cat = post.categories[0] %}
+    {% for p in site.categories[cat] %}
+      {% if forloop.first == false %}
+        <a class="article-nav-item article-nav-item--{{ p.title | slugify }}" href="#{{ p.title | slugify }}">
+          <div class="article-nav-item-icon"></div>
+          <div class="article-nav-item-label">{{ p.title }}</div>
+        </a>
+      {% endif %}
+    {% endfor %}
+    {% assign cat = nil %}
+    </div>
+  </nav>
+</article>
+

@@ -92,16 +92,24 @@ h4 {
 h5 {
   font-size: 1.25em; }
 
-.prose ul {
-  list-style-position: inside;
-  list-style-type: disc; }
-.prose ol {
-  list-style-type: decimal;
-  list-style-position: inside; }
-.prose li {
-  margin: 1.2rem 0; }
-.prose p {
-  margin: 1.2rem 0; }
+.prose {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto; }
+  .prose img {
+    max-width: 100%;
+    display: block;
+    margin: 1em auto; }
+  .prose ul {
+    list-style-position: inside;
+    list-style-type: disc; }
+  .prose ol {
+    list-style-type: decimal;
+    list-style-position: inside; }
+  .prose li {
+    margin: 1.2rem 0; }
+  .prose p {
+    margin: 1.2rem 0; }
 
 input, select, textarea, button {
   -webkit-appearance: none;
@@ -161,6 +169,8 @@ html, body {
   background: white;
   text-align: center;
   box-sizing: border-box; }
+  .primary-nav .minichimp {
+    display: none; }
   .primary-nav .menu {
     display: none; }
   .primary-nav .menu-trigger, .primary-nav .donate-trigger {
@@ -212,8 +222,7 @@ html, body {
   font-weight: bold; }
   .menu section {
     border-collapse: collapse;
-    display: table-cell;
-    padding: 1em .5em; }
+    display: table-cell; }
   .menu .top-level-link {
     margin-bottom: .66667em;
     display: block; }
@@ -228,16 +237,25 @@ html, body {
     position: fixed;
     z-index: 100; }
     .primary-nav .menu {
-      display: block;
-      padding-left: 8em; }
+      display: table;
+      margin-left: 8em;
+      table-layout: fixed; }
     .primary-nav .top-level-link {
       font-size: 15px;
       line-height: 19px;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      padding: 0 1.5em;
+      border-top: 5px solid transparent;
+      line-height: 55px; }
+    .primary-nav .top-level-link.active {
+      border-top: 5px solid #15c8ff; }
     .primary-nav .menu-item {
-      padding: 1em 1.5em;
       position: relative;
-      text-align: left; }
+      text-align: center; }
+      .primary-nav .menu-item a {
+        display: block; }
+        .primary-nav .menu-item a:hover {
+          color: #15c8ff; }
     .primary-nav .sub-nav {
       position: absolute;
       top: 60px;
@@ -259,7 +277,7 @@ html, body {
         color: #191919;
         font-size: 12px;
         display: block;
-        padding: .75rem; }
+        padding: .75rem .25rem; }
     .primary-nav .menu-item:hover .sub-nav {
       display: block; }
     .primary-nav .menu-trigger {
@@ -276,6 +294,18 @@ html, body {
       width: 2.5em;
       height: 2.5em;
       margin: 0 auto; } }
+@media (min-width: 1100px) {
+  .primary-nav .minichimp {
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 100px;
+    width: 180px;
+    font-size: 12px; }
+    .primary-nav .minichimp input, .primary-nav .minichimp .btn {
+      height: 30px; }
+    .primary-nav .minichimp input.email {
+      background-color: #f0f0f0; } }
 .minichimp {
   margin: 1em auto; }
   .minichimp::after {
@@ -321,7 +351,8 @@ html, body {
   .primary-footer .menu-item {
     float: left;
     width: 25%;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    padding: 1em .5em; }
     .primary-footer .menu-item a {
       color: #8c92a8; }
     .primary-footer .menu-item .top-level-link, .primary-footer .menu-item a:hover {
@@ -356,11 +387,12 @@ html, body {
 
 .article {
   background-color: #f0f0f0;
+  background-color: #dedede;
+  background-image: -webkit-linear-gradient(#dedede, #f0f0f0);
+  background-image: linear-gradient(#dedede, #f0f0f0);
   position: relative;
   padding: 3em 1em;
   line-height: 1.2; }
-  .article:nth-child(even) {
-    background-color: #d4e6f4; }
 
 .centered {
   text-align: center; }
@@ -396,20 +428,90 @@ html, body {
   font-weight: 700;
   font-size: 2.5em; }
 
-.bg--grey {
-  background-color: #e0e0e0 !important;
-  color: #191919; }
+.article-header {
+  text-transform: uppercase;
+  max-width: 1280px;
+  margin: 0 auto;
+  letter-spacing: 3px; }
+  .article-header * {
+    font-size: 1em;
+    display: inline-block;
+    background: white;
+    color: #191919;
+    padding: 1em;
+    margin-left: -1em; }
 
-.bg--purple {
-  background-color: #5e5dff !important;
+.article-headline {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto; }
+
+.article-nav {
+  text-align: center;
+  margin: 2em auto 0;
+  width: 100%;
+  max-width: 60ch;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
+
+.article-nav-inner {
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+
+.article-nav-item {
+  display: table-cell;
+  box-sizing: border-box;
+  padding: .5em;
+  font-weight: 600; }
+
+.article-nav-item-icon {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  background: white; }
+
+.article-nav-item-label {
+  font-size: .75em;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.theme--light-blue {
+  background: #d4e6f4;
+  background-color: #b8d5ed;
+  background-image: -webkit-linear-gradient(#b8d5ed, #d4e6f4);
+  background-image: linear-gradient(#b8d5ed, #d4e6f4); }
+
+.theme--sky-blue {
+  background: #b2e5fa;
+  background-color: #90daf8;
+  background-image: -webkit-linear-gradient(#90daf8, #b2e5fa);
+  background-image: linear-gradient(#90daf8, #b2e5fa); }
+
+.theme--purple {
+  background: #5e5dff;
+  background-color: #3b39ff;
+  background-image: -webkit-linear-gradient(#3b39ff, #5e5dff);
+  background-image: linear-gradient(#3b39ff, #5e5dff);
   color: white; }
+  .theme--purple a {
+    color: white; }
 
-.bg--light-blue {
-  background-color: #d4e6f4 !important;
-  color: #191919; }
+.theme--green {
+  background: #7ae0dd;
+  background-color: #5dd9d6;
+  background-image: -webkit-linear-gradient(#5dd9d6, #7ae0dd);
+  background-image: linear-gradient(#5dd9d6, #7ae0dd); }
+  .theme--green a {
+    color: white; }
 
-.bg--blue {
-  background-color: #129fff !important;
+.theme--medium-blue {
+  background-color: #129fff;
+  background-color: #008ded;
+  background-image: -webkit-linear-gradient(#008ded, #129fff);
+  background-image: linear-gradient(#008ded, #129fff);
   color: white; }
 
 #homepage-take-a-stand {

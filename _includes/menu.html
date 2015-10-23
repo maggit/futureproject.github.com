@@ -1,26 +1,26 @@
 <nav class="menu">
   <section class="menu-item">
-    <a class='top-level-link' href="/about">About</a>
+    <a class='top-level-link {% if page.url contains 'about' %}active{% endif %}' href="/about">About</a>
     <ul class="sub-nav">
       {% for post in site.categories.about %}
-        {% if forloop.index0 != 0 %}
-        <li class='sub-nav-item'><a href="/about/#about-{{ post.title | slugify }}" class="{{ post.status }}">{{ post.title }}</a></li>
+        {% if forloop.first == false %}
+        <li class='sub-nav-item'><a href="/about/#{{ post.title | slugify }}" class="{{ post.status }}">{{ post.title }}</a></li>
         {% endif %}
       {% endfor %}
     </ul>
   </section>
   <section class="menu-item">
-    <a class='top-level-link' href="/program">Program</a>
+    <a class='top-level-link {% if page.url contains 'program' %}active{% endif %}' href="/program">Program</a>
     <ul class="sub-nav">
-      <li><a href="#" class="unfinished">The Method</a></li>
-      <li><a href="#" class="unfinished">Research</a></li>
-      <li><a href="#" class="unfinished">Results</a></li>
-      <li><a href="#" class="unfinished">Our Schools</a></li>
-      <li><a href="#" class="unfinished">Inquire</a></li>
+      {% for post in site.categories.program %}
+        {% if forloop.first == false %}
+        <li class='sub-nav-item'><a href="/program/#{{ post.title | slugify }}" class="{{ post.status }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
     </ul>
   </section>
   <section class="menu-item">
-    <a class='top-level-link' href="/stories">Stories</a>
+    <a class='top-level-link {% if page.url contains 'stories' %}active{% endif %}' href="/stories">Stories</a>
     <ul class="sub-nav">
       <li><a href="#" class="unfinished">Videos</a></li>
       <li><a href="#" class="unfinished">Photos</a></li>
@@ -28,7 +28,7 @@
     </ul>
   </section>
   <section class="menu-item get-involved-menu-item">
-    <a class='top-level-link' href="/get-involved">Get Involved</a>
+    <a class='top-level-link {% if page.url contains 'involved' %}active{% endif %}' href="/get-involved">Get Involved</a>
     <ul class="sub-nav">
       <li><a href="#" class="unfinished">Share</a></li>
       <li><a href="#" class="unfinished">Invest</a></li>
@@ -37,7 +37,7 @@
     </ul>
   </section>
   <section class="menu-item shop-menu-item">
-    <a class='top-level-link' href="/shop">Shop</a>
+    <a class='top-level-link {% if page.url contains 'shop' %}active{% endif %}' href="/shop">Shop</a>
   </section>
   <section class="menu-item social-menu-item">
     <div class='top-level-link'>Follow Us</div>

@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="/img/favicon.png" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="/css/screen.css">
   </head>
-  <body>
+  <body class="page--{{ page.url | remove:'html' | slugify }}">
     <div id="the-container">
 
     {{ content }}
