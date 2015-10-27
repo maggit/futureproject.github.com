@@ -60,3 +60,19 @@
     background: transparent;
   }
 }
+
+.article#join-and-donate {
+  @include fbs;
+  background-image: url(/img/join-and-donate.jpg);
+  background-size: contain;
+  background-position: calc(50% - 300px) bottom;
+}
+@media (min-width: 780px) {
+  .article#join-and-donate {
+    padding-left: 50%;
+    .prose {
+      margin: 0;
+      max-width: 480px;
+    }
+  }
+}

@@ -11,6 +11,10 @@
     background-color: $hover-blue;
   }
 }
+a.btn {
+  padding: .5em;
+  box-sizing: border-box;
+}
 .call-to-action {
   margin: 2em auto;
   text-align: center;

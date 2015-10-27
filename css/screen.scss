@@ -3,6 +3,7 @@
 ---
 @import "bourbon/bourbon";
 @import "colors";
+@import "mixins";
 @import "reset";
 @import "typography";
 @import "inputs";
@@ -13,4 +14,8 @@
 @import "footer";
 @import "articles";
 @import "themes";
-@import "home";
+@import "tweaks/about";
+@import "tweaks/get-involved";
+@import "tweaks/homepage";
+@import "tweaks/program";
+@import "tweaks/stories";

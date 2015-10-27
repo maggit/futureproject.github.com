@@ -22,3 +22,8 @@
   @include linear-gradient(darken($medium-blue, 7%), $medium-blue);
   color: white;
 }
+.theme--black {
+  background-color: black;
+  @include linear-gradient(black, black);
+  color: white;
+}

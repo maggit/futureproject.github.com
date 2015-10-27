@@ -1,0 +1,53 @@
+.page--index {
+  .article-header { display: none; }
+  /*#the-container .primary-nav .minichimp {*/
+    /*display: none;*/
+  /*}*/
+  .article#about {
+    p {
+      font-size: 2em;
+      font-weight: 600;
+    }
+  }
+  // Top section, i.e. IMAGINE IF EVERYONE GREW UP
+  #imagine {
+    @include fbs;
+    background-image: url(/img/imagine-background.jpg);
+    background-position: right top;
+    padding-left: 30%;
+    h1 {
+      @include replace-text;
+      background-image: url(/img/imagine.png);
+      padding-bottom: 56.25%;
+    }
+    .prose {
+      max-width: 360px;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+    }
+    li {
+      list-style: none;
+      font-size: 2em;
+      text-align: center;
+    }
+    li:not(:first-child) {
+      display: none;
+    }
+  }
+}
+@media (min-width: 640px) {
+  .page--index #imagine {
+    padding-left: 50%;
+    background-image: url(/img/imagine-lg.jpg);
+    .prose {
+      margin: 0;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .page--index #imagine {
+    background-image: url(/img/imagine-xl.jpg);
+  }
+}

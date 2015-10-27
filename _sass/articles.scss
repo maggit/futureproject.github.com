@@ -4,39 +4,18 @@
   position: relative;
   padding: 3em 1em;
   line-height: 1.2;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .centered {
   text-align: center;
-}
-.article-sans-title {
-  .article-title { display: none; }
-}
-.bg--photo {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  &:after {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    @include linear-gradient(to bottom, rgba(255,255,255,.25), rgba(255,255,255,.75));
-  }
 }
 .article-copy {
   position: relative;
   z-index: 2;
   max-width: 60ch;
   margin: 0 auto;
-}
-.article-title {
-  font-weight: 700;
-  font-size: 2.5em;
 }
 .article-header {
   text-transform: uppercase;

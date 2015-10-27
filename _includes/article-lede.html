@@ -1,4 +1,4 @@
-<article class="article article--leade theme--{{ post.theme }}">
+<article class="article article--lede theme--{{ post.theme }}" id="{{ post.title | slugify }}"{% if post.bg %} style="background-image: url({{post.bg}});"{% endif %}>
   <header class="article-headline">
     <h2>{{ post.title }}<h2>
   </header>

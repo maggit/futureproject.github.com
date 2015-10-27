@@ -20,7 +20,7 @@
     display: block;
     width: 75px;
     height: 30px;
-    line-height: 30px;
+    line-height: 1.5;
     font-size: 12px;
   }
   .menu-trigger {
@@ -159,7 +159,7 @@
   }
 }
 
-@media(min-width: 1100px) {
+@media(min-width: 1024px) {
   .primary-nav {
     .minichimp {
       display: block;
@@ -169,7 +169,9 @@
       width: 180px;
       font-size: 12px;
       input, .btn {
-        height: 30px;
+        /*height: 30px;*/
+        padding: .6em;
+        margin: 0;
       }
       input.email {
         background-color: $base-border-color;

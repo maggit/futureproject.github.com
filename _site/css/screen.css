@@ -46,7 +46,7 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: "Gotham A", "Gotham B", verdana, sans-serif;
+  font-family: "Gotham A", "Gotham B", "Avenir", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1;
@@ -119,7 +119,7 @@ input, select, textarea, button {
   appearance: none;
   display: block;
   border: none;
-  font-family: "Gotham A", "Gotham B", verdana, sans-serif;
+  font-family: "Gotham A", "Gotham B", "Avenir", sans-serif;
   font-size: 1em;
   width: 100%;
   box-sizing: border-box;
@@ -140,6 +140,10 @@ input, select, textarea, button {
   transition: background 1s; }
   .btn:hover {
     background-color: #0064f4; }
+
+a.btn {
+  padding: .5em;
+  box-sizing: border-box; }
 
 .call-to-action {
   margin: 2em auto;
@@ -180,7 +184,7 @@ html, body {
     display: block;
     width: 75px;
     height: 30px;
-    line-height: 30px;
+    line-height: 1.5;
     font-size: 12px; }
   .primary-nav .menu-trigger {
     left: 0; }
@@ -294,7 +298,7 @@ html, body {
       width: 2.5em;
       height: 2.5em;
       margin: 0 auto; } }
-@media (min-width: 1100px) {
+@media (min-width: 1024px) {
   .primary-nav .minichimp {
     display: block;
     position: absolute;
@@ -303,7 +307,9 @@ html, body {
     width: 180px;
     font-size: 12px; }
     .primary-nav .minichimp input, .primary-nav .minichimp .btn {
-      height: 30px; }
+      /*height: 30px;*/
+      padding: .6em;
+      margin: 0; }
     .primary-nav .minichimp input.email {
       background-color: #f0f0f0; } }
 .minichimp {
@@ -385,6 +391,20 @@ html, body {
     padding: 2em 1em;
     background: transparent; }
 
+.article#join-and-donate {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(/img/join-and-donate.jpg);
+  background-size: contain;
+  background-position: calc(50% - 300px) bottom; }
+
+@media (min-width: 780px) {
+  .article#join-and-donate {
+    padding-left: 50%; }
+    .article#join-and-donate .prose {
+      margin: 0;
+      max-width: 480px; } }
 .article {
   background-color: #f0f0f0;
   background-color: #dedede;
@@ -392,41 +412,19 @@ html, body {
   background-image: linear-gradient(#dedede, #f0f0f0);
   position: relative;
   padding: 3em 1em;
-  line-height: 1.2; }
+  line-height: 1.2;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 .centered {
   text-align: center; }
-
-.article-sans-title .article-title {
-  display: none; }
-
-.bg--photo {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-  .bg--photo:after {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.25);
-    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.75));
-    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.75)); }
 
 .article-copy {
   position: relative;
   z-index: 2;
   max-width: 60ch;
   margin: 0 auto; }
-
-.article-title {
-  font-weight: 700;
-  font-size: 2.5em; }
 
 .article-header {
   text-transform: uppercase;
@@ -514,10 +512,57 @@ html, body {
   background-image: linear-gradient(#008ded, #129fff);
   color: white; }
 
-#homepage-take-a-stand {
-  /*padding-top: 10em;*/
-  /*background-image: url(/img/homepage/homepage-header.jpg);*/ }
-
-#homepage-join-and-donate {
-  /*background-image: url(/img/homepage/join-and-donate.jpg);*/
+.theme--black {
+  background-color: black;
+  background-color: black;
+  background-image: -webkit-linear-gradient(black, black);
+  background-image: linear-gradient(black, black);
   color: white; }
+
+.page--index {
+  /*#the-container .primary-nav .minichimp {*/
+  /*display: none;*/
+  /*}*/ }
+  .page--index .article-header {
+    display: none; }
+  .page--index .article#about p {
+    font-size: 2em;
+    font-weight: 600; }
+  .page--index #imagine {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/img/imagine-background.jpg);
+    background-position: right top;
+    padding-left: 30%; }
+    .page--index #imagine h1 {
+      height: 0;
+      margin: 0;
+      text-indent: -999em;
+      overflow: hidden;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url(/img/imagine.png);
+      padding-bottom: 56.25%; }
+    .page--index #imagine .prose {
+      max-width: 360px; }
+    .page--index #imagine ul {
+      list-style: none;
+      margin: 0; }
+    .page--index #imagine li {
+      list-style: none;
+      font-size: 2em;
+      text-align: center; }
+    .page--index #imagine li:not(:first-child) {
+      display: none; }
+
+@media (min-width: 640px) {
+  .page--index #imagine {
+    padding-left: 50%;
+    background-image: url(/img/imagine-lg.jpg); }
+    .page--index #imagine .prose {
+      margin: 0; } }
+@media (min-width: 1024px) {
+  .page--index #imagine {
+    background-image: url(/img/imagine-xl.jpg); } }
