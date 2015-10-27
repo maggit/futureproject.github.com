@@ -569,3 +569,8 @@ html, body {
 @media (min-width: 1024px) {
   .page--index #imagine {
     background-image: url(/img/imagine-xl.jpg); } }
+@media (min-width: 1300px) {
+  .page--index #imagine {
+    background-position: left center;
+    background-size: auto 140%;
+    background-color: white; } }
