@@ -309,6 +309,7 @@ html, body {
     .primary-nav .minichimp input, .primary-nav .minichimp .btn {
       /*height: 30px;*/
       padding: .6em;
+      height: 30px;
       margin: 0; }
     .primary-nav .minichimp input.email {
       background-color: #f0f0f0; } }
@@ -525,8 +526,7 @@ html, body {
   /*}*/ }
   .page--index .article-header {
     display: none; }
-  .page--index .article#about p {
-    font-size: 2em;
+  .page--index #about {
     font-weight: 600; }
   .page--index #imagine {
     background-repeat: no-repeat;
@@ -553,7 +553,8 @@ html, body {
     .page--index #imagine li {
       list-style: none;
       font-size: 2em;
-      text-align: center; }
+      text-align: center;
+      white-space: nowrap; }
     .page--index #imagine li:not(:first-child) {
       display: none; }
 
@@ -562,7 +563,9 @@ html, body {
     padding-left: 50%;
     background-image: url(/img/imagine-lg.jpg); }
     .page--index #imagine .prose {
-      margin: 0; } }
+      margin: 0; }
+  .page--index #about p {
+    font-size: 1.5em; } }
 @media (min-width: 1024px) {
   .page--index #imagine {
     background-image: url(/img/imagine-xl.jpg); } }
