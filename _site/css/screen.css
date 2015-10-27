@@ -532,6 +532,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-color: white;
     background-image: url(/img/imagine-background.jpg);
     background-position: right top;
     padding-left: 30%; }
@@ -568,9 +569,9 @@ html, body {
     font-size: 1.5em; } }
 @media (min-width: 1024px) {
   .page--index #imagine {
-    background-image: url(/img/imagine-xl.jpg); } }
+    background-image: url(/img/imagine-xl.jpg);
+    background-position: left top;
+    background-size: auto 130%; } }
 @media (min-width: 1300px) {
   .page--index #imagine {
-    background-position: left center;
-    background-size: auto 140%;
-    background-color: white; } }
+    background-size: auto 140%; } }
