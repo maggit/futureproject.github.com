@@ -1,18 +1,28 @@
 ---
 status: draft
-theme: medium-blue
+theme: grey
 ---
 
-America’s education system calibrates – really, programs – young people to pursue a vision of success that has nothing to do with real success in life, at least life in the 21st Century.
+## Our country is uninspired, unfulfilled, and losing hope.
 
-* * *
+America is supposed to be a place of possibility. But amid major challenges, our society has become more pessimistic than ever before. Worst of all, millions of young people are growing up hopeless and disengaged, without the belief or the skills they need to lead in the 21st century.
 
-- We teach students algebra but not the art of aspiration, and then wonder why they don’t dream beyond their circumstance.
-- We teach students how to critically think, but then challenge them to apply that to pointless passages on tests, rather than the biggest problems in their communities, and wonder why our world seems stuck.
-- We promise teachers the opportunity to inspire their students to seek knowledge and live curiously – to light the fire – and we measure them based on how much they’ve informed those students about information they could look up on Google.
+1. Millions of Americans are living unhappy, unfulfilled lives and don’t have faith in the future.
+  - 2/3 say they are unhappy with their lives.
+  - More than half say they are unfulfilled in their jobs.
+  - Nearly 2/3 believe the next generation will be economically worse off that they are today.
 
-* * *
+2. This is most dangerously true for young people, who do not believe they can build a better future.
+  - 7/10 young people say they are uninspired and unmotivated.
+  - 5/10 say they are not hopeful about their futures.
 
-### Then we wonder why so many students drop out of school – and never even want to go to college in the first place.
+3. This is being reinforced by schools across America, which are designed to prepare students for the past, not the future.
+  - Most aspects of today’s public schools in America were designed in 1892.
+  - Students lose more than 90% of their creative capacity during their school years.
+  - 65% of students will be employed in jobs that don’t exist yet and for which schools are not preparing them.
 
-They’re the smart ones. Our education system, it turns out, is one big lie – and it’s not the fault of any one actor within it. In fact, it’s our fault – because as much as we say it is time to reimagine education, we keep sending our kids to school and keep paying those college tuition bills – and too often pretend that school served a purpose that it never did.
+4. This is causing young people to disengage at staggering numbers and never discover and unleash their full potential.
+  - Only 55% of students are engaged in learning at school.
+  - 1.2 million students drop out of American high schools every year (that’s 7000 each day).
+  - Suspension rates have more than doubled in the past four decades, contributing to a strong school to prison pipeline.
+

@@ -1,0 +1,66 @@
+.page--about-index {
+  #about {
+    @include fbs;
+    background-image: url(/img/about-header.jpg);
+    background-size: contain;
+    background-position: left bottom;
+    padding-left: 30%;
+    .article-header {
+      display: none;
+    }
+  }
+  #our-mission {
+    background-color: #6e65ff;
+    @include linear-gradient(top,  #6c1974 0%,#662591 50%,#5f33b4 75%,#6e65ff 100%);
+    overflow: hidden;
+    .prose {
+      padding-top: 2em;
+      padding-bottom: 10em;
+    }
+    img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      margin: 0;
+      height: 246px;
+      width: 375px;
+      min-width: 375px;
+    }
+  }
+}
+@media (min-width: 780px) {
+  .page--about-index {
+    #about {
+      padding-left: 50%;
+      background-image: url(/img/about-header-xl.jpg);
+      background-position: left bottom;
+      .prose {
+        margin: 0;
+        padding-right: 2em;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .page--about-index {
+    #about {
+      background-image: url(/img/about-header-xl.jpg);
+      background-position: calc(50% - 140px) bottom;
+    }
+    #our-mission {
+      .prose {
+        padding-bottom: 6em;
+      }
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .page--about-index {
+    #our-mission {
+      img {
+        left: 50%;
+        margin-left: -720px;
+      }
+    }
+  }
+}

@@ -100,12 +100,14 @@ h5 {
     max-width: 100%;
     display: block;
     margin: 1em auto; }
+  .prose ol, .prose ul {
+    margin-left: 2ch; }
   .prose ul {
-    list-style-position: inside;
+    list-style-position: outside;
     list-style-type: disc; }
   .prose ol {
     list-style-type: decimal;
-    list-style-position: inside; }
+    list-style-position: outside; }
   .prose li {
     margin: 1.2rem 0; }
   .prose p {
@@ -394,7 +396,7 @@ html, body {
 
 .article#join-and-donate {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
   background-position: center center;
   background-image: url(/img/join-and-donate.jpg);
   background-size: contain;
@@ -431,14 +433,16 @@ html, body {
   text-transform: uppercase;
   max-width: 1280px;
   margin: 0 auto;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  text-align: left; }
   .article-header * {
     font-size: 1em;
     display: inline-block;
     background: white;
     color: #191919;
-    padding: 1em;
-    margin-left: -1em; }
+    padding: 1em 2em;
+    margin-left: -1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); }
 
 .article-headline {
   max-width: 60ch;
@@ -520,6 +524,52 @@ html, body {
   background-image: linear-gradient(black, black);
   color: white; }
 
+.page--about-index #about {
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  background-image: url(/img/about-header.jpg);
+  background-size: contain;
+  background-position: left bottom;
+  padding-left: 30%; }
+  .page--about-index #about .article-header {
+    display: none; }
+.page--about-index #our-mission {
+  background-color: #6e65ff;
+  background-color: #6c1974;
+  background-image: -webkit-linear-gradient(top, #6c1974 0%, #662591 50%, #5f33b4 75%, #6e65ff 100%);
+  background-image: linear-gradient(to bottom,#6c1974 0%, #662591 50%, #5f33b4 75%, #6e65ff 100%);
+  overflow: hidden; }
+  .page--about-index #our-mission .prose {
+    padding-top: 2em;
+    padding-bottom: 10em; }
+  .page--about-index #our-mission img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    height: 246px;
+    width: 375px;
+    min-width: 375px; }
+
+@media (min-width: 780px) {
+  .page--about-index #about {
+    padding-left: 50%;
+    background-image: url(/img/about-header-xl.jpg);
+    background-position: left bottom; }
+    .page--about-index #about .prose {
+      margin: 0;
+      padding-right: 2em; } }
+@media (min-width: 1024px) {
+  .page--about-index #about {
+    background-image: url(/img/about-header-xl.jpg);
+    background-position: calc(50% - 140px) bottom; }
+  .page--about-index #our-mission .prose {
+    padding-bottom: 6em; } }
+@media (min-width: 1280px) {
+  .page--about-index #our-mission img {
+    left: 50%;
+    margin-left: -720px; } }
 .page--index {
   /*#the-container .primary-nav .minichimp {*/
   /*display: none;*/
@@ -530,7 +580,7 @@ html, body {
     font-weight: 600; }
   .page--index #imagine {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 100%;
     background-position: center center;
     background-color: white;
     background-image: url(/img/imagine-background.jpg);
@@ -572,6 +622,6 @@ html, body {
     background-image: url(/img/imagine-xl.jpg);
     background-position: left top;
     background-size: auto 130%; } }
-@media (min-width: 1300px) {
+@media (min-width: 1280px) {
   .page--index #imagine {
     background-size: auto 140%; } }

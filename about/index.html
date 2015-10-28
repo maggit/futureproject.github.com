@@ -2,5 +2,7 @@
 title: About
 ---
 {% assign cat = 'about' %}
-{% include articles-list.html %}
+{% for post in site.categories[cat] %}
+  {% include article-stnd.html %}
+{% endfor %}
 {% assign cat = nil %}

@@ -22,13 +22,15 @@
   max-width: 1280px;
   margin: 0 auto;
   letter-spacing: 3px;
+  text-align: left;
   * {
     font-size: 1em;
     display: inline-block;
     background: white;
     color: $base-font-color;
-    padding: 1em;
+    padding: 1em 2em;
     margin-left: -1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,.25);
   }
 }
 .article-headline {
