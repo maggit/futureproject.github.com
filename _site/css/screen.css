@@ -58,19 +58,77 @@
     opacity: 0; } }
 @-webkit-keyframes highlight {
   from {
-    background-color: #06d0ff; }
+    background-color: #ffce00; }
   to {
     background-color: inherit; } }
 @-moz-keyframes highlight {
   from {
-    background-color: #06d0ff; }
+    background-color: #ffce00; }
   to {
     background-color: inherit; } }
 @keyframes highlight {
   from {
-    background-color: #06d0ff; }
+    background-color: #ffce00; }
   to {
     background-color: inherit; } }
+@-webkit-keyframes expand {
+  from {
+    -webkit-transform: scaleY(0);
+    opacity: 0; }
+  to {
+    -webkit-transform: scaleY(1);
+    opacity: 1; } }
+@-moz-keyframes expand {
+  from {
+    -moz-transform: scaleY(0);
+    opacity: 0; }
+  to {
+    -moz-transform: scaleY(1);
+    opacity: 1; } }
+@keyframes expand {
+  from {
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform: scaleY(0);
+    opacity: 0; }
+  to {
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 1; } }
+@-webkit-keyframes contact {
+  from {
+    -webkit-transform: scaleY(1);
+    opacity: 1; }
+  to {
+    -webkit-transform: scaleY(0);
+    opacity: 0; } }
+@-moz-keyframes contact {
+  from {
+    -moz-transform: scaleY(1);
+    opacity: 1; }
+  to {
+    -moz-transform: scaleY(0);
+    opacity: 0; } }
+@keyframes contact {
+  from {
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 1; }
+  to {
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform: scaleY(0);
+    opacity: 0; } }
 .animation-fallout {
   -webkit-transform-origin: center top;
   -moz-transform-origin: center top;
@@ -217,6 +275,9 @@ h5 {
   .prose p {
     margin: 1.2rem 0; }
 
+@media (min-width: 780px) {
+  *:target {
+    padding-top: 6em; } }
 input, select, textarea, button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -513,7 +574,8 @@ html, body {
       margin: 0;
       max-width: 480px; } }
 .img-flip {
-  position: relative; }
+  position: relative;
+  display: block; }
 
 .img-flip img {
   display: block;
@@ -631,7 +693,53 @@ html, body {
   width: 50%;
   box-sizing: border-box;
   text-align: center;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  display: block; }
+  .person .person-more {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #b2e5fa;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25); }
+    .person .person-more .person-more-content {
+      max-width: 1280px;
+      padding: 1em;
+      margin: 0 auto;
+      position: relative; }
+    .person .person-more p {
+      text-align: left;
+      max-width: 70ch;
+      margin-left: auto;
+      margin-right: auto; }
+    .person .person-more .close {
+      margin-top: 0;
+      text-align: center; }
+      .person .person-more .close a {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        display: block;
+        font-size: 1.5em;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        font-weight: 700;
+        color: white;
+        border: 3px solid;
+        border-radius: 100%;
+        text-align: center; }
+  .person:target .person-name {
+    color: #06d0ff; }
+  .person:target .person-role {
+    color: #b2e5fa; }
+  .person:target .person-more {
+    display: block;
+    /*@include animation (expand .5s);*/
+    /*@include transform-origin(center top);*/
+    z-index: 100; }
   .person .img-flip {
     height: 0;
     padding-bottom: 72%; }
@@ -650,7 +758,8 @@ html, body {
 @media (min-width: 780px) {
   .person {
     width: 33.3333333333333333333333333333%;
-    padding: .5em; } }
+    padding: 3em .5em .5em;
+    margin-bottom: 0; } }
 @media (min-width: 1280px) {
   .person {
     width: 25%; } }

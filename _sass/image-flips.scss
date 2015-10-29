@@ -1,4 +1,7 @@
-.img-flip { position: relative; }
+.img-flip {
+  position: relative;
+  display: block;
+}
 .img-flip img {
   display: block;
   position: absolute;

@@ -20,10 +20,30 @@
 }
 @include keyframes(highlight) {
   from {
-    background-color: $future-blue;
+    background-color: $brand-yellow;
   }
   to {
     background-color: inherit;
+  }
+}
+@include keyframes(expand) {
+  from {
+    @include transform(scaleY(0));
+    opacity: 0;
+  }
+  to {
+    @include transform(scaleY(1));
+    opacity: 1;
+  }
+}
+@include keyframes(contact) {
+  from {
+    @include transform(scaleY(1));
+    opacity: 1;
+  }
+  to {
+    @include transform(scaleY(0));
+    opacity: 0;
   }
 }
 .animation-fallout {

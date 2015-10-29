@@ -9,6 +9,54 @@
   box-sizing: border-box;
   text-align: center;
   margin-bottom: .5em;
+  display: block;
+  .person-more {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: $sky-blue;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(0,0,0,.25);
+    .person-more-content {
+      max-width: 1280px;
+      padding: 1em;
+      margin: 0 auto;
+      position: relative;
+    }
+    p {
+      text-align: left;
+      max-width: 70ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .close {
+      margin-top: 0;
+      text-align: center;
+      a {
+        @include transform(rotate(45deg));
+        display: block;
+        font-size: 1.5em;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        font-weight: 700;
+        color: white;
+        border: 3px solid;
+        border-radius: 100%;
+        text-align: center;
+      }
+    }
+  }
+  &:target {
+    .person-name { color: $future-blue; }
+    .person-role { color: $sky-blue; }
+    .person-more {
+      display: block;
+      /*@include animation (expand .5s);*/
+      /*@include transform-origin(center top);*/
+      z-index: 100;
+    }
+  }
   .img-flip {
     height: 0;
     padding-bottom: 72%;
@@ -31,7 +79,8 @@
 @media (min-width: 780px) {
   .person {
     width: 33.3333333333333333333333333333%;
-    padding: .5em;
+    padding: 3em .5em .5em;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1280px) {
