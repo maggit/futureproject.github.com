@@ -472,7 +472,8 @@ html, body {
     color: #191919;
     padding: 1em 2em;
     margin-left: -1em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); }
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    line-height: 1; }
 
 .article-headline {
   max-width: 60ch;
