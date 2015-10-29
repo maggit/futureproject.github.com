@@ -1,0 +1,38 @@
+@include keyframes(fallin) {
+  from {
+    @include transform(translate3d(0,10%,0) scale(0.9));
+    opacity: 0;
+  }
+  to {
+    @include transform(translate3d(0,0,0) scale(1));
+    opacity: 1;
+  }
+}
+@include keyframes(fallout) {
+  from {
+    @include transform(translate3d(0,0,0) scale(1));
+    opacity: 1;
+  }
+  to {
+    @include transform(translate3d(0,10%,0) scale(0.9));
+    opacity: 0;
+  }
+}
+@include keyframes(highlight) {
+  from {
+    background-color: $future-blue;
+  }
+  to {
+    background-color: inherit;
+  }
+}
+.animation-fallout {
+  @include transform-origin(center top);
+  @include animation(fallout .4s);
+  @include animation-timing-function(cubic-bezier(0.23,1,0.32,1));
+}
+.animation-fallin {
+  @include transform-origin(center top);
+  @include animation(fallin .4s);
+  @include animation-timing-function(cubic-bezier(0.23,1,0.32,1));
+}

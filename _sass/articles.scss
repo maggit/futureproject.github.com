@@ -72,3 +72,12 @@
   text-overflow: ellipsis;
 }
 
+@media(min-width: 780px) {
+  .article:target {
+    padding-top: 6em;
+    .article-header * {
+      @include animation(highlight 1s);
+    }
+  }
+}
+

@@ -1,3 +1,102 @@
+@-webkit-keyframes fallin {
+  from {
+    -webkit-transform: translate3d(0, 10%, 0) scale(0.9);
+    opacity: 0; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1; } }
+@-moz-keyframes fallin {
+  from {
+    -moz-transform: translate3d(0, 10%, 0) scale(0.9);
+    opacity: 0; }
+  to {
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1; } }
+@keyframes fallin {
+  from {
+    -webkit-transform: translate3d(0, 10%, 0) scale(0.9);
+    -moz-transform: translate3d(0, 10%, 0) scale(0.9);
+    -ms-transform: translate3d(0, 10%, 0) scale(0.9);
+    -o-transform: translate3d(0, 10%, 0) scale(0.9);
+    transform: translate3d(0, 10%, 0) scale(0.9);
+    opacity: 0; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    -o-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1; } }
+@-webkit-keyframes fallout {
+  from {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1; }
+  to {
+    -webkit-transform: translate3d(0, 10%, 0) scale(0.9);
+    opacity: 0; } }
+@-moz-keyframes fallout {
+  from {
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1; }
+  to {
+    -moz-transform: translate3d(0, 10%, 0) scale(0.9);
+    opacity: 0; } }
+@keyframes fallout {
+  from {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    -o-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1; }
+  to {
+    -webkit-transform: translate3d(0, 10%, 0) scale(0.9);
+    -moz-transform: translate3d(0, 10%, 0) scale(0.9);
+    -ms-transform: translate3d(0, 10%, 0) scale(0.9);
+    -o-transform: translate3d(0, 10%, 0) scale(0.9);
+    transform: translate3d(0, 10%, 0) scale(0.9);
+    opacity: 0; } }
+@-webkit-keyframes highlight {
+  from {
+    background-color: #06d0ff; }
+  to {
+    background-color: inherit; } }
+@-moz-keyframes highlight {
+  from {
+    background-color: #06d0ff; }
+  to {
+    background-color: inherit; } }
+@keyframes highlight {
+  from {
+    background-color: #06d0ff; }
+  to {
+    background-color: inherit; } }
+.animation-fallout {
+  -webkit-transform-origin: center top;
+  -moz-transform-origin: center top;
+  -ms-transform-origin: center top;
+  -o-transform-origin: center top;
+  transform-origin: center top;
+  -webkit-animation: fallout 0.4s;
+  -moz-animation: fallout 0.4s;
+  animation: fallout 0.4s;
+  -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1); }
+
+.animation-fallin {
+  -webkit-transform-origin: center top;
+  -moz-transform-origin: center top;
+  -ms-transform-origin: center top;
+  -o-transform-origin: center top;
+  transform-origin: center top;
+  -webkit-animation: fallin 0.4s;
+  -moz-animation: fallin 0.4s;
+  animation: fallin 0.4s;
+  -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1); }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -512,6 +611,13 @@ html, body {
   overflow: hidden;
   text-overflow: ellipsis; }
 
+@media (min-width: 780px) {
+  .article:target {
+    padding-top: 6em; }
+    .article:target .article-header * {
+      -webkit-animation: highlight 1s;
+      -moz-animation: highlight 1s;
+      animation: highlight 1s; } }
 .people {
   max-width: 1280px;
   margin: 0 auto; }

@@ -22,18 +22,21 @@
   <section class="menu-item">
     <a class='top-level-link {% if page.url contains 'stories' %}active{% endif %}' href="/stories">Stories</a>
     <ul class="sub-nav">
-      <li><a href="#" class="unfinished">Videos</a></li>
-      <li><a href="#" class="unfinished">Photos</a></li>
-      <li><a href="#" class="unfinished">Case Studies</a></li>
+      {% for post in site.categories.stories %}
+        {% if forloop.first == false %}
+        <li class='sub-nav-item'><a href="/stories/#{{ post.title | slugify }}" class="{{ post.status }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
     </ul>
   </section>
   <section class="menu-item get-involved-menu-item">
-    <a class='top-level-link {% if page.url contains 'involved' %}active{% endif %}' href="/get-involved">Get Involved</a>
+    <a class='top-level-link {% if page.url contains 'involved' %}active{% endif %}' href="/get_involved">Get Involved</a>
     <ul class="sub-nav">
-      <li><a href="#" class="unfinished">Share</a></li>
-      <li><a href="#" class="unfinished">Invest</a></li>
-      <li><a href="#" class="unfinished">Jobs</a></li>
-      <li><a href="#" class="unfinished">Internships</a></li>
+      {% for post in site.categories.get_involved %}
+        {% if forloop.first == false %}
+        <li class='sub-nav-item'><a href="/get_involved/#{{ post.title | slugify }}" class="{{ post.status }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
     </ul>
   </section>
   <!--
