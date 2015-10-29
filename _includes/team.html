@@ -1,5 +1,5 @@
 <div class='people'>
-{% for person in site.categories.team %}
+{% for person in site.data.team %}
   {% if person.team contains team %}
   <div id="person-{{ person.name | slugify }}" class="person {{ person.team }}{% if team != 'board' and team != 'advisors' %} expandable{% endif %}"{% if person.vimeo_id %} data-vimeo-id="{{ person.vimeo_id }}"{% endif %}>
     <a href="#person-{{ person.name | slugify }}" class='person-photos img-flip'>
@@ -10,7 +10,7 @@
     <div class='person-role'>{{ person.role }}</div>
     <figure class="person-more">
       <div class="person-more-content">
-        {{ person.content }}
+        {{ person.bio | markdownify }}
       </div>
     </figure>
   </div>

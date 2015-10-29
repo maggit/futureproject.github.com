@@ -2,9 +2,14 @@
 title: Team
 theme: white
 ---
+<div class="article">
 
-<div id="people">
-{% assign team = 'payroll' %}{% include team.html %}
+  <pre>
+  name,portrait,team,role,vimeo_id,bio
+  {% for person in site.categories.team reversed%}
+  {{ person.name }},{{ person.portrait }},{{ person.team }},"{% if person.role %}{{ person.role | replace:'<br>',', ' | strip_html }} {% endif %}",{{ person.vimeo_id }},"{{person.content | strip_newlines | strip_html}}"
+  {% endfor %}
+  </pre>
 </div>
 
 <!--<article id="join-the-team" class='sized article-with-photo-l-r article-short article-photo-bigger'>-->
