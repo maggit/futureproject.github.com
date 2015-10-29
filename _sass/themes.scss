@@ -27,3 +27,12 @@
   @include linear-gradient(black, black);
   color: white;
 }
+.theme--white {
+  background-color: white;
+  @include linear-gradient($base-border-color 0px, white 6em);
+}
+.wide {
+  .prose {
+    max-width: 100%;
+  }
+}

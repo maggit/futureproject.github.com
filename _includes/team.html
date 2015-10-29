@@ -1,0 +1,15 @@
+<div class='people'>
+{% for person in site.categories.team reversed %}
+  {% if person.team contains team %}
+  <figure class="person {{ person.team }}{% if team != 'board' and team != 'advisors' %} expandable{% endif %}"{% if person.vimeo_id %} data-vimeo-id="{{ person.vimeo_id }}"{% endif %}>
+    <div class='person-photos img-flip'>
+      <img src="/img/team/team_{{ person.portrait }}_1.jpg" alt="{{ person.name }}" />
+      <img src="/img/team/team_{{ person.portrait }}_2.jpg" alt="{{ person.name }}" />
+    </div>
+    <div class='person-name'>{{ person.name }}</div>
+    <div class='person-role'>{{ person.role }}</div>
+  </figure>
+  {% endif %}
+{% endfor %}
+{% assign team = nil %}
+</div>

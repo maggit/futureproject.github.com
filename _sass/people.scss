@@ -1,0 +1,42 @@
+.people {
+  @include clearfix;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.person {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: .5em;
+  .img-flip {
+    height: 0;
+    padding-bottom: 72%;
+  }
+  .person-name {
+    font-weight: 700;
+    height: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .person-role {
+    @extend .caps;
+    color: $all-caps-grey;
+    height: 2.4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media (min-width: 780px) {
+  .person {
+    width: 33.3333333333333333333333333333%;
+    padding: .5em;
+  }
+}
+@media (min-width: 1280px) {
+  .person {
+    width: 25%;
+  }
+}
+
