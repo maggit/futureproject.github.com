@@ -741,6 +741,8 @@ html, body {
     height: 2.4em;
     overflow: hidden;
     text-overflow: ellipsis; }
+  .person.advisors:target:not(.leadership) .person-more, .person.board:target:not(.leadership) .person-more {
+    display: none; }
 
 .team-nav {
   max-width: 1280px;

@@ -58,6 +58,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  &.advisors:target:not(.leadership), &.board:target:not(.leadership) { .person-more { display: none; } }
 }
 .team-nav {
   max-width: 1280px;
