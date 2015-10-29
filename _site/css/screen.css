@@ -305,8 +305,12 @@ input, select, textarea, button {
   -webkit-transition: background 1s;
   -moz-transition: background 1s;
   transition: background 1s; }
+  .btn.btn-grey {
+    background-color: #f0f0f0;
+    color: #928d9b; }
   .btn:hover {
-    background-color: #0064f4; }
+    background-color: #0064f4;
+    color: white; }
 
 a.btn {
   padding: .5em;
@@ -582,7 +586,9 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  margin: 0; }
+  margin: 0;
+  width: 100%;
+  height: auto; }
 
 .img-flip img:last-child {
   opacity: 0; }
@@ -735,6 +741,22 @@ html, body {
     height: 2.4em;
     overflow: hidden;
     text-overflow: ellipsis; }
+
+.team-nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center; }
+  .team-nav a {
+    margin: .5em;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none; }
+  .team-nav .active {
+    background-color: #06d0ff;
+    color: white; }
+
+.team {
+  margin: 2em auto; }
 
 @media (min-width: 780px) {
   .person {

@@ -8,6 +8,8 @@
   top: 0;
   left: 0;
   margin: 0;
+  width: 100%;
+  height: auto;
 }
 .img-flip img:last-child { opacity: 0; }
 .img-flip:hover img:first-child { opacity: 0; }

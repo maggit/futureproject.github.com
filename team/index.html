@@ -1,16 +1,17 @@
 ---
 title: Team
-theme: white
 ---
-<div class="article">
-
-  <pre>
-  name,portrait,team,role,vimeo_id,bio
-  {% for person in site.categories.team reversed%}
-  {{ person.name }},{{ person.portrait }},{{ person.team }},"{% if person.role %}{{ person.role | replace:'<br>',', ' | strip_html }} {% endif %}",{{ person.vimeo_id }},"{{person.content | strip_newlines | strip_html}}"
-  {% endfor %}
-  </pre>
+<div class="article theme--white">
+  {% include team-nav.html %}
 </div>
+{% for team in site.teams %}
+<div class="article theme--white">
+  <div class="team people" id="{{team[1].id}}">
+    <div class='article-header'><h3>{{ team[1].label }}</h3></div>
+    {% assign team_name = team[1].id %}{% include team.html %}
+  </div>
+</div>
+{% endfor %}
 
 <!--<article id="join-the-team" class='sized article-with-photo-l-r article-short article-photo-bigger'>-->
   <!--<h2>Join the Team</h2>-->

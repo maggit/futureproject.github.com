@@ -7,8 +7,13 @@
   border-radius: $base-border-radius;
   color: white;
   @include transition(background 1s);
+  &.btn-grey {
+    background-color: $base-border-color;
+    color: $all-caps-grey;
+  }
   &:hover {
     background-color: $hover-blue;
+    color: white;
   }
 }
 a.btn {

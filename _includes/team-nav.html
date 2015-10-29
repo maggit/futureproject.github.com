@@ -1,18 +1,6 @@
-<div class='sized-narrow'>
-  <div class='inline-nav-outer'>
-    <nav class='inline-nav-inner'>
-      <a class="inline-nav-item {% if page.url contains 'index' %}active{% endif %}" href="/team/">Everyone</a>
-      <a class="inline-nav-item {% if page.url contains 'leadership' %}active{% endif %}" href="/team/leadership.html">Leadership</a>
-      <a class="inline-nav-item {% if page.url contains 'detroit' %}active{% endif %}" href="/team/detroit.html">Detroit</a>
-      <a class="inline-nav-item {% if page.url contains 'haven' %}active{% endif %}" href="/team/new-haven.html">New Haven</a>
-      <a class="inline-nav-item {% if page.url contains 'newark' %}active{% endif %}" href="/team/newark.html">Newark</a>
-      <a class="inline-nav-item {% if page.url contains 'nyc' %}active{% endif %}" href="/team/nyc.html">New York City</a>
-      <a class="inline-nav-item {% if page.url contains 'philly' %}active{% endif %}" href="/team/philly.html">Philadelphia</a>
-      <a class="inline-nav-item {% if page.url contains 'sf' %}active{% endif %}" href="/team/sf.html">San Francisco</a>
-      <a class="inline-nav-item {% if page.url contains 'dc' %}active{% endif %}" href="/team/dc.html">Washington, DC</a>
-      <a class="inline-nav-item {% if page.url contains 'hq' %}active{% endif %}" href="/team/hq.html">Headquarters</a>
-      <a class="inline-nav-item {% if page.url contains 'board' %}active{% endif %}" href="/team/board.html">Board of Directors</a>
-      <a class="inline-nav-item {% if page.url contains 'advisors' %}active{% endif %}" href="/team/advisors.html">Advisors</a>
-    </nav>
-  </div>
-</div>
+<nav class='team-nav'>
+  {% for team in site.teams %}
+  <a class="btn btn-grey {% if team_name == team[1].id %}active{% endif %}" href="{% if page.url != '/team/index.html' %}/team/{% endif %}#{{ team[1].id }}">{{ team[1].label }}</a>
+  {% endfor %}
+</nav>
+

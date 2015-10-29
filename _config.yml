@@ -11,3 +11,38 @@ defaults:
       type: "pages"
     values:
       layout: "v1"
+teams: [leadership, detroit, nh, newark, philly, sf, dc, hq, board, advisors]
+teams:
+  leadership:
+    id: 'leadership'
+    label: 'Leadership'
+  detroit:
+    id: 'detroit'
+    label: 'Detroit'
+  nh:
+    id: 'nh'
+    label: 'New Haven'
+  newark:
+    id: 'newark'
+    label: 'Newark'
+  nyc:
+    id: 'nyc'
+    label: 'New York City'
+  philly:
+    id: 'philly'
+    label: 'Philadelphia'
+  sf:
+    id: 'sf'
+    label: 'San Francisco'
+  dc:
+    id: 'dc'
+    label: 'Washington, DC'
+  hq:
+    id: 'hq'
+    label: 'Headquarters'
+  board:
+    id: 'board'
+    label: 'Board of Directors'
+  advisors:
+    id: 'advisors'
+    label: 'Advisors'

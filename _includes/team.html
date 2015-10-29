@@ -1,6 +1,6 @@
 <div class='people'>
 {% for person in site.data.team %}
-  {% if person.team contains team %}
+  {% if person.team contains team_name %}
   <div id="person-{{ person.name | slugify }}" class="person {{ person.team }}{% if team != 'board' and team != 'advisors' %} expandable{% endif %}"{% if person.vimeo_id %} data-vimeo-id="{{ person.vimeo_id }}"{% endif %}>
     <a href="#person-{{ person.name | slugify }}" class='person-photos img-flip'>
       <img src="/img/team/team_{{ person.portrait }}_1.jpg" alt="{{ person.name }}" />
