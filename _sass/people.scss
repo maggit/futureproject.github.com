@@ -29,23 +29,6 @@
       margin-left: auto;
       margin-right: auto;
     }
-    .close {
-      margin-top: 0;
-      text-align: center;
-      a {
-        @include transform(rotate(45deg));
-        display: block;
-        font-size: 1.5em;
-        width: 34px;
-        height: 34px;
-        line-height: 34px;
-        font-weight: 700;
-        color: white;
-        border: 3px solid;
-        border-radius: 100%;
-        text-align: center;
-      }
-    }
   }
   &:target {
     .person-name { color: $future-blue; }
