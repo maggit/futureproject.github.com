@@ -10,7 +10,7 @@
     <div class='person-role'>{{ person.role }}</div>
     <figure class="person-more">
       <div class="person-more-content">
-        {{ person.bio | markdownify }}
+        {% if person.vimeo_id == null %}{{ person.bio | markdownify }}{% endif %}
       </div>
     </figure>
   </div>
