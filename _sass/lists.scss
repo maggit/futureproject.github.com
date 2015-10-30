@@ -1,0 +1,25 @@
+.listicle.interactive {
+  ol {
+    margin: 0;
+    list-style: none;
+    background: rgb(224,224,226);
+    padding: 1em;
+    border: .25em solid $dark-blue;
+    > li { display: none; }
+    > li.active {
+      display: block;
+    }
+  }
+  nav {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    color: $all-caps-grey;
+    * {
+      display: inline-block;
+      cursor: pointer;
+      padding: 1rem;
+    }
+    .active { color: $dark-blue; }
+  }
+}

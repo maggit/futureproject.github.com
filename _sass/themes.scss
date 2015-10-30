@@ -31,6 +31,10 @@
   background-color: white;
   @include linear-gradient($base-border-color 0px, white 6em);
 }
+.theme--grey {
+  background-color: #C0C0C4;
+  @include linear-gradient(#928D9B 0px, #C0C0C4 400px);
+}
 .wide {
   .prose {
     max-width: 100%;
