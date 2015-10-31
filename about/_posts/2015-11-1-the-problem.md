@@ -10,14 +10,14 @@ America is supposed to be a place of possibility. But amid major challenges, our
 1. #### Millions of Americans are living unhappy, unfulfilled lives and don’t have faith in the future.
   - 2/3 say they are unhappy with their lives.
   - More than half say they are unfulfilled in their jobs.
-  - Nearly 2/3 believe the next generation will be economically worse off that they are today.
+  - Nearly 2/3 believe the next generation will be economically worse off than they are today.
 
 2. #### This is most dangerously true for young people, who do not believe they can build a better future.
   - 7/10 young people say they are uninspired and unmotivated.
   - 5/10 say they are not hopeful about their futures.
 
 3. #### This is being reinforced by schools across America, which are designed to prepare students for the past, not the future.
-  - Most aspects of today’s public schools in America were designed in 1892.
+  - Most aspects of today’s public schools in America were designed in 1893.
   - Students lose more than 90% of their creative capacity during their school years.
   - 65% of students will be employed in jobs that don’t exist yet and for which schools are not preparing them.
 
