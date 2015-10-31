@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'have_heart';
+    src: url('/img/have_heart_two-webfont.woff2') format('woff2'),
+         url('/img/have_heart_two-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
 body {
   font-family: $base-font-family;
   font-weight: 400;

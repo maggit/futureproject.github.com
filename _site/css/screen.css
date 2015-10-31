@@ -202,6 +202,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: 'have_heart';
+  src: url("/img/have_heart_two-webfont.woff2") format("woff2"), url("/img/have_heart_two-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
 body {
   font-family: "Gotham A", "Gotham B", "Avenir", sans-serif;
   font-weight: 400;
@@ -902,58 +907,67 @@ html, body {
   .page--about-index #our-mission img {
     left: 50%;
     margin-left: -720px; } }
-.page--index {
-  /*#the-container .primary-nav .minichimp {*/
-  /*display: none;*/
-  /*}*/ }
-  .page--index .article-header {
+.page--index .article-header {
+  display: none; }
+.page--index #the-container .primary-nav .minichimp {
+  display: none; }
+.page--index #about {
+  font-weight: 600; }
+.page--index #imagine {
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  background-color: white;
+  background-image: url(/img/imagine-background.jpg);
+  background-position: center top;
+  background-size: 100% auto;
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 30%, white 50%), url(/img/imagine-background.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 30%, white 50%), url(/img/imagine-background.jpg);
+  padding-top: 16em; }
+  .page--index #imagine input.email {
+    background-color: #f0f0f0; }
+  .page--index #imagine h1, .page--index #imagine h2, .page--index #imagine h3, .page--index #imagine h4 {
+    margin: 0; }
+  .page--index #imagine .prose {
+    max-width: 320px; }
+  .page--index #imagine ul {
+    list-style: none;
+    margin: -1em auto 2em; }
+  .page--index #imagine li {
+    list-style: none;
+    font-size: 4em;
+    white-space: nowrap;
+    font-family: 'have_heart';
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1;
+    border-bottom: 0.25rem solid #191919;
+    margin: 0;
+    text-transform: uppercase; }
+  .page--index #imagine li:not(:first-child) {
     display: none; }
-  .page--index #about {
-    font-weight: 600; }
-  .page--index #imagine {
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: center center;
-    background-color: white;
-    background-image: url(/img/imagine-background.jpg);
-    background-position: right top;
-    padding-left: 30%; }
-    .page--index #imagine h1 {
-      height: 0;
-      margin: 0;
-      text-indent: -999em;
-      overflow: hidden;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url(/img/imagine.png);
-      padding-bottom: 56.25%; }
-    .page--index #imagine .prose {
-      max-width: 360px; }
-    .page--index #imagine ul {
-      list-style: none;
-      margin: 0; }
-    .page--index #imagine li {
-      list-style: none;
-      font-size: 2em;
-      text-align: center;
-      white-space: nowrap; }
-    .page--index #imagine li:not(:first-child) {
-      display: none; }
 
+@media (min-width: 480px) {
+  .page--index #imagine .prose {
+    max-width: 480px; } }
 @media (min-width: 640px) {
   .page--index #imagine {
-    padding-left: 50%;
-    background-image: url(/img/imagine-lg.jpg); }
+    padding-left: 30%;
+    padding-top: 6em;
+    background-image: url(/img/imagine-lg.jpg);
+    background-size: auto 100%;
+    background-position: left top; }
     .page--index #imagine .prose {
       margin: 0; }
   .page--index #about p {
     font-size: 1.5em; } }
 @media (min-width: 1024px) {
   .page--index #imagine {
+    padding-left: 50%;
     background-image: url(/img/imagine-xl.jpg);
     background-position: left top;
-    background-size: auto 130%; } }
-@media (min-width: 1280px) {
+    background-size: auto 110%; } }
+@media (min-width: 1300px) {
   .page--index #imagine {
-    background-size: auto 140%; } }
+    background-image: url(/img/homepage-header-xl.jpg);
+    background-position: calc(50% - 220px) top; } }
