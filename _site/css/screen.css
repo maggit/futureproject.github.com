@@ -950,20 +950,26 @@ html, body {
     text-transform: uppercase; }
   .page--index #imagine li:not(:first-child) {
     display: none; }
-.page--index #press .prose {
-  max-width: 70ch; }
-.page--index #press ul {
-  margin: 0;
-  list-style: none; }
-.page--index #press blockquote {
-  font-size: 2em; }
-.page--index #press li {
-  margin-bottom: 2em; }
-  .page--index #press li:last-child {
-    margin-bottom: 0; }
-.page--index #press li > p:last-child {
-  text-transform: uppercase;
-  color: #928d9b; }
+.page--index #press {
+  background-image: url(/img/homepage-press-bg.jpg);
+  padding-top: 60%;
+  background-size: 100% auto;
+  background-position: center top;
+  background-color: white; }
+  .page--index #press .prose {
+    max-width: 70ch; }
+  .page--index #press ul {
+    margin: 0;
+    list-style: none; }
+  .page--index #press blockquote {
+    font-size: 1.5em; }
+  .page--index #press li {
+    margin-bottom: 2em; }
+    .page--index #press li:last-child {
+      margin-bottom: 0; }
+  .page--index #press li > p:last-child {
+    text-transform: uppercase;
+    color: #928d9b; }
 
 @media (min-width: 480px) {
   .page--index #imagine .prose {
@@ -978,7 +984,9 @@ html, body {
     .page--index #imagine .prose {
       margin: 0; }
   .page--index #about p {
-    font-size: 1.5em; } }
+    font-size: 1.5em; }
+  .page--index #press {
+    background-image: url(/img/homepage-press-bg-xl.jpg); } }
 @media (min-width: 1024px) {
   .page--index #imagine {
     padding-left: 50%;

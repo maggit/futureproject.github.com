@@ -47,12 +47,17 @@
     }
   }
   #press {
+    background-image: url(/img/homepage-press-bg.jpg);
+    padding-top: 60%;
+    background-size: 100% auto;
+    background-position: center top;
+    background-color: white;
     .prose {
       max-width: 70ch;
     }
     ul { margin: 0; list-style: none; }
     blockquote {
-      font-size: 2em;
+      font-size: 1.5em;
     }
     li {
       margin-bottom: 2em;
@@ -89,6 +94,9 @@
       p {
         font-size: 1.5em;
       }
+    }
+    #press {
+      background-image: url(/img/homepage-press-bg-xl.jpg);
     }
   }
 }
