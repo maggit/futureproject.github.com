@@ -6,6 +6,8 @@
   // Top section, i.e. IMAGINE IF EVERYONE GREW UP
   #about {
     font-weight: 600;
+    @include fbs;
+    background-image: url(/img/homepage-about-bg.jpg);
   }
   #imagine {
     @include fbs;
@@ -42,6 +44,23 @@
     }
     li:not(:first-child) {
       display: none;
+    }
+  }
+  #press {
+    .prose {
+      max-width: 70ch;
+    }
+    ul { margin: 0; list-style: none; }
+    blockquote {
+      font-size: 2em;
+    }
+    li {
+      margin-bottom: 2em;
+      &:last-child { margin-bottom: 0; }
+    }
+    li > p:last-child {
+      text-transform: uppercase;
+      color: $all-caps-grey;
     }
   }
 }
