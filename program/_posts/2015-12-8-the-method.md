@@ -1,5 +1,5 @@
 ---
-theme: white
+theme: grey
 ---
 
 ## Students build Future Projects that Change their Schools and World
@@ -16,20 +16,38 @@ Dream Directors provide coaching, offer courses, and apply culture-change techni
 
 * * *
 
-- #### Discovery
+- ### Discovery
 
-  THE POSSIBILITY AUDIT. Dream Directors use this month-long process—involving dozens of interviews and observations—to uncover their school's challenges and opportunities and design a tailored impact strategy. [CLIPBOARD]
+  - ![The Possibility Audit](/img/method-clipboard-fs8.png)
 
-  1:1 COACHING. Through a structured process of inquiry, discussion, reflection, and action, Dream Directors help students discover their passions and purpose in one-on-one sessions. [HIGH FIVE]
+    ###### The Possibility Audit
+    Dream Directors use this month-long process—involving dozens of interviews and observations—to uncover their school's challenges and opportunities and design a tailored impact strategy.
 
-- #### Learning
+  - ![1:1 Coaching](/img/method-hifive-fs8.png)
 
-  THE DREAM TEAM. Dream Directors recruit and train a team of diverse leaders from across the school in the skills of Dream Directing. [HANDS UP]
+    ###### 1:1 Coaching
+    Through a structured process of inquiry, discussion, reflection, and action, Dream Directors help students discover their passions and purpose in one-on-one sessions.
 
-  FUTURE U. Dream Directors offer a robust curriculum of courses—sometimes facilitated by expert guests—to train students in 21st century, social-emotional, and project building skills. [NOTEBOOK]
+- ### Learning
 
-- #### Action
+  - ![Dream Team](/img/method-hands-raised-fs8.png)
 
-  FUTURE PROJECTS. Dream Teams launch projects to increase student engagement, transform the physical environment of their school, and shift attitudes amongst students and adults. [PAINT]
+    ###### The Dream Team
+    Dream Directors recruit and train a team of diverse leaders from across the school in the skills of Dream Directing.
 
-  FUTURE PROJECTS. Future Fellows build passion-fueled projects, from events to campaigns to products to organizations, to bring their dreams to life. [FLAG]
+  - ![Future U](/img/method-clipboard-fs8.png)
+
+    ###### Future U
+    Dream Directors offer a robust curriculum of courses—sometimes facilitated by expert guests—to train students in 21st century, social-emotional, and project building skills.
+
+- ### Action
+
+  - ![Dream Team Projects](/img/method-paint-fs8.png)
+
+    ###### School Transformation Projects
+    Dream Teams launch projects to increase student engagement, transform the physical environment of their school, and shift attitudes amongst students and adults.
+
+  - ![Future Projects](/img/method-flag-fs8.png)
+
+    ###### Future Projects
+    Future Fellows build passion-fueled projects, from events to campaigns to products to organizations, to bring their dreams to life.

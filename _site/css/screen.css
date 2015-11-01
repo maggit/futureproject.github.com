@@ -1030,6 +1030,25 @@ html, body {
   background-position: center top;
   background-image: url(/img/program-header.jpg);
   padding-top: 6em; }
+.page--program-index .article#the-method ul {
+  list-style: none;
+  margin: 0; }
+  .page--program-index .article#the-method ul li::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .page--program-index .article#the-method ul li img {
+    clear: left;
+    float: left;
+    margin: 0 1em 1em 0;
+    width: 25%; }
+  .page--program-index .article#the-method ul li li {
+    display: block;
+    margin-bottom: 1px;
+    background: white;
+    padding: .5em; }
+.page--program-index .article#the-method .prose > ul h3 {
+  text-align: center; }
 
 @media (min-width: 780px) {
   .page--program-index .article#the-dream-director {
