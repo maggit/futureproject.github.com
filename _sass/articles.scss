@@ -77,6 +77,22 @@
   margin: 0 auto;
   @include clearfix;
 }
+.article.gridded {
+  .article-header {
+    margin-bottom: 2rem;
+  }
+  .prose {
+    max-width: 1280px;
+    > p, > h2, {
+      max-width: 780px;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 2em 0;
+    @include clearfix;
+  }
+}
 
 @media(min-width: 780px) {
   .article:target {
@@ -85,5 +101,21 @@
       @include animation(highlight 1s);
     }
   }
+  .article.gridded {
+      li {
+        float: left;
+        display: block;
+        width: 33.3333333333333%;
+        width: calc(33.3333333333333% - 1rem);
+        text-align: center;
+        padding: 1rem 0;
+        box-sizing: border-box;
+        margin-left: 1rem;
+        &:nth-child(3n+1) {
+          clear: left;
+          margin-left: 0;
+       }
+      }
+    }
 }
 

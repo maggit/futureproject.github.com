@@ -698,13 +698,40 @@ html, body {
     content: "";
     display: table; }
 
+.article.gridded .article-header {
+  margin-bottom: 2rem; }
+.article.gridded .prose {
+  max-width: 1280px; }
+  .article.gridded .prose > p, .article.gridded .prose > h2 {
+    max-width: 780px; }
+.article.gridded ul {
+  list-style: none;
+  margin: 2em 0; }
+  .article.gridded ul::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 @media (min-width: 780px) {
   .article:target {
     padding-top: 6em; }
     .article:target .article-header * {
       -webkit-animation: highlight 1s;
       -moz-animation: highlight 1s;
-      animation: highlight 1s; } }
+      animation: highlight 1s; }
+
+  .article.gridded li {
+    float: left;
+    display: block;
+    width: 33.3333333333333%;
+    width: calc(33.3333333333333% - 1rem);
+    text-align: center;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    margin-left: 1rem; }
+    .article.gridded li:nth-child(3n+1) {
+      clear: left;
+      margin-left: 0; } }
 .listicle.interactive ol {
   margin: 0;
   list-style: none;
@@ -1065,19 +1092,11 @@ html, body {
     width: 25%; }
   .page--program-index .article#the-method-part-ii ul li li {
     display: block; }
-.page--program-index .article#results .article-header {
-  margin-bottom: 2rem; }
-.page--program-index .article#results .prose {
-  max-width: 1280px; }
-  .page--program-index .article#results .prose > p, .page--program-index .article#results .prose > h2 {
-    max-width: 780px; }
-.page--program-index .article#results ul {
-  list-style: none;
-  margin: 2em 0; }
-  .page--program-index .article#results ul::after {
-    clear: both;
-    content: "";
-    display: table; }
+.page--program-index .article#research img {
+  width: 6em;
+  height: 6em;
+  margin: 2em 0 1em;
+  border-radius: 0.33333em; }
 .page--program-index .article#results li:nth-child(3n-2) h3 {
   color: #ffce00; }
 .page--program-index .article#results li:nth-child(3n-1) h3 {
@@ -1101,18 +1120,13 @@ html, body {
       max-width: 1280px; }
       .page--program-index .article#the-method .prose * {
         padding-left: 50%; }
-  .page--program-index .article#results li {
-    float: left;
-    display: block;
-    width: 33.3333333333333%;
-    width: calc(33.3333333333333% - 1rem);
-    text-align: center;
-    padding: 1rem 0;
-    box-sizing: border-box;
-    margin-left: 1rem; }
-    .page--program-index .article#results li:nth-child(3n+1) {
-      clear: left;
-      margin-left: 0; } }
+  .page--program-index .article#research img {
+    margin: 0 auto; }
+  .page--program-index .article#research li {
+    font-size: .75em; }
+    .page--program-index .article#research li p {
+      text-align: justify;
+      padding-right: 1rem; } }
 @media (min-width: 1024px) {
   .page--program-index .article--lede {
     padding-top: 8em;
