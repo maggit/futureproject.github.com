@@ -21,8 +21,6 @@
       max-width: 1280px;
       > h2, > p {
         max-width: 780px;
-        margin-left: auto;
-        margin-right: auto;
       }
       > p { margin-bottom: 2em; }
     }
@@ -44,6 +42,27 @@
       }
     }
   }
+  .article#results {
+    .article-header {
+      margin-bottom: 2rem;
+    }
+    .prose {
+      max-width: 1280px;
+      > p, > h2, {
+        max-width: 780px;
+      }
+    }
+    ul {
+      list-style: none;
+      margin: 2em 0;
+      @include clearfix;
+    }
+    li {
+      &:nth-child(3n-2) { h3 { color: $brand-yellow; } }
+      &:nth-child(3n-1) { h3 { color: $future-blue; } }
+      &:nth-child(3n) { h3 { color: $medium-blue; } }
+    }
+  }
 }
 
 @media (min-width: 780px) {
@@ -58,6 +77,22 @@
       .prose {
         max-width: 1280px;
         * { padding-left: 50%; }
+      }
+    }
+    .article#results {
+      li {
+        float: left;
+        display: block;
+        width: 33.3333333333333%;
+        width: calc(33.3333333333333% - 1rem);
+        text-align: center;
+        padding: 1rem 0;
+        box-sizing: border-box;
+        margin-left: 1rem;
+        &:nth-child(3n+1) {
+          clear: left;
+          margin-left: 0;
+        }
       }
     }
   }
@@ -92,13 +127,19 @@
     .article#the-method-part-ii {
       .prose > ul {
         display: table;
+        table-layout: fixed;
         width: 100%;
-        h3 { white-space: nowrap; }
+        h3 {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
         > li {
           display: table-cell;
           width: 50%;
           vertical-align: top;
           padding: 2em;
+          overflow: hidden;
           &:nth-child(odd) {
             padding-left: 0;
             border-right: 1px solid $base-border-color;
@@ -113,6 +154,14 @@
         padding: 2em 0;
         height: 240px;
         overflow: hidden;
+      }
+    }
+    .article#results {
+      li {
+        h3 {
+          font-size: 3em;
+          letter-spacing: -.1em;
+        }
       }
     }
   }

@@ -36,3 +36,5 @@ Dream Directors are more than just natural leaders. They're also rigorously trai
 
 - ### School culture
   School culture is comprised of the rituals, values, and norms that define a school. At The Future Project, we believe the success and happiness of individuals is influenced by school culture and visa versa, so our work actively accounts for this interplay between the individual and the collective. To learn more about the power of school culture, explore the research of David H. Hargreaves, Kent D. Peterson, and Terrence E. Deal.
+
+In addition to these nine key areas of research that inform The Future Project's model, there are other valuable constructs that inform our work: goal-setting, grit, self-determination theory, inspiration, intrinsic motivation, collaborative leadership, student engagement, and imagination.
