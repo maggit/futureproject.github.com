@@ -4,7 +4,7 @@
     <ul class="sub-nav">
       {% for post in site.categories.about %}
         {% if forloop.first == false %}
-        <li class='sub-nav-item'><a href="/about/#{{ post.title | slugify }}" class="{{ post.status }}">{{ post.title }}</a></li>
+        <li class='sub-nav-item'><a href="/about/#{{ post.title | slugify }}" class="{{ post.title | slugify }}">{{ post.title }}</a></li>
         {% endif %}
       {% endfor %}
     </ul>
@@ -14,7 +14,7 @@
     <ul class="sub-nav">
       {% for post in site.categories.program %}
         {% if forloop.first == false %}
-        <li class='sub-nav-item'><a href="/program/#{{ post.title | slugify }}" class="{{ post.status }}">{{ post.title }}</a></li>
+        <li class='sub-nav-item {{ post.title | slugify }}'><a href="/program/#{{ post.title | slugify }}">{{ post.title }}</a></li>
         {% endif %}
       {% endfor %}
     </ul>

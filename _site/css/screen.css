@@ -410,6 +410,8 @@ html, body {
     border-left: 1px solid red; }
   .menu .draft {
     border-left: 1px solid #ffce00; }
+  .menu .the-method-part-ii {
+    display: none !important; }
 
 @media (min-width: 780px) {
   .primary-nav {
@@ -789,9 +791,6 @@ html, body {
     background-color: #06d0ff;
     color: white; }
 
-.team {
-  margin: 2em auto; }
-
 .person-video-player {
   width: 100%;
   height: 0;
@@ -1020,6 +1019,8 @@ html, body {
     background-image: -webkit-linear-gradient(-360deg, white 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, white 100%), url(/img/homepage-press-bg-xl.jpg);
     background-image: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, white 100%), url(/img/homepage-press-bg-xl.jpg);
     background-size: 1280px auto; } }
+.page--program-index .article-nav-item--the-method-part-ii {
+  display: none; }
 .page--program-index .article--lede {
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -1030,41 +1031,46 @@ html, body {
   background-position: center top;
   background-image: url(/img/program-header.jpg);
   padding-top: 6em; }
-.page--program-index .article#the-method ul {
+.page--program-index .article#the-method-part-ii .prose {
+  max-width: 1280px; }
+  .page--program-index .article#the-method-part-ii .prose > h2, .page--program-index .article#the-method-part-ii .prose > p {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto; }
+  .page--program-index .article#the-method-part-ii .prose > p {
+    margin-bottom: 2em; }
+.page--program-index .article#the-method-part-ii .article-header {
+  display: none; }
+.page--program-index .article#the-method-part-ii ul {
   list-style: none;
   margin: 0; }
-  .page--program-index .article#the-method ul li::after {
+  .page--program-index .article#the-method-part-ii ul li::after {
     clear: both;
     content: "";
     display: table; }
-  .page--program-index .article#the-method ul li img {
+  .page--program-index .article#the-method-part-ii ul li img {
     clear: left;
     float: left;
     margin: 0 1em 1em 0;
     width: 25%; }
-  .page--program-index .article#the-method ul li li {
-    display: block;
-    margin-bottom: 1px;
-    background: white;
-    padding: .5em; }
-.page--program-index .article#the-method .prose > ul h3 {
-  text-align: center; }
+  .page--program-index .article#the-method-part-ii ul li li {
+    display: block; }
 
 @media (min-width: 780px) {
-  .page--program-index .article#the-dream-director {
+  .page--program-index .article#the-method {
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center center;
     background-image: url(/img/divine-dd-background-xl.jpg);
     background-position: calc(50% - 200px) bottom;
     background-size: auto 100%; }
-    .page--program-index .article#the-dream-director .article-header {
+    .page--program-index .article#the-method .article-header {
       display: none; }
-    .page--program-index .article#the-dream-director img {
+    .page--program-index .article#the-method img {
       display: none; }
-    .page--program-index .article#the-dream-director .prose {
+    .page--program-index .article#the-method .prose {
       max-width: 1280px; }
-      .page--program-index .article#the-dream-director .prose * {
+      .page--program-index .article#the-method .prose * {
         padding-left: 50%; } }
 @media (min-width: 1024px) {
   .page--program-index .article--lede {
@@ -1084,5 +1090,25 @@ html, body {
       padding-right: 1em; }
     .page--program-index .article--lede .article-nav {
       padding-left: 1em; }
-  .page--program-index .article#the-dream-director {
-    padding-top: 6em; } }
+  .page--program-index .article#the-method {
+    padding-top: 6em; }
+  .page--program-index .article#the-method-part-ii .prose > ul {
+    display: table;
+    width: 100%; }
+    .page--program-index .article#the-method-part-ii .prose > ul h3 {
+      white-space: nowrap; }
+    .page--program-index .article#the-method-part-ii .prose > ul > li {
+      display: table-cell;
+      width: 50%;
+      vertical-align: top;
+      padding: 2em; }
+      .page--program-index .article#the-method-part-ii .prose > ul > li:nth-child(odd) {
+        padding-left: 0;
+        border-right: 1px solid #f0f0f0; }
+      .page--program-index .article#the-method-part-ii .prose > ul > li:nth-child(even) {
+        padding-right: 0;
+        border-left: 1px solid #f0f0f0; }
+  .page--program-index .article#the-method-part-ii li li {
+    padding: 2em 0;
+    height: 240px;
+    overflow: hidden; } }

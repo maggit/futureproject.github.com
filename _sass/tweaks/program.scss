@@ -1,4 +1,7 @@
 .page--program-index {
+  .article-nav-item--the-method-part-ii {
+    display: none;
+  }
   .article--lede {
     @include fbs;
     background-color: black;
@@ -8,7 +11,17 @@
     background-image: url(/img/program-header.jpg);
     padding-top: 6em;
   }
-  .article#the-method {
+  .article#the-method-part-ii {
+    .prose {
+      max-width: 1280px;
+      > h2, > p {
+        max-width: 780px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      > p { margin-bottom: 2em; }
+    }
+    .article-header { display: none; }
     ul {
       list-style: none;
       margin: 0;
@@ -22,21 +35,15 @@
         }
         li {
           display: block;
-          margin-bottom: 1px;
-          background: white;
-          padding: .5em;
         }
       }
-    }
-    .prose > ul {
-      h3 { text-align: center; }
     }
   }
 }
 
 @media (min-width: 780px) {
   .page--program-index {
-    .article#the-dream-director {
+    .article#the-method {
       .article-header { display: none; }
       img { display: none; }
       @include fbs;
@@ -74,8 +81,34 @@
         padding-left: 1em;
       }
     }
-    .article#the-dream-director {
+    .article#the-method {
       padding-top: 6em;
+    }
+    .article#the-method-part-ii {
+      .prose > ul {
+        display: table;
+        width: 100%;
+        h3 { white-space: nowrap; }
+        > li {
+          display: table-cell;
+          width: 50%;
+          vertical-align: top;
+          padding: 2em;
+          &:nth-child(odd) {
+            padding-left: 0;
+            border-right: 1px solid $base-border-color;
+          }
+          &:nth-child(even) {
+            padding-right: 0;
+            border-left: 1px solid $base-border-color;
+          }
+        }
+      }
+      li li {
+        padding: 2em 0;
+        height: 240px;
+        overflow: hidden;
+      }
     }
   }
 }
