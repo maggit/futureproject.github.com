@@ -1104,6 +1104,15 @@ html, body {
   color: #06d0ff; }
 .page--program-index .article#results li:nth-child(3n) h3 {
   color: #129fff; }
+.page--program-index .article#schools li {
+  text-align: left;
+  background: #f0f0f0;
+  background-color: #f0f0f0;
+  background-image: -webkit-linear-gradient(#f0f0f0, #e3e3e3);
+  background-image: linear-gradient(#f0f0f0, #e3e3e3);
+  padding: 1rem; }
+  .page--program-index .article#schools li h6 {
+    margin: 0; }
 
 @media (min-width: 780px) {
   .page--program-index .article--lede {
@@ -1176,4 +1185,6 @@ html, body {
     overflow: hidden; }
   .page--program-index .article#results li h3 {
     font-size: 3em;
-    letter-spacing: -.1em; } }
+    letter-spacing: -.1em; }
+  .page--program-index .article#schools li {
+    height: 240px; } }

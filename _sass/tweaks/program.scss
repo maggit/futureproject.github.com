@@ -57,6 +57,15 @@
       &:nth-child(3n) { h3 { color: $medium-blue; } }
     }
   }
+  .article#schools {
+    li {
+      h6 { margin: 0; }
+      text-align: left;
+      background: $base-border-color;
+      @include linear-gradient($base-border-color, darken($base-border-color, 5%));
+      padding: 1rem;
+    }
+  }
 }
 
 @media (min-width: 780px) {
@@ -153,6 +162,9 @@
           letter-spacing: -.1em;
         }
       }
+    }
+    .article#schools li {
+      height: 240px;
     }
   }
 }
