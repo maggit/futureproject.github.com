@@ -10,10 +10,10 @@
   .article--lede {
     @include fbs;
     background-color: black;
-    background-image: url(/img/program-header.jpg);
     background-size: 100% auto;
     background-position: center top;
     background-image: url(/img/program-header.jpg);
+    @include background-image(linear-gradient(rgba(0,0,0,0) 20%, rgba(0,0,0,1) 70%),url(/img/program-header.jpg));
     padding-top: 6em;
   }
   .article#the-method-part-ii {
@@ -61,6 +61,9 @@
 
 @media (min-width: 780px) {
   .page--program-index {
+    .article--lede {
+      background-image: url(/img/program-header.jpg);
+    }
     .article#the-method {
       .article-header { display: none; }
       img { display: none; }

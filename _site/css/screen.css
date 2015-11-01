@@ -666,7 +666,7 @@ html, body {
 
 .article-nav-item {
   display: block;
-  width: 33.33333%;
+  width: 25%;
   box-sizing: border-box;
   padding: .5em;
   font-weight: 600;
@@ -677,7 +677,7 @@ html, body {
 .article-nav-item-icon {
   width: 100%;
   height: 0;
-  padding-bottom: 40%;
+  padding-bottom: 60%;
   margin-bottom: 1em;
   background-size: contain;
   background-position: center bottom;
@@ -939,7 +939,7 @@ html, body {
   .page--about-index #about {
     padding-left: 50%;
     background-image: url(/img/about-header-xl.jpg);
-    background-position: left bottom; }
+    background-position: -100px bottom; }
     .page--about-index #about .prose {
       margin: 0;
       padding-right: 2em; } }
@@ -1065,10 +1065,11 @@ html, body {
   background-size: auto 100%;
   background-position: center center;
   background-color: black;
-  background-image: url(/img/program-header.jpg);
   background-size: 100% auto;
   background-position: center top;
   background-image: url(/img/program-header.jpg);
+  background-image: -webkit-linear-gradient(transparent 20%, black 70%), url(/img/program-header.jpg);
+  background-image: linear-gradient(to   , black 70%), url(/img/program-header.jpg);
   padding-top: 6em; }
 .page--program-index .article#the-method-part-ii .prose {
   max-width: 1280px; }
@@ -1105,6 +1106,8 @@ html, body {
   color: #129fff; }
 
 @media (min-width: 780px) {
+  .page--program-index .article--lede {
+    background-image: url(/img/program-header.jpg); }
   .page--program-index .article#the-method {
     background-repeat: no-repeat;
     background-size: auto 100%;
