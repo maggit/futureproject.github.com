@@ -1,0 +1,10 @@
+.page--program-index {
+  .article--lede {
+    @include fbs;
+    background-color: black;
+    background-image: url(/img/program-header.jpg);
+    background-position: right top;
+    @include background-image(linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url(/img/program-header.jpg));
+  }
+}
+

@@ -669,7 +669,8 @@ html, body {
   display: table-cell;
   box-sizing: border-box;
   padding: .5em;
-  font-weight: 600; }
+  font-weight: 600;
+  color: white; }
 
 .article-nav-item-icon {
   width: 100%;
@@ -1006,3 +1007,12 @@ html, body {
     background-image: -webkit-linear-gradient(-360deg, white 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, white 100%), url(/img/homepage-press-bg-xl.jpg);
     background-image: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, white 100%), url(/img/homepage-press-bg-xl.jpg);
     background-size: 1280px auto; } }
+.page--program-index .article--lede {
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  background-color: black;
+  background-image: url(/img/program-header.jpg);
+  background-position: right top;
+  background-image: -webkit-linear-gradient(transparent, black), url(/img/program-header.jpg);
+  background-image: linear-gradient(transparent, black), url(/img/program-header.jpg); }
