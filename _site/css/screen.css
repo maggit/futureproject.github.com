@@ -656,34 +656,43 @@ html, body {
   text-align: center;
   margin: 2em auto 0;
   width: 100%;
-  max-width: 65ch;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch; }
-
-.article-nav-inner {
-  display: table;
-  table-layout: fixed;
-  width: 100%; }
+  max-width: 65ch; }
+  .article-nav::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .article-nav-item {
-  display: table-cell;
+  display: block;
+  width: 33.33333%;
   box-sizing: border-box;
   padding: .5em;
   font-weight: 600;
-  color: white; }
+  color: white;
+  float: left;
+  margin-bottom: .5em; }
 
 .article-nav-item-icon {
   width: 100%;
   height: 0;
-  padding-bottom: 100%;
-  border-radius: 50%;
+  padding-bottom: 50%;
   margin-bottom: 1em;
   background: white; }
 
 .article-nav-item-label {
   font-size: .75em;
   overflow: hidden;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.article-lede-content {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto; }
+  .article-lede-content::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 @media (min-width: 780px) {
   .article:target {
@@ -842,6 +851,10 @@ html, body {
 
 .theme--future-blue {
   background: #06d0ff;
+  color: white; }
+
+.theme--grey-blue {
+  background: #64cbec;
   color: white; }
 
 .theme--black {
@@ -1016,3 +1029,36 @@ html, body {
   background-position: right top;
   background-image: -webkit-linear-gradient(transparent, black), url(/img/program-header.jpg);
   background-image: linear-gradient(transparent, black), url(/img/program-header.jpg); }
+
+@media (min-width: 780px) {
+  .page--program-index .article#the-dream-director {
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+    background-image: url(/img/divine-dd-background-xl.jpg);
+    background-position: calc(50% - 200px) bottom;
+    background-size: auto 100%; }
+    .page--program-index .article#the-dream-director .article-header {
+      display: none; }
+    .page--program-index .article#the-dream-director img {
+      display: none; }
+    .page--program-index .article#the-dream-director .prose {
+      max-width: 1280px; }
+      .page--program-index .article#the-dream-director .prose * {
+        padding-left: 50%; } }
+@media (min-width: 1024px) {
+  .page--program-index .article--lede .article-lede-content {
+    display: table;
+    table-layout: fixed; }
+  .page--program-index .article--lede .prose, .page--program-index .article--lede .article-nav {
+    vertical-align: top;
+    display: table-cell;
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box; }
+  .page--program-index .article--lede .prose {
+    padding-right: 1em;
+    border-right: 1px solid white; }
+  .page--program-index .article--lede .article-nav {
+    padding-left: 1em;
+    border-left: 1px solid white; } }

@@ -26,6 +26,10 @@
   background: $future-blue;
   color: white;
 }
+.theme--grey-blue {
+  background: #64cbec;
+  color: white;
+}
 .theme--black {
   background-color: black;
   @include linear-gradient(black, black);

@@ -8,3 +8,44 @@
   }
 }
 
+@media (min-width: 780px) {
+  .page--program-index {
+    .article#the-dream-director {
+      .article-header { display: none; }
+      img { display: none; }
+      @include fbs;
+      background-image: url(/img/divine-dd-background-xl.jpg);
+      background-position: calc(50% - 200px) bottom;
+      background-size: auto 100%;
+      .prose {
+        max-width: 1280px;
+        * { padding-left: 50%; }
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .page--program-index {
+    .article--lede {
+      .article-lede-content {
+        display: table;
+        table-layout: fixed;
+      }
+      .prose, .article-nav {
+        vertical-align: top;
+        display: table-cell;
+        width: 50%;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .prose {
+        padding-right: 1em;
+        border-right: 1px solid white;
+      }
+      .article-nav {
+        padding-left: 1em;
+        border-left: 1px solid white;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 ---
-theme: future-blue
+theme: grey-blue
 ---
 ![Divine Bradley, Dream Director](/img/program-dd.jpg)
 
