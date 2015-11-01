@@ -1026,9 +1026,10 @@ html, body {
   background-position: center center;
   background-color: black;
   background-image: url(/img/program-header.jpg);
-  background-position: right top;
-  background-image: -webkit-linear-gradient(transparent, black), url(/img/program-header.jpg);
-  background-image: linear-gradient(transparent, black), url(/img/program-header.jpg); }
+  background-size: 100% auto;
+  background-position: center top;
+  background-image: url(/img/program-header.jpg);
+  padding-top: 6em; }
 
 @media (min-width: 780px) {
   .page--program-index .article#the-dream-director {
@@ -1047,18 +1048,22 @@ html, body {
       .page--program-index .article#the-dream-director .prose * {
         padding-left: 50%; } }
 @media (min-width: 1024px) {
-  .page--program-index .article--lede .article-lede-content {
-    display: table;
-    table-layout: fixed; }
-  .page--program-index .article--lede .prose, .page--program-index .article--lede .article-nav {
-    vertical-align: top;
-    display: table-cell;
-    width: 50%;
-    margin: 0;
-    box-sizing: border-box; }
-  .page--program-index .article--lede .prose {
-    padding-right: 1em;
-    border-right: 1px solid white; }
-  .page--program-index .article--lede .article-nav {
-    padding-left: 1em;
-    border-left: 1px solid white; } }
+  .page--program-index .article--lede {
+    padding-top: 8em;
+    background-size: auto 100%;
+    background-position: calc(50% - 160px) top; }
+    .page--program-index .article--lede .article-lede-content {
+      display: table;
+      table-layout: fixed; }
+    .page--program-index .article--lede .prose, .page--program-index .article--lede .article-nav {
+      vertical-align: top;
+      display: table-cell;
+      width: 50%;
+      margin: 0;
+      box-sizing: border-box; }
+    .page--program-index .article--lede .prose {
+      padding-right: 1em; }
+    .page--program-index .article--lede .article-nav {
+      padding-left: 1em; }
+  .page--program-index .article#the-dream-director {
+    padding-top: 6em; } }

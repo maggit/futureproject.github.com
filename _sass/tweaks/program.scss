@@ -3,8 +3,10 @@
     @include fbs;
     background-color: black;
     background-image: url(/img/program-header.jpg);
-    background-position: right top;
-    @include background-image(linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url(/img/program-header.jpg));
+    background-size: 100% auto;
+    background-position: center top;
+    background-image: url(/img/program-header.jpg);
+    padding-top: 6em;
   }
 }
 
@@ -27,6 +29,9 @@
 @media (min-width: 1024px) {
   .page--program-index {
     .article--lede {
+      padding-top: 8em;
+      background-size: auto 100%;
+      background-position: calc(50% - 160px) top;
       .article-lede-content {
         display: table;
         table-layout: fixed;
@@ -40,12 +45,13 @@
       }
       .prose {
         padding-right: 1em;
-        border-right: 1px solid white;
       }
       .article-nav {
         padding-left: 1em;
-        border-left: 1px solid white;
       }
+    }
+    .article#the-dream-director {
+      padding-top: 6em;
     }
   }
 }

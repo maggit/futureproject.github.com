@@ -1,5 +1,4 @@
 ---
-status: draft
 theme: grey listicle
 ---
 
