@@ -677,9 +677,11 @@ html, body {
 .article-nav-item-icon {
   width: 100%;
   height: 0;
-  padding-bottom: 50%;
+  padding-bottom: 40%;
   margin-bottom: 1em;
-  background: white; }
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat; }
 
 .article-nav-item-label {
   font-size: .75em;
@@ -1021,6 +1023,16 @@ html, body {
     background-size: 1280px auto; } }
 .page--program-index .article-nav-item--the-method-part-ii {
   display: none; }
+.page--program-index .article-nav-item--the-method .article-nav-item-icon {
+  background-image: url(/img/program-icon-method.svg); }
+.page--program-index .article-nav-item--research .article-nav-item-icon {
+  background-image: url(/img/program-icon-research.svg); }
+.page--program-index .article-nav-item--results .article-nav-item-icon {
+  background-image: url(/img/program-icon-results.svg); }
+.page--program-index .article-nav-item--schools .article-nav-item-icon {
+  background-image: url(/img/program-icon-schools.svg); }
+.page--program-index .article-nav-item--inquire .article-nav-item-icon {
+  background-image: url(/img/program-icon-inquire.svg); }
 .page--program-index .article--lede {
   background-repeat: no-repeat;
   background-size: auto 100%;

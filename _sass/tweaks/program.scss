@@ -2,6 +2,11 @@
   .article-nav-item--the-method-part-ii {
     display: none;
   }
+  .article-nav-item--the-method .article-nav-item-icon { background-image: url(/img/program-icon-method.svg); }
+  .article-nav-item--research .article-nav-item-icon { background-image: url(/img/program-icon-research.svg); }
+  .article-nav-item--results .article-nav-item-icon { background-image: url(/img/program-icon-results.svg); }
+  .article-nav-item--schools .article-nav-item-icon { background-image: url(/img/program-icon-schools.svg); }
+  .article-nav-item--inquire .article-nav-item-icon { background-image: url(/img/program-icon-inquire.svg); }
   .article--lede {
     @include fbs;
     background-color: black;
