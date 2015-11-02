@@ -169,9 +169,8 @@
       width: 240px;
       font-size: 12px;
       input, .btn {
-        /*height: 30px;*/
         padding: .6em;
-        height: 30px;
+        height: 30px !important;
         margin: 0;
       }
       input.email {

@@ -60,17 +60,17 @@
   from {
     background-color: #15c8ff; }
   to {
-    background-color: inherit; } }
+    background-color: white; } }
 @-moz-keyframes highlight {
   from {
     background-color: #15c8ff; }
   to {
-    background-color: inherit; } }
+    background-color: white; } }
 @keyframes highlight {
   from {
     background-color: #15c8ff; }
   to {
-    background-color: inherit; } }
+    background-color: white; } }
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0; }
@@ -499,9 +499,8 @@ html, body {
     width: 240px;
     font-size: 12px; }
     .primary-nav .minichimp input, .primary-nav .minichimp .btn {
-      /*height: 30px;*/
       padding: .6em;
-      height: 30px;
+      height: 30px !important;
       margin: 0; }
     .primary-nav .minichimp input.email {
       background-color: #f0f0f0; } }
@@ -519,17 +518,21 @@ html, body {
     width: 100%;
     border-collapse: collapse; }
   .minichimp .fields {
-    display: table-cell; }
+    display: table-cell;
+    vertical-align: top;
+    overflow: hidden; }
   .minichimp .email-field {
     width: 80%; }
     .minichimp .email-field input {
       border-top-left-radius: 0.33333em;
-      border-bottom-left-radius: 0.33333em; }
+      border-bottom-left-radius: 0.33333em;
+      height: 2.5rem; }
   .minichimp .action-field {
     width: 20%; }
     .minichimp .action-field .btn {
       border-top-left-radius: 0;
-      border-bottom-left-radius: 0; }
+      border-bottom-left-radius: 0;
+      height: 2.5rem; }
 
 .primary-footer {
   background: #212e47;
@@ -993,7 +996,7 @@ html, body {
   .page--index #imagine li {
     list-style: none;
     font-size: 4em;
-    /*white-space: nowrap;*/
+    white-space: nowrap;
     font-family: 'have_heart';
     font-style: italic;
     font-weight: bold;
@@ -1014,10 +1017,11 @@ html, body {
     margin-left: 0; }
 .page--index #press {
   background-image: url(/img/homepage-press-bg.jpg);
-  padding-top: 60%;
+  padding-top: 62%;
   background-size: 100% auto;
   background-position: center top;
-  background-color: white; }
+  background-color: white;
+  -webkit-font-smoothing: antialiased; }
   .page--index #press .prose {
     max-width: 70ch; }
   .page--index #press ul {
@@ -1032,6 +1036,16 @@ html, body {
   .page--index #press li > p:last-child {
     text-transform: uppercase;
     color: #928d9b; }
+  .page--index #press.rotating ul {
+    height: 12em;
+    overflow: hidden; }
+  .page--index #press.rotating li {
+    display: none;
+    -webkit-animation: fadeIn 0.5s;
+    -moz-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s; }
+  .page--index #press.rotating li:first-child {
+    display: block; }
 
 @media (min-width: 480px) {
   .page--index #imagine .prose {

@@ -23,7 +23,7 @@
     background-color: $text-blue;
   }
   to {
-    background-color: inherit;
+    background-color: white;
   }
 }
 @include keyframes(fadeIn) {

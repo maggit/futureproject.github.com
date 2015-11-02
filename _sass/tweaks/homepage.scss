@@ -33,7 +33,7 @@
     li {
       list-style: none;
       font-size: 4em;
-      /*white-space: nowrap;*/
+      white-space: nowrap;
       font-family: 'have_heart';
       font-style: italic;
       font-weight: bold;
@@ -55,10 +55,11 @@
   }
   #press {
     background-image: url(/img/homepage-press-bg.jpg);
-    padding-top: 60%;
+    padding-top: 62%;
     background-size: 100% auto;
     background-position: center top;
     background-color: white;
+    -webkit-font-smoothing: antialiased;
     .prose {
       max-width: 70ch;
     }
@@ -73,6 +74,19 @@
     li > p:last-child {
       text-transform: uppercase;
       color: $all-caps-grey;
+    }
+    &.rotating {
+      ul {
+        height: 12em;
+        overflow: hidden;
+      }
+      li {
+        display: none;
+        @include animation(fadeIn .5s);
+      }
+      li:first-child {
+        display: block;
+      }
     }
   }
 }

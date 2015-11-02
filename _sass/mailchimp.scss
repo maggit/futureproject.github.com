@@ -10,12 +10,15 @@
   }
   .fields {
     display: table-cell;
+    vertical-align: top;
+    overflow: hidden;
   }
   .email-field {
     width: 80%;
     input {
       border-top-left-radius: $base-border-radius;
       border-bottom-left-radius:  $base-border-radius;
+      height: 2.5rem;
     }
   }
   .action-field {
@@ -23,6 +26,7 @@
     .btn {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
+      height: 2.5rem;
     }
   }
 }

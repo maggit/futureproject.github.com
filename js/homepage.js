@@ -4,12 +4,26 @@ jQuery.fn.random = function() {
 }
 
 $(function(){
+  //rotate Imagine If... quotes on the homepage
   $('.page--index #imagine').each(function(){
     $list = $(this).find('ul')
-    window.setInterval(function(){
-      $quote = $list.children().first().nextAll().random()
-      $list.prepend($quote.clone())
-      $quote.remove()
+    dreamTimer = window.setInterval(function(){
+      $dream = $list.children().first().nextAll().random()
+      $list.prepend($dream.clone())
+      $dream.remove()
     }, 2000)
   })
+  //rotate press quotes
+  if (window.matchMedia("min-width: 780px")) {
+    $('.page--index #press').each(function(){
+      $t = $(this)
+      $t.addClass('rotating')
+      $quotes = $t.find('ul')
+      pressTimer = window.setInterval(function(){
+        $quote = $quotes.children().first().nextAll().random()
+        $quotes.prepend($quote.clone())
+        $quote.remove()
+      }, 6000)
+    })
+  }
 })
