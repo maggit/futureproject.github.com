@@ -14,7 +14,7 @@ $(function(){
     }, 2000)
   })
   //rotate press quotes
-  if (window.matchMedia("min-width: 780px")) {
+  if (window.matchMedia("(min-width: 780px)").matches) {
     $('.page--index #press').each(function(){
       $t = $(this)
       $t.addClass('rotating')
