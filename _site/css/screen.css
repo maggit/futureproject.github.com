@@ -58,19 +58,34 @@
     opacity: 0; } }
 @-webkit-keyframes highlight {
   from {
-    background-color: #ffce00; }
+    background-color: #15c8ff; }
   to {
     background-color: inherit; } }
 @-moz-keyframes highlight {
   from {
-    background-color: #ffce00; }
+    background-color: #15c8ff; }
   to {
     background-color: inherit; } }
 @keyframes highlight {
   from {
-    background-color: #ffce00; }
+    background-color: #15c8ff; }
   to {
     background-color: inherit; } }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 @-webkit-keyframes expand {
   from {
     -webkit-transform: scaleY(0);
@@ -438,6 +453,8 @@ html, body {
         display: block; }
         .primary-nav .menu-item a:hover {
           color: #15c8ff; }
+    .primary-nav .get-involved-menu-item {
+      display: none; }
     .primary-nav .sub-nav {
       position: absolute;
       top: 60px;
@@ -448,12 +465,9 @@ html, body {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       z-index: 100; }
-      .primary-nav .sub-nav .unfinished {
-        border-left: none;
-        color: red; }
-      .primary-nav .sub-nav .draft {
-        border-left: none;
-        color: #ffce00; }
+      .primary-nav .sub-nav.team-menu-item {
+        width: 150%;
+        margin-left: -25%; }
       .primary-nav .sub-nav a {
         font-weight: 500;
         color: #191919;
@@ -482,7 +496,7 @@ html, body {
     position: absolute;
     top: 3px;
     right: 100px;
-    width: 180px;
+    width: 240px;
     font-size: 12px; }
     .primary-nav .minichimp input, .primary-nav .minichimp .btn {
       /*height: 30px;*/
@@ -492,7 +506,8 @@ html, body {
     .primary-nav .minichimp input.email {
       background-color: #f0f0f0; } }
 .minichimp {
-  margin: 1em auto; }
+  margin: 1em auto;
+  max-width: 360px; }
   .minichimp::after {
     clear: both;
     content: "";
@@ -537,7 +552,9 @@ html, body {
     float: left;
     width: 25%;
     box-sizing: border-box;
-    padding: 1em .5em; }
+    padding: 1em .5em;
+    max-height: 180px;
+    overflow: auto; }
     .primary-footer .menu-item a {
       color: #8c92a8; }
     .primary-footer .menu-item .top-level-link, .primary-footer .menu-item a:hover {
@@ -551,22 +568,10 @@ html, body {
   .primary-footer .sub-nav a {
     display: block;
     margin: .8em 0; }
-  .primary-footer .social-menu-item {
-    display: block;
-    clear: both;
-    width: 100%;
-    float: none;
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
-    .primary-footer .social-menu-item .top-level-link {
-      display: none; }
-    .primary-footer .social-menu-item .sub-nav li, .primary-footer .social-menu-item .sub-nav a {
-      display: inline-block;
-      margin: 0; }
-    .primary-footer .social-menu-item .sub-nav a {
-      padding: 1em; }
+  .primary-footer .team-menu-item {
+    display: none; }
   .primary-footer .article.contact-callout {
+    display: none;
     padding: 2em 1em;
     background: transparent; }
 
@@ -897,6 +902,8 @@ html, body {
   background-color: #f0f0f0;
   background-image: -webkit-linear-gradient(#f0f0f0 0px, white 6em);
   background-image: linear-gradient(#f0f0f0 0px, white 6em); }
+  .theme--white a {
+    color: #15c8ff; }
 
 .theme--grey {
   background-color: #C0C0C4;
@@ -986,16 +993,25 @@ html, body {
   .page--index #imagine li {
     list-style: none;
     font-size: 4em;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     font-family: 'have_heart';
     font-style: italic;
     font-weight: bold;
     line-height: 1;
     border-bottom: 0.25rem solid #191919;
     margin: 0;
-    text-transform: uppercase; }
-  .page--index #imagine li:not(:first-child) {
+    text-transform: uppercase;
+    text-indent: .5ch;
+    -webkit-font-smoothing: antialiased; }
+  .page--index #imagine li {
     display: none; }
+  .page--index #imagine li:first-child {
+    display: block;
+    -webkit-animation: fadeIn 0.5s;
+    -moz-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s; }
+  .page--index #imagine .minichimp {
+    margin-left: 0; }
 .page--index #press {
   background-image: url(/img/homepage-press-bg.jpg);
   padding-top: 60%;
@@ -1019,7 +1035,9 @@ html, body {
 
 @media (min-width: 480px) {
   .page--index #imagine .prose {
-    max-width: 480px; } }
+    max-width: 480px; }
+  .page--index #imagine li {
+    font-size: 5em; } }
 @media (min-width: 640px) {
   .page--index #imagine {
     padding-left: 30%;

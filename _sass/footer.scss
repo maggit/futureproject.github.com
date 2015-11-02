@@ -16,6 +16,8 @@
     width: 25%;
     box-sizing: border-box;
     padding: 1em .5em;
+    max-height: 180px;
+    overflow: auto;
     a {
       color: #8c92a8;
     }
@@ -34,28 +36,11 @@
     display: block;
     margin: .8em 0;
   }
-  .social-menu-item {
-    display: block;
-    clear: both;
-    width: 100%;
-    float: none;
-    text-align: center;
-    .top-level-link {
-      display: none;
-    }
-    border-top: 1px solid rgba(255,255,255,.5);
-    border-bottom: 1px solid rgba(255,255,255,.5);
-    .sub-nav {
-      li, a {
-        display: inline-block;
-        margin: 0;
-      }
-      a {
-        padding: 1em;
-      }
-    }
+  .team-menu-item {
+    display: none;
   }
   .article.contact-callout {
+    display: none;
     padding: 2em 1em;
     background: transparent;
   }

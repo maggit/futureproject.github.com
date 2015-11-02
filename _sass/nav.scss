@@ -112,6 +112,9 @@
         }
       }
     }
+    .get-involved-menu-item {
+      display: none;
+    }
     .sub-nav {
       position: absolute;
       top: 60px;
@@ -122,13 +125,9 @@
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       z-index: 100;
-      .unfinished {
-        border-left: none;
-        color: red;
-      }
-      .draft {
-        border-left: none;
-        color: $brand-yellow;
+      &.team-menu-item {
+        width: 150%;
+        margin-left: -25%;
       }
       a {
         font-weight: 500;
@@ -167,7 +166,7 @@
       position: absolute;
       top: 3px;
       right: 100px;
-      width: 180px;
+      width: 240px;
       font-size: 12px;
       input, .btn {
         /*height: 30px;*/

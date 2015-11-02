@@ -1,5 +1,6 @@
 .minichimp {
   margin: 1em auto;
+  max-width: 360px;
   @include clearfix;
   label, .hidden { display: none; }
   form {

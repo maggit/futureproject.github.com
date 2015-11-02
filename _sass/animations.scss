@@ -20,10 +20,18 @@
 }
 @include keyframes(highlight) {
   from {
-    background-color: $brand-yellow;
+    background-color: $text-blue;
   }
   to {
     background-color: inherit;
+  }
+}
+@include keyframes(fadeIn) {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 @include keyframes(expand) {

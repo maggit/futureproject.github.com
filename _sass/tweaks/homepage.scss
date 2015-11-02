@@ -33,7 +33,7 @@
     li {
       list-style: none;
       font-size: 4em;
-      white-space: nowrap;
+      /*white-space: nowrap;*/
       font-family: 'have_heart';
       font-style: italic;
       font-weight: bold;
@@ -41,10 +41,17 @@
       border-bottom: .25rem solid $base-font-color;
       margin: 0;
       text-transform: uppercase;
+      text-indent: .5ch;
+      -webkit-font-smoothing: antialiased;
     }
-    li:not(:first-child) {
+    li {
       display: none;
     }
+    li:first-child {
+      display: block;
+      @include animation(fadeIn .5s);
+    }
+    .minichimp { margin-left: 0; }
   }
   #press {
     background-image: url(/img/homepage-press-bg.jpg);
@@ -75,6 +82,7 @@
       .prose {
         max-width: 480px;
       }
+      li { font-size: 5em; }
     }
   }
 }

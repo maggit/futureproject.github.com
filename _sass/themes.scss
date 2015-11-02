@@ -38,6 +38,7 @@
 .theme--white {
   background-color: white;
   @include linear-gradient($base-border-color 0px, white 6em);
+  a { color: $text-blue; }
 }
 .theme--grey {
   background-color: #C0C0C4;

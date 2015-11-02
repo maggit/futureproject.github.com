@@ -11,7 +11,6 @@ defaults:
       type: "pages"
     values:
       layout: "v1"
-teams: [leadership, detroit, nh, newark, philly, sf, dc, hq, board, advisors]
 teams:
   leadership:
     id: 'leadership'
