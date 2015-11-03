@@ -1239,6 +1239,4 @@ html, body {
     overflow: hidden; }
   .page--program-index .article#results li h3 {
     font-size: 3em;
-    letter-spacing: -.1em; }
-  .page--program-index .article#schools li.detroit-mi p {
-    display: none; } }
+    letter-spacing: -.1em; } }
