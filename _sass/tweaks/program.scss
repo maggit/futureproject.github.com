@@ -51,6 +51,14 @@
     }
   }
   .article#schools {
+    background-color: #c1c0c5;
+    background-image: url(/img/problem-skyline.jpg);
+    background-position: left top;
+    background-size: auto 262px;
+    background-repeat: repeat-x;
+    .article-header {
+      margin-bottom: 4rem;
+    }
     h3 { color: white; }
     li {
       h6 { margin: 0; }
@@ -157,7 +165,9 @@
       }
     }
     .article#schools li {
-      height: 240px;
+      &.detroit-mi {
+        p { display: none; }
+      }
     }
   }
 }
