@@ -18,20 +18,37 @@
   }
   .article#the-method-part-ii {
     .article-header { display: none; }
-    ul {
-      list-style: none;
-      margin: 0;
-      li {
-        @include clearfix;
-        img {
-          clear: left;
-          float: left;
-          margin: 0 1em 1em 0;
-          width: 25%;
-        }
-        li {
-          display: block;
-        }
+    table {
+      width: calc(100% + 2em);
+      margin-left: -1em;
+      text-align: center;
+    }
+    td {
+      padding-bottom: 2em;
+      * {
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      p { font-size: .75em; }
+      img { max-width: 8em; }
+    }
+    tbody th {
+      position: relative;
+      height: 0;
+      padding: 0;
+      display: block;
+      width: 100%;
+      * {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 8em;
+        background: white;
+        padding: .5em;
+        box-sizing: border-box;
+        margin-left: -4em;
+        font-size: 1em;
       }
     }
   }
@@ -123,38 +140,6 @@
     }
     .article#the-method {
       padding-top: 6em;
-    }
-    .article#the-method-part-ii {
-      .article-content > ul {
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-        h3 {
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
-        > li {
-          display: table-cell;
-          width: 50%;
-          vertical-align: top;
-          padding: 2em;
-          overflow: hidden;
-          &:nth-child(odd) {
-            padding-left: 0;
-            border-right: 1px solid $base-border-color;
-          }
-          &:nth-child(even) {
-            padding-right: 0;
-            border-left: 1px solid $base-border-color;
-          }
-        }
-      }
-      li li {
-        padding: 2em 0;
-        height: 240px;
-        overflow: hidden;
-      }
     }
     .article#results {
       li {

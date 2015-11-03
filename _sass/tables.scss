@@ -1,0 +1,15 @@
+table {
+  table-layout: fixed;
+  tbody {
+    td:nth-child(even) {
+      background: lighten($base-border-color, 3%);
+    }
+    td:nth-child(odd) {
+      background: darken($base-border-color, 3%);
+    }
+  }
+  td, th {
+    padding: 1em;
+  }
+  th %headings { margin: 0; }
+}

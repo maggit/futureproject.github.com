@@ -299,6 +299,17 @@ h5 {
 @media (min-width: 780px) {
   *:target {
     padding-top: 6em; } }
+table {
+  table-layout: fixed; }
+  table tbody td:nth-child(even) {
+    background: #f8f8f8; }
+  table tbody td:nth-child(odd) {
+    background: #e8e8e8; }
+  table td, table th {
+    padding: 1em; }
+  table th h1, table th h2, table th h3, table th h4, table th h5, table th h6 {
+    margin: 0; }
+
 input, select, textarea, button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1125,20 +1136,36 @@ html, body {
   padding-top: 6em; }
 .page--program-index .article#the-method-part-ii .article-header {
   display: none; }
-.page--program-index .article#the-method-part-ii ul {
-  list-style: none;
-  margin: 0; }
-  .page--program-index .article#the-method-part-ii ul li::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .page--program-index .article#the-method-part-ii ul li img {
-    clear: left;
-    float: left;
-    margin: 0 1em 1em 0;
-    width: 25%; }
-  .page--program-index .article#the-method-part-ii ul li li {
-    display: block; }
+.page--program-index .article#the-method-part-ii table {
+  width: calc(100% + 2em);
+  margin-left: -1em;
+  text-align: center; }
+.page--program-index .article#the-method-part-ii td {
+  padding-bottom: 2em; }
+  .page--program-index .article#the-method-part-ii td * {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto; }
+  .page--program-index .article#the-method-part-ii td p {
+    font-size: .75em; }
+  .page--program-index .article#the-method-part-ii td img {
+    max-width: 8em; }
+.page--program-index .article#the-method-part-ii tbody th {
+  position: relative;
+  height: 0;
+  padding: 0;
+  display: block;
+  width: 100%; }
+  .page--program-index .article#the-method-part-ii tbody th * {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 8em;
+    background: white;
+    padding: .5em;
+    box-sizing: border-box;
+    margin-left: -4em;
+    font-size: 1em; }
 .page--program-index .article#research img {
   width: 6em;
   height: 6em;
@@ -1213,30 +1240,6 @@ html, body {
       padding-left: 1em; }
   .page--program-index .article#the-method {
     padding-top: 6em; }
-  .page--program-index .article#the-method-part-ii .article-content > ul {
-    display: table;
-    table-layout: fixed;
-    width: 100%; }
-    .page--program-index .article#the-method-part-ii .article-content > ul h3 {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis; }
-    .page--program-index .article#the-method-part-ii .article-content > ul > li {
-      display: table-cell;
-      width: 50%;
-      vertical-align: top;
-      padding: 2em;
-      overflow: hidden; }
-      .page--program-index .article#the-method-part-ii .article-content > ul > li:nth-child(odd) {
-        padding-left: 0;
-        border-right: 1px solid #f0f0f0; }
-      .page--program-index .article#the-method-part-ii .article-content > ul > li:nth-child(even) {
-        padding-right: 0;
-        border-left: 1px solid #f0f0f0; }
-  .page--program-index .article#the-method-part-ii li li {
-    padding: 2em 0;
-    height: 240px;
-    overflow: hidden; }
   .page--program-index .article#results li h3 {
     font-size: 3em;
     letter-spacing: -.1em; } }
