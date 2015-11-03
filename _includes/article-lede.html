@@ -1,6 +1,6 @@
 <article class="article article--lede theme--{{ post.theme }}" id="{{ post.title | slugify }}"{% if post.bg %} style="background-image: url({{post.bg}});"{% endif %}>
   <div class='article-lede-content'>
-  <section class="prose">
+  <section class="article-page-summary">
     <h2>{{ post.title }}</h2>
     {{ post.content }}
   </section>

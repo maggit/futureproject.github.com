@@ -1,13 +1,31 @@
 .listicle.interactive {
   ol {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 780px;
     list-style: none;
     background: rgb(224,224,226);
     padding: 1em;
-    border: .25em solid $dark-blue;
+    box-shadow: 0 5px 10px rgba(0,0,0,.25);
     > li { display: none; }
     > li.active {
       display: block;
+    }
+  }
+  ul {
+    list-style: none;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  li {
+    display: table-cell;
+    vertical-align: top;
+    font-size: .8em;
+    text-align: left;
+    padding-right: 1rem;
+    img {
+      width: 100%;
+      max-width: 8rem;
     }
   }
   nav {

@@ -4,16 +4,30 @@
     background-image: url(/img/about-header.jpg);
     background-size: contain;
     background-position: left bottom;
-    padding-left: 30%;
+    .article-content {
+      > * { padding-left: 20%; }
+    }
     .article-header {
       display: none;
     }
   }
+  #the-problem {
+    .article-content h2 { color: white; }
+    background-color: #c1c0c5;
+    background-image: url(/img/problem-skyline.jpg);
+    background-position: left top;
+    background-size: auto 262px;
+    background-repeat: repeat-x;
+    .article-header {
+      margin-bottom: 4rem;
+    }
+  }
+
   #our-mission {
     background-color: #6e65ff;
     @include linear-gradient(top,  #6c1974 0%,#662591 50%,#5f33b4 75%,#6e65ff 100%);
     overflow: hidden;
-    .prose {
+    .article-content {
       padding-top: 2em;
       padding-bottom: 10em;
     }
@@ -31,13 +45,12 @@
 @media (min-width: 780px) {
   .page--about-index {
     #about {
-      padding-left: 50%;
+      .article-content > * { padding-left: 30%; }
       background-image: url(/img/about-header-xl.jpg);
       background-position: -100px bottom;
-      .prose {
-        margin: 0;
-        padding-right: 2em;
-      }
+    }
+    #the-problem {
+      ol { height: 20rem; }
     }
   }
 }
@@ -46,9 +59,10 @@
     #about {
       background-image: url(/img/about-header-xl.jpg);
       background-position: calc(50% - 140px) bottom;
+      .article-content > * { padding-left: 50%; }
     }
     #our-mission {
-      .prose {
+      .article-content {
         padding-bottom: 6em;
       }
     }

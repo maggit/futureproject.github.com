@@ -43,17 +43,25 @@ hr {
   letter-spacing: -.05em;
 }
 
-h1, h2, h3, h4, h5, h6 { font-weight: 700; margin-bottom: 1.2rem; line-height: 1.05; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  line-height: 1.05;
+  @extend %headings;
+}
 h1 { font-size: 2.5em; }
 h2 { font-size: 2em; }
 h3 { font-size: 1.66667em; }
 h4 { font-size: 1.5em; }
 h5 { font-size: 1.25em; }
 
-.prose {
-  max-width: 65ch;
+.article-content {
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  > p, > %headings {
+    max-width: 780px;
+  }
   img {
     max-width: 100%;
     display: block;
@@ -70,11 +78,9 @@ h5 { font-size: 1.25em; }
     list-style-type: decimal;
     list-style-position: outside;
   }
-  li {
-    margin: 1.2rem 0;
-  }
-  p{
-    margin: 1.2rem 0;
+  p, li {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
   }
 }
 

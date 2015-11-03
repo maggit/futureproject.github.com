@@ -274,26 +274,27 @@ h4 {
 h5 {
   font-size: 1.25em; }
 
-.prose {
-  max-width: 65ch;
+.article-content {
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto; }
-  .prose img {
+  .article-content > p, .article-content > h1, .article-content > h2, .article-content > h3, .article-content > h4, .article-content > h5, .article-content > h6 {
+    max-width: 780px; }
+  .article-content img {
     max-width: 100%;
     display: block;
     margin: 1em auto; }
-  .prose ol, .prose ul {
+  .article-content ol, .article-content ul {
     margin-left: 2ch; }
-  .prose ul {
+  .article-content ul {
     list-style-position: outside;
     list-style-type: disc; }
-  .prose ol {
+  .article-content ol {
     list-style-type: decimal;
     list-style-position: outside; }
-  .prose li {
-    margin: 1.2rem 0; }
-  .prose p {
-    margin: 1.2rem 0; }
+  .article-content p, .article-content li {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem; }
 
 @media (min-width: 780px) {
   *:target {
@@ -310,7 +311,8 @@ input, select, textarea, button {
   font-size: 1em;
   width: 100%;
   box-sizing: border-box;
-  padding: .33333em; }
+  padding: .33333em;
+  border-radius: 0; }
   input:focus, select:focus, textarea:focus, button:focus {
     outline: none; }
 
@@ -634,12 +636,9 @@ html, body {
 
 .centered {
   text-align: center; }
-
-.article-copy {
-  position: relative;
-  z-index: 2;
-  max-width: 65ch;
-  margin: 0 auto; }
+  .centered .article-content * {
+    margin-left: auto;
+    margin-right: auto; }
 
 .article-header {
   text-transform: uppercase;
@@ -656,11 +655,6 @@ html, body {
     margin-left: -1em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
     line-height: 1; }
-
-.article-headline {
-  max-width: 65ch;
-  margin-left: auto;
-  margin-right: auto; }
 
 .article-nav {
   text-align: center;
@@ -708,10 +702,6 @@ html, body {
 
 .article.gridded .article-header {
   margin-bottom: 2rem; }
-.article.gridded .prose {
-  max-width: 1280px; }
-  .article.gridded .prose > p, .article.gridded .prose > h2 {
-    max-width: 780px; }
 .article.gridded ul {
   list-style: none;
   margin: 2em 0; }
@@ -741,15 +731,30 @@ html, body {
       clear: left;
       margin-left: 0; } }
 .listicle.interactive ol {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 780px;
   list-style: none;
   background: #e0e0e2;
   padding: 1em;
-  border: 0.25em solid #212e47; }
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25); }
   .listicle.interactive ol > li {
     display: none; }
   .listicle.interactive ol > li.active {
     display: block; }
+.listicle.interactive ul {
+  list-style: none;
+  display: table;
+  width: 100%;
+  table-layout: fixed; }
+.listicle.interactive li {
+  display: table-cell;
+  vertical-align: top;
+  font-size: .8em;
+  text-align: left;
+  padding-right: 1rem; }
+  .listicle.interactive li img {
+    width: 100%;
+    max-width: 8rem; }
 .listicle.interactive nav {
   text-align: center;
   font-size: 3em;
@@ -923,17 +928,28 @@ html, body {
   background-position: center center;
   background-image: url(/img/about-header.jpg);
   background-size: contain;
-  background-position: left bottom;
-  padding-left: 30%; }
+  background-position: left bottom; }
+  .page--about-index #about .article-content > * {
+    padding-left: 20%; }
   .page--about-index #about .article-header {
     display: none; }
+.page--about-index #the-problem {
+  background-color: #c1c0c5;
+  background-image: url(/img/problem-skyline.jpg);
+  background-position: left top;
+  background-size: auto 262px;
+  background-repeat: repeat-x; }
+  .page--about-index #the-problem .article-content h2 {
+    color: white; }
+  .page--about-index #the-problem .article-header {
+    margin-bottom: 4rem; }
 .page--about-index #our-mission {
   background-color: #6e65ff;
   background-color: #6c1974;
   background-image: -webkit-linear-gradient(top, #6c1974 0%, #662591 50%, #5f33b4 75%, #6e65ff 100%);
   background-image: linear-gradient(to bottom,#6c1974 0%, #662591 50%, #5f33b4 75%, #6e65ff 100%);
   overflow: hidden; }
-  .page--about-index #our-mission .prose {
+  .page--about-index #our-mission .article-content {
     padding-top: 2em;
     padding-bottom: 10em; }
   .page--about-index #our-mission img {
@@ -947,17 +963,19 @@ html, body {
 
 @media (min-width: 780px) {
   .page--about-index #about {
-    padding-left: 50%;
     background-image: url(/img/about-header-xl.jpg);
     background-position: -100px bottom; }
-    .page--about-index #about .prose {
-      margin: 0;
-      padding-right: 2em; } }
+    .page--about-index #about .article-content > * {
+      padding-left: 30%; }
+  .page--about-index #the-problem ol {
+    height: 20rem; } }
 @media (min-width: 1024px) {
   .page--about-index #about {
     background-image: url(/img/about-header-xl.jpg);
     background-position: calc(50% - 140px) bottom; }
-  .page--about-index #our-mission .prose {
+    .page--about-index #about .article-content > * {
+      padding-left: 50%; }
+  .page--about-index #our-mission .article-content {
     padding-bottom: 6em; } }
 @media (min-width: 1280px) {
   .page--about-index #our-mission img {
@@ -973,6 +991,8 @@ html, body {
   background-size: auto 100%;
   background-position: center center;
   background-image: url(/img/homepage-about-bg.jpg); }
+  .page--index #about > * {
+    max-width: 60ch; }
 .page--index #imagine {
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -988,11 +1008,12 @@ html, body {
     background-color: #f0f0f0; }
   .page--index #imagine h1, .page--index #imagine h2, .page--index #imagine h3, .page--index #imagine h4 {
     margin: 0; }
-  .page--index #imagine .prose {
+  .page--index #imagine .article-content {
     max-width: 320px; }
   .page--index #imagine ul {
     list-style: none;
-    margin: -1em auto 2em; }
+    margin: -1em auto 2em;
+    border-bottom: 0.25rem solid #191919; }
   .page--index #imagine li {
     list-style: none;
     font-size: 4em;
@@ -1001,7 +1022,6 @@ html, body {
     font-style: italic;
     font-weight: bold;
     line-height: 1;
-    border-bottom: 0.25rem solid #191919;
     margin: 0;
     text-transform: uppercase;
     text-indent: .5ch;
@@ -1022,7 +1042,7 @@ html, body {
   background-position: center top;
   background-color: white;
   -webkit-font-smoothing: antialiased; }
-  .page--index #press .prose {
+  .page--index #press .article-content {
     max-width: 70ch; }
   .page--index #press ul {
     margin: 0;
@@ -1048,7 +1068,7 @@ html, body {
     display: block; }
 
 @media (min-width: 480px) {
-  .page--index #imagine .prose {
+  .page--index #imagine .article-content {
     max-width: 480px; }
   .page--index #imagine li {
     font-size: 5em; } }
@@ -1059,7 +1079,7 @@ html, body {
     background-image: url(/img/imagine-lg.jpg);
     background-size: auto 100%;
     background-position: left top; }
-    .page--index #imagine .prose {
+    .page--index #imagine .article-content {
       margin: 0; }
   .page--index #about p {
     font-size: 1.5em; }
@@ -1103,12 +1123,6 @@ html, body {
   background-image: -webkit-linear-gradient(transparent 20%, black 70%), url(/img/program-header.jpg);
   background-image: linear-gradient(to   , black 70%), url(/img/program-header.jpg);
   padding-top: 6em; }
-.page--program-index .article#the-method-part-ii .prose {
-  max-width: 1280px; }
-  .page--program-index .article#the-method-part-ii .prose > h2, .page--program-index .article#the-method-part-ii .prose > p {
-    max-width: 780px; }
-  .page--program-index .article#the-method-part-ii .prose > p {
-    margin-bottom: 2em; }
 .page--program-index .article#the-method-part-ii .article-header {
   display: none; }
 .page--program-index .article#the-method-part-ii ul {
@@ -1136,6 +1150,8 @@ html, body {
   color: #06d0ff; }
 .page--program-index .article#results li:nth-child(3n) h3 {
   color: #129fff; }
+.page--program-index .article#schools h3 {
+  color: white; }
 .page--program-index .article#schools li {
   text-align: left;
   background: #f0f0f0;
@@ -1160,10 +1176,8 @@ html, body {
       display: none; }
     .page--program-index .article#the-method img {
       display: none; }
-    .page--program-index .article#the-method .prose {
-      max-width: 1280px; }
-      .page--program-index .article#the-method .prose * {
-        padding-left: 50%; }
+    .page--program-index .article#the-method .article-content * {
+      padding-left: 50%; }
   .page--program-index .article#research img {
     margin: 0 auto; }
   .page--program-index .article#research li {
@@ -1179,36 +1193,36 @@ html, body {
     .page--program-index .article--lede .article-lede-content {
       display: table;
       table-layout: fixed; }
-    .page--program-index .article--lede .prose, .page--program-index .article--lede .article-nav {
+    .page--program-index .article--lede .article-page-summary, .page--program-index .article--lede .article-nav {
       vertical-align: top;
       display: table-cell;
       width: 50%;
       margin: 0;
       box-sizing: border-box; }
-    .page--program-index .article--lede .prose {
+    .page--program-index .article--lede .article-page-summary {
       padding-right: 1em; }
     .page--program-index .article--lede .article-nav {
       padding-left: 1em; }
   .page--program-index .article#the-method {
     padding-top: 6em; }
-  .page--program-index .article#the-method-part-ii .prose > ul {
+  .page--program-index .article#the-method-part-ii .article-content > ul {
     display: table;
     table-layout: fixed;
     width: 100%; }
-    .page--program-index .article#the-method-part-ii .prose > ul h3 {
+    .page--program-index .article#the-method-part-ii .article-content > ul h3 {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
-    .page--program-index .article#the-method-part-ii .prose > ul > li {
+    .page--program-index .article#the-method-part-ii .article-content > ul > li {
       display: table-cell;
       width: 50%;
       vertical-align: top;
       padding: 2em;
       overflow: hidden; }
-      .page--program-index .article#the-method-part-ii .prose > ul > li:nth-child(odd) {
+      .page--program-index .article#the-method-part-ii .article-content > ul > li:nth-child(odd) {
         padding-left: 0;
         border-right: 1px solid #f0f0f0; }
-      .page--program-index .article#the-method-part-ii .prose > ul > li:nth-child(even) {
+      .page--program-index .article#the-method-part-ii .article-content > ul > li:nth-child(even) {
         padding-right: 0;
         border-left: 1px solid #f0f0f0; }
   .page--program-index .article#the-method-part-ii li li {

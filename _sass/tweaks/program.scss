@@ -17,13 +17,6 @@
     padding-top: 6em;
   }
   .article#the-method-part-ii {
-    .prose {
-      max-width: 1280px;
-      > h2, > p {
-        max-width: 780px;
-      }
-      > p { margin-bottom: 2em; }
-    }
     .article-header { display: none; }
     ul {
       list-style: none;
@@ -58,6 +51,7 @@
     }
   }
   .article#schools {
+    h3 { color: white; }
     li {
       h6 { margin: 0; }
       text-align: left;
@@ -80,8 +74,7 @@
       background-image: url(/img/divine-dd-background-xl.jpg);
       background-position: calc(50% - 200px) bottom;
       background-size: auto 100%;
-      .prose {
-        max-width: 1280px;
+      .article-content {
         * { padding-left: 50%; }
       }
     }
@@ -106,14 +99,14 @@
         display: table;
         table-layout: fixed;
       }
-      .prose, .article-nav {
+      .article-page-summary, .article-nav {
         vertical-align: top;
         display: table-cell;
         width: 50%;
         margin: 0;
         box-sizing: border-box;
       }
-      .prose {
+      .article-page-summary {
         padding-right: 1em;
       }
       .article-nav {
@@ -124,7 +117,7 @@
       padding-top: 6em;
     }
     .article#the-method-part-ii {
-      .prose > ul {
+      .article-content > ul {
         display: table;
         table-layout: fixed;
         width: 100%;

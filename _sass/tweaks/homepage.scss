@@ -8,6 +8,7 @@
     font-weight: 600;
     @include fbs;
     background-image: url(/img/homepage-about-bg.jpg);
+    > * { max-width: 60ch; }
   }
   #imagine {
     @include fbs;
@@ -23,12 +24,13 @@
     h1, h2, h3, h4 {
       margin: 0;
     }
-    .prose {
+    .article-content {
       max-width: 320px;
     }
     ul {
       list-style: none;
       margin: -1em auto 2em;
+      border-bottom: .25rem solid $base-font-color;
     }
     li {
       list-style: none;
@@ -38,7 +40,6 @@
       font-style: italic;
       font-weight: bold;
       line-height: 1;
-      border-bottom: .25rem solid $base-font-color;
       margin: 0;
       text-transform: uppercase;
       text-indent: .5ch;
@@ -60,7 +61,7 @@
     background-position: center top;
     background-color: white;
     -webkit-font-smoothing: antialiased;
-    .prose {
+    .article-content {
       max-width: 70ch;
     }
     ul { margin: 0; list-style: none; }
@@ -93,7 +94,7 @@
 @media (min-width: 480px) {
   .page--index {
     #imagine {
-      .prose {
+      .article-content {
         max-width: 480px;
       }
       li { font-size: 5em; }
@@ -108,7 +109,7 @@
       background-image: url(/img/imagine-lg.jpg);
       background-size: auto 100%;
       background-position: left top;
-      .prose {
+      .article-content {
         margin: 0;
       }
     }
