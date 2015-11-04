@@ -22,6 +22,7 @@
       width: calc(100% + 2em);
       margin-left: -1em;
       text-align: center;
+      margin-top: 10em;
     }
     td {
       padding-bottom: 2em;
@@ -32,6 +33,19 @@
       }
       p { font-size: .75em; }
       img { max-width: 8em; }
+    }
+    thead th {
+      img {
+        width: 100%;
+        margin-top: -6em;
+        max-width: 16em;
+      }
+      &:nth-child(odd) {
+        background: darken($base-border-color, 3%);
+      }
+      &:nth-child(even) {
+        background: lighten($base-border-color, 3%);
+      }
     }
     tbody th {
       position: relative;
@@ -62,9 +76,29 @@
   }
   .article#results {
     li {
-      &:nth-child(3n-2) { h3 { color: $brand-yellow; } }
-      &:nth-child(3n-1) { h3 { color: $future-blue; } }
-      &:nth-child(3n) { h3 { color: $medium-blue; } }
+      position: relative;
+      &:after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 2em;
+        height: 2em;
+        margin: 0 -2em;
+        background: $brand-yellow;
+        z-index: 1;
+        border-radius: 100%;
+      }
+    }
+    h3 {
+      position: relative;
+      z-index: 2;
+    }
+    li {
+      &:nth-child(3n-2):after { background: $brand-yellow; }
+      &:nth-child(3n-1):after { background: $future-blue; }
+      &:nth-child(3n):after { background: $medium-blue; }
     }
   }
   .article#schools {
@@ -103,6 +137,14 @@
         * { padding-left: 50%; }
       }
     }
+    .article#the-method-part-ii {
+      thead th {
+        img {
+          width: 100%;
+          margin-top: -8em;
+        }
+      }
+    }
     .article#research {
       img {
         margin: 0 auto;
@@ -110,6 +152,18 @@
       li {
         font-size: .75em;
         p { text-align: justify; padding-right: 1rem; }
+      }
+    }
+    .article#results {
+      h3 {
+        margin-bottom: 1em;
+        font-size: 2em;
+      }
+      li:after {
+        height: 4em;
+        width: 4em;
+        margin: 0 0 0 -2em;
+        left: 50%;
       }
     }
   }
@@ -147,6 +201,12 @@
           font-size: 3em;
           letter-spacing: -.1em;
         }
+      }
+      li:after {
+        margin-top: 0;
+        height: 5em;
+        width: 5em;
+        margin-left: -2.5em;
       }
     }
   }

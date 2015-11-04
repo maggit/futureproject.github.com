@@ -1139,7 +1139,8 @@ html, body {
 .page--program-index .article#the-method-part-ii table {
   width: calc(100% + 2em);
   margin-left: -1em;
-  text-align: center; }
+  text-align: center;
+  margin-top: 10em; }
 .page--program-index .article#the-method-part-ii td {
   padding-bottom: 2em; }
   .page--program-index .article#the-method-part-ii td * {
@@ -1150,6 +1151,14 @@ html, body {
     font-size: .75em; }
   .page--program-index .article#the-method-part-ii td img {
     max-width: 8em; }
+.page--program-index .article#the-method-part-ii thead th img {
+  width: 100%;
+  margin-top: -6em;
+  max-width: 16em; }
+.page--program-index .article#the-method-part-ii thead th:nth-child(odd) {
+  background: #e8e8e8; }
+.page--program-index .article#the-method-part-ii thead th:nth-child(even) {
+  background: #f8f8f8; }
 .page--program-index .article#the-method-part-ii tbody th {
   position: relative;
   height: 0;
@@ -1171,12 +1180,29 @@ html, body {
   height: 6em;
   margin: 2em 0 1em;
   border-radius: 0.33333em; }
-.page--program-index .article#results li:nth-child(3n-2) h3 {
-  color: #ffce00; }
-.page--program-index .article#results li:nth-child(3n-1) h3 {
-  color: #06d0ff; }
-.page--program-index .article#results li:nth-child(3n) h3 {
-  color: #129fff; }
+.page--program-index .article#results li {
+  position: relative; }
+  .page--program-index .article#results li:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 2em;
+    height: 2em;
+    margin: 0 -2em;
+    background: #ffce00;
+    z-index: 1;
+    border-radius: 100%; }
+.page--program-index .article#results h3 {
+  position: relative;
+  z-index: 2; }
+.page--program-index .article#results li:nth-child(3n-2):after {
+  background: #ffce00; }
+.page--program-index .article#results li:nth-child(3n-1):after {
+  background: #06d0ff; }
+.page--program-index .article#results li:nth-child(3n):after {
+  background: #129fff; }
 .page--program-index .article#schools {
   background-color: #c1c0c5;
   background-image: url(/img/problem-skyline.jpg);
@@ -1213,13 +1239,24 @@ html, body {
       display: none; }
     .page--program-index .article#the-method .article-content * {
       padding-left: 50%; }
+  .page--program-index .article#the-method-part-ii thead th img {
+    width: 100%;
+    margin-top: -8em; }
   .page--program-index .article#research img {
     margin: 0 auto; }
   .page--program-index .article#research li {
     font-size: .75em; }
     .page--program-index .article#research li p {
       text-align: justify;
-      padding-right: 1rem; } }
+      padding-right: 1rem; }
+  .page--program-index .article#results h3 {
+    margin-bottom: 1em;
+    font-size: 2em; }
+  .page--program-index .article#results li:after {
+    height: 4em;
+    width: 4em;
+    margin: 0 0 0 -2em;
+    left: 50%; } }
 @media (min-width: 1024px) {
   .page--program-index .article--lede {
     padding-top: 8em;
@@ -1242,4 +1279,9 @@ html, body {
     padding-top: 6em; }
   .page--program-index .article#results li h3 {
     font-size: 3em;
-    letter-spacing: -.1em; } }
+    letter-spacing: -.1em; }
+  .page--program-index .article#results li:after {
+    margin-top: 0;
+    height: 5em;
+    width: 5em;
+    margin-left: -2.5em; } }
