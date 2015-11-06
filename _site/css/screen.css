@@ -1191,16 +1191,17 @@ html, body {
     display: block;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     content: '';
     width: 2em;
     height: 2em;
-    margin: 0 -2em;
+    margin: 0 -1em;
     background: #ffce00;
     z-index: 1;
     border-radius: 100%; }
 .page--program-index .post#results h3 {
   position: relative;
+  text-align: center;
   z-index: 2; }
 .page--program-index .post#results li:nth-child(3n-2):after {
   background: #ffce00; }

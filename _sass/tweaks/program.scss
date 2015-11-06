@@ -81,11 +81,11 @@
         display: block;
         position: absolute;
         top: 0;
-        left: 0;
+        left: 50%;
         content: '';
         width: 2em;
         height: 2em;
-        margin: 0 -2em;
+        margin: 0 -1em;
         background: $brand-yellow;
         z-index: 1;
         border-radius: 100%;
@@ -93,6 +93,7 @@
     }
     h3 {
       position: relative;
+      text-align: center;
       z-index: 2;
     }
     li {
