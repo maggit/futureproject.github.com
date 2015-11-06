@@ -1,0 +1,7 @@
+{% for post in site.categories[cat] %}
+  {% if forloop.first %}
+    {% include post-lede.html %}
+  {% else %}
+    {% include post-stnd.html %}
+  {% endif %}
+{% endfor %}

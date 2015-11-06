@@ -1,0 +1,138 @@
+.post {
+  background-color: $base-border-color;
+  @include linear-gradient(darken($base-border-color, 7%), $base-border-color);
+  position: relative;
+  padding: 3em 1em;
+  line-height: 1.2;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.centered {
+  text-align: center;
+  .post-content * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.post-header {
+  text-transform: uppercase;
+  max-width: 1240px;
+  margin: 0 auto;
+  letter-spacing: 3px;
+  text-align: left;
+  * {
+    font-size: 1em;
+    display: inline-block;
+    background: white;
+    color: $base-font-color;
+    padding: 1em 2em;
+    margin-left: -1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,.25);
+    line-height: 1;
+  }
+}
+.post-nav {
+  text-align: center;
+  margin: 2em auto 0;
+  width: 100%;
+  max-width: 65ch;
+  @include clearfix;
+}
+.post-nav-item {
+  display: block;
+  width: 25%;
+  box-sizing: border-box;
+  padding: .5em;
+  font-weight: 600;
+  color: white;
+  float: left;
+  margin-bottom: .5em;
+}
+.post-nav-item-icon {
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  margin-bottom: 1em;
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.post-nav-item-label {
+  font-size: .75em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.post-lede-content {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  @include clearfix;
+}
+.post-content {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  > p, > %headings {
+    max-width: 780px;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+    margin: 1em auto;
+  }
+  ol, ul {
+    margin-left: 2ch;
+  }
+  ul {
+    list-style-position: outside;
+    list-style-type: disc;
+  }
+  ol {
+    list-style-type: decimal;
+    list-style-position: outside;
+  }
+  p, li {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+}
+.post.gridded {
+  .post-header {
+    margin-bottom: 2rem;
+  }
+  ul {
+    list-style: none;
+    margin: 2em 0;
+    @include clearfix;
+  }
+}
+
+@media(min-width: 780px) {
+  .post {
+    padding: 6em 1em;
+  }
+  .post:target {
+    .post-header * {
+      @include animation(highlight 1s);
+    }
+  }
+  .post.gridded {
+      li {
+        float: left;
+        display: block;
+        width: 33.3333333333333%;
+        width: calc(33.3333333333333% - 1rem);
+        text-align: center;
+        padding: 1rem 0;
+        box-sizing: border-box;
+        margin-left: 1rem;
+        &:nth-child(3n+1) {
+          clear: left;
+          margin-left: 0;
+       }
+      }
+    }
+}
+
