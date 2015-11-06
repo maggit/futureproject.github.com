@@ -37,8 +37,8 @@
     thead th {
       img {
         width: 100%;
-        margin-top: -6em;
-        max-width: 16em;
+        margin-top: -10.5em;
+        max-width: 24em;
       }
       &:nth-child(odd) {
         background: darken($base-border-color, 3%);
@@ -141,7 +141,7 @@
       thead th {
         img {
           width: 100%;
-          margin-top: -8em;
+          margin-top: -11em;
         }
       }
     }
@@ -173,7 +173,7 @@
     .article--lede {
       padding-top: 8em;
       background-size: auto 100%;
-      background-position: calc(50% - 160px) top;
+      background-position: calc(50% + 250px) top;
       .article-lede-content {
         display: table;
         table-layout: fixed;

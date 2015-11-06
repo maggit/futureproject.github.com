@@ -5,7 +5,8 @@
   }
   // Top section, i.e. IMAGINE IF EVERYONE GREW UP
   #about {
-    font-weight: 600;
+    font-weight: 800;
+    font-size: 1.35em;
     @include fbs;
     background-image: url(/img/homepage-about-bg.jpg);
     > * { max-width: 60ch; }
