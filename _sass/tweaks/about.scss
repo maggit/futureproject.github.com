@@ -3,7 +3,7 @@
     @include fbs;
     background-image: url(/img/about-header.jpg);
     background-size: contain;
-    background-position: left bottom;
+    background-position: -20% 100%;
     .article-content {
       > * { padding-left: 20%; }
     }
