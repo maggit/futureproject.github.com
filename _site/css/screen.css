@@ -274,28 +274,6 @@ h4 {
 h5 {
   font-size: 1.25em; }
 
-.article-content {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto; }
-  .article-content > p, .article-content > h1, .article-content > h2, .article-content > h3, .article-content > h4, .article-content > h5, .article-content > h6 {
-    max-width: 780px; }
-  .article-content img {
-    max-width: 100%;
-    display: block;
-    margin: 1em auto; }
-  .article-content ol, .article-content ul {
-    margin-left: 2ch; }
-  .article-content ul {
-    list-style-position: outside;
-    list-style-type: disc; }
-  .article-content ol {
-    list-style-type: decimal;
-    list-style-position: outside; }
-  .article-content p, .article-content li {
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem; }
-
 @media (min-width: 780px) {
   *:target {
     padding-top: 6em; } }
@@ -586,12 +564,12 @@ html, body {
     margin: .8em 0; }
   .primary-footer .team-menu-item {
     display: none; }
-  .primary-footer .article.contact-callout {
+  .primary-footer .post.contact-callout {
     display: none;
     padding: 2em 1em;
     background: transparent; }
 
-.article#join-and-donate {
+.post#join-and-donate {
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center center;
@@ -600,9 +578,9 @@ html, body {
   background-position: calc(50% - 300px) bottom; }
 
 @media (min-width: 780px) {
-  .article#join-and-donate {
+  .post#join-and-donate {
     padding-left: 50%; }
-    .article#join-and-donate .prose {
+    .post#join-and-donate .prose {
       margin: 0;
       max-width: 480px; } }
 .img-flip {
@@ -633,7 +611,7 @@ html, body {
 .active .img-flip img:last-child {
   opacity: 1; }
 
-.article {
+.post {
   background-color: #f0f0f0;
   background-color: #dedede;
   background-image: -webkit-linear-gradient(#dedede, #f0f0f0);
@@ -647,17 +625,17 @@ html, body {
 
 .centered {
   text-align: center; }
-  .centered .article-content * {
+  .centered .post-content * {
     margin-left: auto;
     margin-right: auto; }
 
-.article-header {
+.post-header {
   text-transform: uppercase;
   max-width: 1240px;
   margin: 0 auto;
   letter-spacing: 3px;
   text-align: left; }
-  .article-header * {
+  .post-header * {
     font-size: 1em;
     display: inline-block;
     background: white;
@@ -667,17 +645,17 @@ html, body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
     line-height: 1; }
 
-.article-nav {
+.post-nav {
   text-align: center;
   margin: 2em auto 0;
   width: 100%;
   max-width: 65ch; }
-  .article-nav::after {
+  .post-nav::after {
     clear: both;
     content: "";
     display: table; }
 
-.article-nav-item {
+.post-nav-item {
   display: block;
   width: 25%;
   box-sizing: border-box;
@@ -687,7 +665,7 @@ html, body {
   float: left;
   margin-bottom: .5em; }
 
-.article-nav-item-icon {
+.post-nav-item-icon {
   width: 100%;
   height: 0;
   padding-bottom: 60%;
@@ -696,40 +674,63 @@ html, body {
   background-position: center bottom;
   background-repeat: no-repeat; }
 
-.article-nav-item-label {
+.post-nav-item-label {
   font-size: .75em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.article-lede-content {
+.post-lede-content {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto; }
-  .article-lede-content::after {
+  .post-lede-content::after {
     clear: both;
     content: "";
     display: table; }
 
-.article.gridded .article-header {
+.post-content {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto; }
+  .post-content > p, .post-content > h1, .post-content > h2, .post-content > h3, .post-content > h4, .post-content > h5, .post-content > h6 {
+    max-width: 780px; }
+  .post-content img {
+    max-width: 100%;
+    display: block;
+    margin: 1em auto; }
+  .post-content ol, .post-content ul {
+    margin-left: 2ch; }
+  .post-content ul {
+    list-style-position: outside;
+    list-style-type: disc; }
+  .post-content ol {
+    list-style-type: decimal;
+    list-style-position: outside; }
+  .post-content p, .post-content li {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem; }
+
+.post.gridded .post-header {
   margin-bottom: 2rem; }
-.article.gridded ul {
+.post.gridded ul {
   list-style: none;
   margin: 2em 0; }
-  .article.gridded ul::after {
+  .post.gridded ul::after {
     clear: both;
     content: "";
     display: table; }
 
 @media (min-width: 780px) {
-  .article:target {
-    padding-top: 6em; }
-    .article:target .article-header * {
-      -webkit-animation: highlight 1s;
-      -moz-animation: highlight 1s;
-      animation: highlight 1s; }
+  .post {
+    padding: 6em 1em; }
 
-  .article.gridded li {
+  .post:target .post-header * {
+    -webkit-animation: highlight 1s;
+    -moz-animation: highlight 1s;
+    animation: highlight 1s; }
+
+  .post.gridded li {
     float: left;
     display: block;
     width: 33.3333333333333%;
@@ -738,7 +739,7 @@ html, body {
     padding: 1rem 0;
     box-sizing: border-box;
     margin-left: 1rem; }
-    .article.gridded li:nth-child(3n+1) {
+    .post.gridded li:nth-child(3n+1) {
       clear: left;
       margin-left: 0; } }
 .listicle.interactive ol {
@@ -940,9 +941,9 @@ html, body {
   background-image: url(/img/about-header.jpg);
   background-size: contain;
   background-position: left bottom; }
-  .page--about-index #about .article-content > * {
+  .page--about-index #about .post-content > * {
     padding-left: 20%; }
-  .page--about-index #about .article-header {
+  .page--about-index #about .post-header {
     display: none; }
 .page--about-index #the-problem {
   background-color: #c1c0c5;
@@ -950,9 +951,9 @@ html, body {
   background-position: left top;
   background-size: auto 262px;
   background-repeat: repeat-x; }
-  .page--about-index #the-problem .article-content h2 {
+  .page--about-index #the-problem .post-content h2 {
     color: white; }
-  .page--about-index #the-problem .article-header {
+  .page--about-index #the-problem .post-header {
     margin-bottom: 4rem; }
 .page--about-index #our-mission {
   background-color: #6e65ff;
@@ -960,9 +961,13 @@ html, body {
   background-image: -webkit-linear-gradient(top, #6c1974 0%, #662591 50%, #5f33b4 75%, #6e65ff 100%);
   background-image: linear-gradient(to bottom,#6c1974 0%, #662591 50%, #5f33b4 75%, #6e65ff 100%);
   overflow: hidden; }
-  .page--about-index #our-mission .article-content {
+  .page--about-index #our-mission .post-content {
     padding-top: 2em;
     padding-bottom: 10em; }
+    .page--about-index #our-mission .post-content h2 {
+      position: relative;
+      z-index: 2;
+      padding-bottom: 1rem; }
   .page--about-index #our-mission img {
     position: absolute;
     left: 0;
@@ -970,29 +975,30 @@ html, body {
     margin: 0;
     height: 246px;
     width: 375px;
-    min-width: 375px; }
+    min-width: 375px;
+    z-index: 1; }
 
 @media (min-width: 780px) {
   .page--about-index #about {
     background-image: url(/img/about-header-xl.jpg);
-    background-position: -100px bottom; }
-    .page--about-index #about .article-content > * {
+    background-position: -300px bottom; }
+    .page--about-index #about .post-content > * {
       padding-left: 30%; }
   .page--about-index #the-problem ol {
     height: 20rem; } }
 @media (min-width: 1024px) {
   .page--about-index #about {
     background-image: url(/img/about-header-xl.jpg);
-    background-position: calc(50% - 140px) bottom; }
-    .page--about-index #about .article-content > * {
+    background-position: calc(50% - 180px) bottom; }
+    .page--about-index #about .post-content > * {
       padding-left: 50%; }
-  .page--about-index #our-mission .article-content {
+  .page--about-index #our-mission .post-content {
     padding-bottom: 6em; } }
 @media (min-width: 1280px) {
   .page--about-index #our-mission img {
     left: 50%;
     margin-left: -720px; } }
-.page--index .article-header {
+.page--index .post-header {
   display: none; }
 .page--index #the-container .primary-nav .minichimp {
   display: none; }
@@ -1019,7 +1025,7 @@ html, body {
     background-color: #f0f0f0; }
   .page--index #imagine h1, .page--index #imagine h2, .page--index #imagine h3, .page--index #imagine h4 {
     margin: 0; }
-  .page--index #imagine .article-content {
+  .page--index #imagine .post-content {
     max-width: 320px; }
   .page--index #imagine ul {
     list-style: none;
@@ -1053,7 +1059,7 @@ html, body {
   background-position: center top;
   background-color: white;
   -webkit-font-smoothing: antialiased; }
-  .page--index #press .article-content {
+  .page--index #press .post-content {
     max-width: 70ch; }
   .page--index #press ul {
     margin: 0;
@@ -1068,8 +1074,7 @@ html, body {
     text-transform: uppercase;
     color: #928d9b; }
   .page--index #press.rotating ul {
-    height: 12em;
-    overflow: hidden; }
+    height: 9em; }
   .page--index #press.rotating li {
     display: none;
     -webkit-animation: fadeIn 0.5s;
@@ -1079,7 +1084,7 @@ html, body {
     display: block; }
 
 @media (min-width: 480px) {
-  .page--index #imagine .article-content {
+  .page--index #imagine .post-content {
     max-width: 480px; }
   .page--index #imagine li {
     font-size: 5em; } }
@@ -1090,7 +1095,7 @@ html, body {
     background-image: url(/img/imagine-lg.jpg);
     background-size: auto 100%;
     background-position: left top; }
-    .page--index #imagine .article-content {
+    .page--index #imagine .post-content {
       margin: 0; }
   .page--index #about p {
     font-size: 1.5em; }
@@ -1111,19 +1116,19 @@ html, body {
     background-image: -webkit-linear-gradient(-360deg, white 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, white 100%), url(/img/homepage-press-bg-xl.jpg);
     background-image: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, white 100%), url(/img/homepage-press-bg-xl.jpg);
     background-size: 1280px auto; } }
-.page--program-index .article-nav-item--the-method-part-ii {
+.page--program-index .post-nav-item--the-method-part-ii {
   display: none; }
-.page--program-index .article-nav-item--the-method .article-nav-item-icon {
+.page--program-index .post-nav-item--the-method .post-nav-item-icon {
   background-image: url(/img/program-icon-method.svg); }
-.page--program-index .article-nav-item--research .article-nav-item-icon {
+.page--program-index .post-nav-item--research .post-nav-item-icon {
   background-image: url(/img/program-icon-research.svg); }
-.page--program-index .article-nav-item--results .article-nav-item-icon {
+.page--program-index .post-nav-item--results .post-nav-item-icon {
   background-image: url(/img/program-icon-results.svg); }
-.page--program-index .article-nav-item--schools .article-nav-item-icon {
+.page--program-index .post-nav-item--schools .post-nav-item-icon {
   background-image: url(/img/program-icon-schools.svg); }
-.page--program-index .article-nav-item--inquire .article-nav-item-icon {
+.page--program-index .post-nav-item--inquire .post-nav-item-icon {
   background-image: url(/img/program-icon-inquire.svg); }
-.page--program-index .article--lede {
+.page--program-index .post--lede {
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center center;
@@ -1134,38 +1139,38 @@ html, body {
   background-image: -webkit-linear-gradient(transparent 20%, black 70%), url(/img/program-header.jpg);
   background-image: linear-gradient(to   , black 70%), url(/img/program-header.jpg);
   padding-top: 6em; }
-.page--program-index .article#the-method-part-ii .article-header {
+.page--program-index .post#the-method-part-ii .post-header {
   display: none; }
-.page--program-index .article#the-method-part-ii table {
+.page--program-index .post#the-method-part-ii table {
   width: calc(100% + 2em);
   margin-left: -1em;
   text-align: center;
   margin-top: 10em; }
-.page--program-index .article#the-method-part-ii td {
+.page--program-index .post#the-method-part-ii td {
   padding-bottom: 2em; }
-  .page--program-index .article#the-method-part-ii td * {
+  .page--program-index .post#the-method-part-ii td * {
     max-width: 480px;
     margin-left: auto;
     margin-right: auto; }
-  .page--program-index .article#the-method-part-ii td p {
+  .page--program-index .post#the-method-part-ii td p {
     font-size: .75em; }
-  .page--program-index .article#the-method-part-ii td img {
+  .page--program-index .post#the-method-part-ii td img {
     max-width: 8em; }
-.page--program-index .article#the-method-part-ii thead th img {
+.page--program-index .post#the-method-part-ii thead th img {
   width: 100%;
   margin-top: -6em;
   max-width: 16em; }
-.page--program-index .article#the-method-part-ii thead th:nth-child(odd) {
+.page--program-index .post#the-method-part-ii thead th:nth-child(odd) {
   background: #e8e8e8; }
-.page--program-index .article#the-method-part-ii thead th:nth-child(even) {
+.page--program-index .post#the-method-part-ii thead th:nth-child(even) {
   background: #f8f8f8; }
-.page--program-index .article#the-method-part-ii tbody th {
+.page--program-index .post#the-method-part-ii tbody th {
   position: relative;
   height: 0;
   padding: 0;
   display: block;
   width: 100%; }
-  .page--program-index .article#the-method-part-ii tbody th * {
+  .page--program-index .post#the-method-part-ii tbody th * {
     position: absolute;
     top: 0;
     left: 100%;
@@ -1175,14 +1180,14 @@ html, body {
     box-sizing: border-box;
     margin-left: -4em;
     font-size: 1em; }
-.page--program-index .article#research img {
+.page--program-index .post#research img {
   width: 6em;
   height: 6em;
   margin: 2em 0 1em;
   border-radius: 0.33333em; }
-.page--program-index .article#results li {
+.page--program-index .post#results li {
   position: relative; }
-  .page--program-index .article#results li:after {
+  .page--program-index .post#results li:after {
     display: block;
     position: absolute;
     top: 0;
@@ -1194,93 +1199,93 @@ html, body {
     background: #ffce00;
     z-index: 1;
     border-radius: 100%; }
-.page--program-index .article#results h3 {
+.page--program-index .post#results h3 {
   position: relative;
   z-index: 2; }
-.page--program-index .article#results li:nth-child(3n-2):after {
+.page--program-index .post#results li:nth-child(3n-2):after {
   background: #ffce00; }
-.page--program-index .article#results li:nth-child(3n-1):after {
+.page--program-index .post#results li:nth-child(3n-1):after {
   background: #06d0ff; }
-.page--program-index .article#results li:nth-child(3n):after {
+.page--program-index .post#results li:nth-child(3n):after {
   background: #129fff; }
-.page--program-index .article#schools {
+.page--program-index .post#schools {
   background-color: #c1c0c5;
   background-image: url(/img/problem-skyline.jpg);
   background-position: left top;
   background-size: auto 262px;
   background-repeat: repeat-x; }
-  .page--program-index .article#schools .article-header {
+  .page--program-index .post#schools .post-header {
     margin-bottom: 4rem; }
-  .page--program-index .article#schools h3 {
+  .page--program-index .post#schools h3 {
     color: white; }
-  .page--program-index .article#schools li {
+  .page--program-index .post#schools li {
     text-align: left;
     background: #f0f0f0;
     background-color: #f0f0f0;
     background-image: -webkit-linear-gradient(#f0f0f0, #e3e3e3);
     background-image: linear-gradient(#f0f0f0, #e3e3e3);
     padding: 1rem; }
-    .page--program-index .article#schools li h6 {
+    .page--program-index .post#schools li h6 {
       margin: 0; }
 
 @media (min-width: 780px) {
-  .page--program-index .article--lede {
+  .page--program-index .post--lede {
     background-image: url(/img/program-header.jpg); }
-  .page--program-index .article#the-method {
+  .page--program-index .post#the-method {
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center center;
     background-image: url(/img/divine-dd-background-xl.jpg);
     background-position: calc(50% - 200px) bottom;
     background-size: auto 100%; }
-    .page--program-index .article#the-method .article-header {
+    .page--program-index .post#the-method .post-header {
       display: none; }
-    .page--program-index .article#the-method img {
+    .page--program-index .post#the-method img {
       display: none; }
-    .page--program-index .article#the-method .article-content * {
+    .page--program-index .post#the-method .post-content * {
       padding-left: 50%; }
-  .page--program-index .article#the-method-part-ii thead th img {
+  .page--program-index .post#the-method-part-ii thead th img {
     width: 100%;
     margin-top: -8em; }
-  .page--program-index .article#research img {
+  .page--program-index .post#research img {
     margin: 0 auto; }
-  .page--program-index .article#research li {
+  .page--program-index .post#research li {
     font-size: .75em; }
-    .page--program-index .article#research li p {
+    .page--program-index .post#research li p {
       text-align: justify;
       padding-right: 1rem; }
-  .page--program-index .article#results h3 {
+  .page--program-index .post#results h3 {
     margin-bottom: 1em;
     font-size: 2em; }
-  .page--program-index .article#results li:after {
+  .page--program-index .post#results li:after {
     height: 4em;
     width: 4em;
     margin: 0 0 0 -2em;
     left: 50%; } }
 @media (min-width: 1024px) {
-  .page--program-index .article--lede {
+  .page--program-index .post--lede {
     padding-top: 8em;
     background-size: auto 100%;
     background-position: calc(50% - 160px) top; }
-    .page--program-index .article--lede .article-lede-content {
+    .page--program-index .post--lede .post-lede-content {
       display: table;
       table-layout: fixed; }
-    .page--program-index .article--lede .article-page-summary, .page--program-index .article--lede .article-nav {
+    .page--program-index .post--lede .post-page-summary, .page--program-index .post--lede .post-nav {
       vertical-align: top;
       display: table-cell;
       width: 50%;
       margin: 0;
       box-sizing: border-box; }
-    .page--program-index .article--lede .article-page-summary {
+    .page--program-index .post--lede .post-page-summary {
       padding-right: 1em; }
-    .page--program-index .article--lede .article-nav {
+    .page--program-index .post--lede .post-nav {
       padding-left: 1em; }
-  .page--program-index .article#the-method {
+  .page--program-index .post#the-method {
     padding-top: 6em; }
-  .page--program-index .article#results li h3 {
+  .page--program-index .post#results li h3 {
     font-size: 3em;
     letter-spacing: -.1em; }
-  .page--program-index .article#results li:after {
+  .page--program-index .post#results li:after {
     margin-top: 0;
     height: 5em;
     width: 5em;

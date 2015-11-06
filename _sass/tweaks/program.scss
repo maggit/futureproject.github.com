@@ -1,13 +1,13 @@
 .page--program-index {
-  .article-nav-item--the-method-part-ii {
+  .post-nav-item--the-method-part-ii {
     display: none;
   }
-  .article-nav-item--the-method .article-nav-item-icon { background-image: url(/img/program-icon-method.svg); }
-  .article-nav-item--research .article-nav-item-icon { background-image: url(/img/program-icon-research.svg); }
-  .article-nav-item--results .article-nav-item-icon { background-image: url(/img/program-icon-results.svg); }
-  .article-nav-item--schools .article-nav-item-icon { background-image: url(/img/program-icon-schools.svg); }
-  .article-nav-item--inquire .article-nav-item-icon { background-image: url(/img/program-icon-inquire.svg); }
-  .article--lede {
+  .post-nav-item--the-method .post-nav-item-icon { background-image: url(/img/program-icon-method.svg); }
+  .post-nav-item--research .post-nav-item-icon { background-image: url(/img/program-icon-research.svg); }
+  .post-nav-item--results .post-nav-item-icon { background-image: url(/img/program-icon-results.svg); }
+  .post-nav-item--schools .post-nav-item-icon { background-image: url(/img/program-icon-schools.svg); }
+  .post-nav-item--inquire .post-nav-item-icon { background-image: url(/img/program-icon-inquire.svg); }
+  .post--lede {
     @include fbs;
     background-color: black;
     background-size: 100% auto;
@@ -16,8 +16,8 @@
     @include background-image(linear-gradient(rgba(0,0,0,0) 20%, rgba(0,0,0,1) 70%),url(/img/program-header.jpg));
     padding-top: 6em;
   }
-  .article#the-method-part-ii {
-    .article-header { display: none; }
+  .post#the-method-part-ii {
+    .post-header { display: none; }
     table {
       width: calc(100% + 2em);
       margin-left: -1em;
@@ -66,7 +66,7 @@
       }
     }
   }
-  .article#research {
+  .post#research {
     img {
       width: 6em;
       height: 6em;
@@ -74,7 +74,7 @@
       border-radius: $base-border-radius;
     }
   }
-  .article#results {
+  .post#results {
     li {
       position: relative;
       &:after {
@@ -101,13 +101,13 @@
       &:nth-child(3n):after { background: $medium-blue; }
     }
   }
-  .article#schools {
+  .post#schools {
     background-color: #c1c0c5;
     background-image: url(/img/problem-skyline.jpg);
     background-position: left top;
     background-size: auto 262px;
     background-repeat: repeat-x;
-    .article-header {
+    .post-header {
       margin-bottom: 4rem;
     }
     h3 { color: white; }
@@ -123,21 +123,21 @@
 
 @media (min-width: 780px) {
   .page--program-index {
-    .article--lede {
+    .post--lede {
       background-image: url(/img/program-header.jpg);
     }
-    .article#the-method {
-      .article-header { display: none; }
+    .post#the-method {
+      .post-header { display: none; }
       img { display: none; }
       @include fbs;
       background-image: url(/img/divine-dd-background-xl.jpg);
       background-position: calc(50% - 200px) bottom;
       background-size: auto 100%;
-      .article-content {
+      .post-content {
         * { padding-left: 50%; }
       }
     }
-    .article#the-method-part-ii {
+    .post#the-method-part-ii {
       thead th {
         img {
           width: 100%;
@@ -145,7 +145,7 @@
         }
       }
     }
-    .article#research {
+    .post#research {
       img {
         margin: 0 auto;
       }
@@ -154,7 +154,7 @@
         p { text-align: justify; padding-right: 1rem; }
       }
     }
-    .article#results {
+    .post#results {
       h3 {
         margin-bottom: 1em;
         font-size: 2em;
@@ -170,32 +170,32 @@
 }
 @media (min-width: 1024px) {
   .page--program-index {
-    .article--lede {
+    .post--lede {
       padding-top: 8em;
       background-size: auto 100%;
       background-position: calc(50% - 160px) top;
-      .article-lede-content {
+      .post-lede-content {
         display: table;
         table-layout: fixed;
       }
-      .article-page-summary, .article-nav {
+      .post-page-summary, .post-nav {
         vertical-align: top;
         display: table-cell;
         width: 50%;
         margin: 0;
         box-sizing: border-box;
       }
-      .article-page-summary {
+      .post-page-summary {
         padding-right: 1em;
       }
-      .article-nav {
+      .post-nav {
         padding-left: 1em;
       }
     }
-    .article#the-method {
+    .post#the-method {
       padding-top: 6em;
     }
-    .article#results {
+    .post#results {
       li {
         h3 {
           font-size: 3em;

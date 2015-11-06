@@ -1,7 +1,7 @@
 {% for post in site.categories[cat] %}
   {% if forloop.first %}
-    {% include article-lede.html %}
+    {% include post-lede.html %}
   {% else %}
-    {% include article-stnd.html %}
+    {% include post-stnd.html %}
   {% endif %}
 {% endfor %}

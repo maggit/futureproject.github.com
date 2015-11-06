@@ -1,0 +1,21 @@
+<article class="post post--lede theme--{{ post.theme }}" id="{{ post.title | slugify }}"{% if post.bg %} style="background-image: url({{post.bg}});"{% endif %}>
+  <div class='post-lede-content'>
+  <section class="post-page-summary">
+    <h2>{{ post.title }}</h2>
+    {{ post.content }}
+  </section>
+  <nav class="post-nav">
+  {% assign cat = post.categories[0] %}
+  {% for p in site.categories[cat] %}
+    {% if forloop.first == false %}
+      <a class="post-nav-item article-nav-item--{{ p.title | slugify }}" href="#{{ p.title | slugify }}">
+        <div class="post-nav-item-icon"></div>
+        <div class="post-nav-item-label">{{ p.title }}</div>
+      </a>
+    {% endif %}
+  {% endfor %}
+  {% assign cat = nil %}
+  </nav>
+  </div>
+</article>
+
