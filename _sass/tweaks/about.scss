@@ -4,21 +4,21 @@
     background-image: url(/img/about-header.jpg);
     background-size: contain;
     background-position: left bottom;
-    .article-content {
+    .post-content {
       > * { padding-left: 20%; }
     }
-    .article-header {
+    .post-header {
       display: none;
     }
   }
   #the-problem {
-    .article-content h2 { color: white; }
+    .post-content h2 { color: white; }
     background-color: #c1c0c5;
     background-image: url(/img/problem-skyline.jpg);
     background-position: left top;
     background-size: auto 262px;
     background-repeat: repeat-x;
-    .article-header {
+    .post-header {
       margin-bottom: 4rem;
     }
   }
@@ -27,9 +27,14 @@
     background-color: #6e65ff;
     @include linear-gradient(top,  #6c1974 0%,#662591 50%,#5f33b4 75%,#6e65ff 100%);
     overflow: hidden;
-    .article-content {
+    .post-content {
       padding-top: 2em;
       padding-bottom: 10em;
+      h2 {
+        position: relative;
+        z-index: 2;
+        padding-bottom: 1rem;
+      }
     }
     img {
       position: absolute;
@@ -39,15 +44,16 @@
       height: 246px;
       width: 375px;
       min-width: 375px;
+      z-index: 1;
     }
   }
 }
 @media (min-width: 780px) {
   .page--about-index {
     #about {
-      .article-content > * { padding-left: 30%; }
+      .post-content > * { padding-left: 30%; }
       background-image: url(/img/about-header-xl.jpg);
-      background-position: -100px bottom;
+      background-position: -300px bottom;
     }
     #the-problem {
       ol { height: 20rem; }
@@ -58,11 +64,11 @@
   .page--about-index {
     #about {
       background-image: url(/img/about-header-xl.jpg);
-      background-position: calc(50% - 140px) bottom;
-      .article-content > * { padding-left: 50%; }
+      background-position: calc(50% - 180px) bottom;
+      .post-content > * { padding-left: 50%; }
     }
     #our-mission {
-      .article-content {
+      .post-content {
         padding-bottom: 6em;
       }
     }

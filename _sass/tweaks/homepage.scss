@@ -1,5 +1,5 @@
 .page--index {
-  .article-header { display: none; }
+  .post-header { display: none; }
   #the-container .primary-nav .minichimp {
     display: none;
   }
@@ -24,7 +24,7 @@
     h1, h2, h3, h4 {
       margin: 0;
     }
-    .article-content {
+    .post-content {
       max-width: 320px;
     }
     ul {
@@ -61,7 +61,7 @@
     background-position: center top;
     background-color: white;
     -webkit-font-smoothing: antialiased;
-    .article-content {
+    .post-content {
       max-width: 70ch;
     }
     ul { margin: 0; list-style: none; }
@@ -78,8 +78,7 @@
     }
     &.rotating {
       ul {
-        height: 12em;
-        overflow: hidden;
+        height: 9em;
       }
       li {
         display: none;
@@ -94,7 +93,7 @@
 @media (min-width: 480px) {
   .page--index {
     #imagine {
-      .article-content {
+      .post-content {
         max-width: 480px;
       }
       li { font-size: 5em; }
@@ -109,7 +108,7 @@
       background-image: url(/img/imagine-lg.jpg);
       background-size: auto 100%;
       background-position: left top;
-      .article-content {
+      .post-content {
         margin: 0;
       }
     }

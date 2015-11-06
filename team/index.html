@@ -1,13 +1,13 @@
 ---
 title: Team
 ---
-<div class="article theme--white">
+<div class="post theme--white">
   {% include team-nav.html %}
 </div>
 {% for team in site.teams %}
-<div class="article theme--white">
+<div class="post theme--white">
   <div class="team people" id="{{team[1].id}}">
-    <div class='article-header'><h3>{{ team[1].label }}</h3></div>
+    <div class='post-header'><h3>{{ team[1].label }}</h3></div>
     {% assign team_name = team[1].id %}{% include team.html %}
   </div>
 </div>
