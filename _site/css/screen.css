@@ -1281,7 +1281,8 @@ html, body {
     .page--program-index .post--lede .post-nav {
       padding-left: 1em; }
   .page--program-index .post#the-method {
-    padding-top: 6em; }
+    padding-top: 10em;
+    background-size: auto 90%; }
   .page--program-index .post#results li h3 {
     font-size: 3em;
     letter-spacing: -.1em; }
