@@ -7,7 +7,7 @@
       <img src="/img/team/team_{{ person.portrait }}_2.jpg" alt="{{ person.name }}" />
     </a>
     <div class='person-name'>{{ person.name }}</div>
-    <div class='person-role'>{{ person.role }}</div>
+    <div class='person-role'>{{ person.role | replace:",","<br>" }}</div>
     <figure class="person-more">
       <div class="person-more-content">
         {% if person.vimeo_id == null %}{{ person.bio | markdownify }}{% endif %}
