@@ -8,7 +8,7 @@
   {% assign cat = post.categories[0] %}
   {% for p in site.categories[cat] %}
     {% if forloop.first == false %}
-      <a class="post-nav-item article-nav-item--{{ p.title | slugify }}" href="#{{ p.title | slugify }}">
+      <a class="post-nav-item post-nav-item--{{ p.title | slugify }}" href="#{{ p.title | slugify }}">
         <div class="post-nav-item-icon"></div>
         <div class="post-nav-item-label">{{ p.title }}</div>
       </a>
