@@ -255,15 +255,15 @@ hr {
   letter-spacing: -.05em; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 1.2rem;
   line-height: 1.05; }
 
 h1 {
-  font-size: 2.5em; }
+  font-size: 2.7em; }
 
 h2 {
-  font-size: 2em; }
+  font-size: 2.25em; }
 
 h3 {
   font-size: 1.66667em; }
@@ -273,6 +273,31 @@ h4 {
 
 h5 {
   font-size: 1.25em; }
+
+h2 {
+  font-weight: 800; }
+
+.article-content {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto; }
+  .article-content > p, .article-content > h1, .article-content > h2, .article-content > h3, .article-content > h4, .article-content > h5, .article-content > h6 {
+    max-width: 780px; }
+  .article-content img {
+    max-width: 100%;
+    display: block;
+    margin: 1em auto; }
+  .article-content ol, .article-content ul {
+    margin-left: 2ch; }
+  .article-content ul {
+    list-style-position: outside;
+    list-style-type: disc; }
+  .article-content ol {
+    list-style-type: decimal;
+    list-style-position: outside; }
+  .article-content p, .article-content li {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem; }
 
 @media (min-width: 780px) {
   *:target {
@@ -744,9 +769,9 @@ html, body {
       margin-left: 0; } }
 .listicle.interactive ol {
   margin: 0 auto;
-  max-width: 780px;
+  max-width: 950px;
   list-style: none;
-  background: #e0e0e2;
+  background: #f9f9f9;
   padding: 1em;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25); }
   .listicle.interactive ol > li {
@@ -761,23 +786,29 @@ html, body {
 .listicle.interactive li {
   display: table-cell;
   vertical-align: top;
-  font-size: .8em;
+  font-size: .9em;
   text-align: left;
   padding-right: 1rem; }
   .listicle.interactive li img {
     width: 100%;
-    max-width: 8rem; }
+    max-width: 12rem; }
+  .listicle.interactive li h4 {
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 0px; }
+  .listicle.interactive li img {
+    margin: .25em auto; }
 .listicle.interactive nav {
   text-align: center;
-  font-size: 3em;
-  font-weight: 700;
-  color: #928d9b; }
+  font-size: 3.5em;
+  font-weight: 800;
+  color: #9a9a9d; }
   .listicle.interactive nav * {
     display: inline-block;
     cursor: pointer;
-    padding: 1rem; }
+    padding: 1.5rem 2rem; }
   .listicle.interactive nav .active {
-    color: #212e47; }
+    color: #262627; }
 
 .people {
   max-width: 1280px;
@@ -940,8 +971,8 @@ html, body {
   background-position: center center;
   background-image: url(/img/about-header.jpg);
   background-size: contain;
-  background-position: left bottom; }
-  .page--about-index #about .post-content > * {
+  background-position: -20% 100%; }
+  .page--about-index #about .article-content > * {
     padding-left: 20%; }
   .page--about-index #about .post-header {
     display: none; }
@@ -949,12 +980,13 @@ html, body {
   background-color: #c1c0c5;
   background-image: url(/img/problem-skyline.jpg);
   background-position: left top;
-  background-size: auto 262px;
+  background-size: auto 400px;
   background-repeat: repeat-x; }
   .page--about-index #the-problem .post-content h2 {
     color: white; }
-  .page--about-index #the-problem .post-header {
-    margin-bottom: 4rem; }
+  .page--about-index #the-problem .article-header {
+    margin-bottom: 4rem;
+    padding-top: 3em; }
 .page--about-index #our-mission {
   background-color: #6e65ff;
   background-color: #6c1974;
@@ -963,20 +995,15 @@ html, body {
   overflow: hidden; }
   .page--about-index #our-mission .post-content {
     padding-top: 2em;
-    padding-bottom: 10em; }
-    .page--about-index #our-mission .post-content h2 {
-      position: relative;
-      z-index: 2;
-      padding-bottom: 1rem; }
+    padding-bottom: 13em; }
   .page--about-index #our-mission img {
     position: absolute;
-    left: 0;
+    left: -100px;
     bottom: 0;
     margin: 0;
-    height: 246px;
-    width: 375px;
-    min-width: 375px;
-    z-index: 1; }
+    height: auto;
+    width: 600px;
+    min-width: 375px; }
 
 @media (min-width: 780px) {
   .page--about-index #about {
@@ -985,15 +1012,16 @@ html, body {
     .page--about-index #about .post-content > * {
       padding-left: 30%; }
   .page--about-index #the-problem ol {
-    height: 20rem; } }
+    height: 23rem;
+    padding-left: 2.75rem; } }
 @media (min-width: 1024px) {
   .page--about-index #about {
     background-image: url(/img/about-header-xl.jpg);
     background-position: calc(50% - 180px) bottom; }
     .page--about-index #about .post-content > * {
       padding-left: 50%; }
-  .page--about-index #our-mission .post-content {
-    padding-bottom: 6em; } }
+  .page--about-index #our-mission .article-content {
+    padding-bottom: 13em; } }
 @media (min-width: 1280px) {
   .page--about-index #our-mission img {
     left: 50%;
@@ -1003,7 +1031,8 @@ html, body {
 .page--index #the-container .primary-nav .minichimp {
   display: none; }
 .page--index #about {
-  font-weight: 600;
+  font-weight: 800;
+  font-size: 1.35em;
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center center;
@@ -1158,9 +1187,9 @@ html, body {
     max-width: 8em; }
 .page--program-index .post#the-method-part-ii thead th img {
   width: 100%;
-  margin-top: -6em;
-  max-width: 16em; }
-.page--program-index .post#the-method-part-ii thead th:nth-child(odd) {
+  margin-top: -10.5em;
+  max-width: 24em; }
+.page--program-index .article#the-method-part-ii thead th:nth-child(odd) {
   background: #e8e8e8; }
 .page--program-index .post#the-method-part-ii thead th:nth-child(even) {
   background: #f8f8f8; }
@@ -1247,8 +1276,8 @@ html, body {
       padding-left: 50%; }
   .page--program-index .post#the-method-part-ii thead th img {
     width: 100%;
-    margin-top: -8em; }
-  .page--program-index .post#research img {
+    margin-top: -11em; }
+  .page--program-index .article#research img {
     margin: 0 auto; }
   .page--program-index .post#research li {
     font-size: .75em; }
@@ -1267,8 +1296,8 @@ html, body {
   .page--program-index .post--lede {
     padding-top: 8em;
     background-size: auto 100%;
-    background-position: calc(50% - 160px) top; }
-    .page--program-index .post--lede .post-lede-content {
+    background-position: calc(50% + 250px) top; }
+    .page--program-index .article--lede .article-lede-content {
       display: table;
       table-layout: fixed; }
     .page--program-index .post--lede .post-page-summary, .page--program-index .post--lede .post-nav {
