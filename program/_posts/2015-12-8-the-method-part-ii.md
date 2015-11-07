@@ -11,11 +11,11 @@ Dream Directors provide coaching, offer courses, and apply culture-change techni
     <tr>
       <th>
         <img src="/img/method-school-culture.png" alt="Improving School Culture" />
-        <h3>Improving School Culture<h3>
+        <h3>Improving<br>School Culture<h3>
       </th>
       <th>
         <img src="/img/method-will-skill.png" alt="Building Will and Skill in Students" />
-        <h3>Building Will & Skill in Students</h3>
+        <h3>Building Will &<br>Skill In Students</h3>
       </th>
     </tr>
   </thead>

@@ -16,10 +16,11 @@
     background-color: #c1c0c5;
     background-image: url(/img/problem-skyline.jpg);
     background-position: left top;
-    background-size: auto 262px;
+    background-size: auto 400px;
     background-repeat: repeat-x;
     .post-header {
       margin-bottom: 4rem;
+      padding-top: 3em;
     }
   }
 
@@ -29,20 +30,16 @@
     overflow: hidden;
     .post-content {
       padding-top: 2em;
-      padding-bottom: 10em;
-      h2 {
-        position: relative;
-        z-index: 2;
-        padding-bottom: 1rem;
-      }
+      padding-bottom: 13em;
     }
+
     img {
       position: absolute;
-      left: 0;
+      left: -100px;
       bottom: 0;
       margin: 0;
-      height: 246px;
-      width: 375px;
+      height: auto;
+      width: 600px;
       min-width: 375px;
       z-index: 1;
     }
@@ -56,7 +53,7 @@
       background-position: -300px bottom;
     }
     #the-problem {
-      ol { height: 20rem; }
+      ol { height: 23rem; padding-left:2.75rem}
     }
   }
 }
@@ -68,8 +65,8 @@
       .post-content > * { padding-left: 50%; }
     }
     #our-mission {
-      .post-content {
-        padding-bottom: 6em;
+      .article-content {
+        padding-bottom: 13em;
       }
     }
   }

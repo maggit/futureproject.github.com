@@ -37,8 +37,8 @@
     thead th {
       img {
         width: 100%;
-        margin-top: -6em;
-        max-width: 16em;
+        margin-top: -10.5em;
+        max-width: 24em;
       }
       &:nth-child(odd) {
         background: darken($base-border-color, 3%);
@@ -142,7 +142,7 @@
       thead th {
         img {
           width: 100%;
-          margin-top: -8em;
+          margin-top: -11em;
         }
       }
     }
