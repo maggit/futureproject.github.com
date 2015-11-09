@@ -1,0 +1,23 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="/css/screen.css?v{{ site.time | date: '%m%d%y%H%M%S' }}" />
+    <title>{% if page.title %}{{ page.title }} | {% endif %}The Future Project</title>
+  </head>
+  <body>
+    <div class="permalink {% if page.graphic %} permalink-with-graphic {% endif %}">
+      {% if page.graphic %}
+      <img src="{{ page.graphic }}" alt="{{ page.title }}" class="permalink-graphic" />
+      {% endif %}
+      <article class="permalink-text">
+        <h2 class="page-title">{{ page.title }}</h2>
+        <div class="page-body">
+          {{ page.content | markdownify }}
+        </div>
+      </article>
+    </div>
+  </body>
+</html>

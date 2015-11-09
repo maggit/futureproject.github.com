@@ -1,0 +1,73 @@
+.futurebox {
+  /*@include animation(expand .3s);*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 4em 2em 2em;
+  background: rgba(0,0,0,.75);
+  z-index: 100000;
+  iframe {
+    width: 100%;
+    background: $base-border-color;
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+.futurebox-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '+';
+  font-family: sans-serif;
+  height: 2em;
+  width: 2em;
+  font-size: 2em;
+  line-height: 2em;
+  @include transform(rotate(45deg));
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 800;
+  &:after {
+    content: "+";
+    display: inline;
+  }
+}
+.futurebox-prev, .futurebox-next {
+  position: absolute;
+  top: 50%;
+  height: 2em;
+  width: 2em;
+  cursor: pointer;
+  &:after {
+    top: 0;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-width: 1em;
+    margin-top: 0;
+    display: inline;
+    color: white;
+  }
+}
+.futurebox-prev {
+  left: 0;
+  &:after {
+    border-right-color: #ffffff;
+    left: -.5em;
+  }
+}
+.futurebox-next {
+  right: 0;
+  &:after {
+    right: -.5em;
+    border-left-color: #ffffff;
+  }
+}

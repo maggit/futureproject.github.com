@@ -18,7 +18,7 @@
 .post-header {
   text-transform: uppercase;
   max-width: 1240px;
-  margin: 0 auto;
+  margin: 0 auto 2em;
   letter-spacing: 3px;
   text-align: left;
   * {
@@ -99,9 +99,6 @@
   }
 }
 .post.gridded {
-  .post-header {
-    margin-bottom: 2rem;
-  }
   ul {
     list-style: none;
     margin: 2em 0;
