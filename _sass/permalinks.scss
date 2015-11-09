@@ -10,6 +10,7 @@
     display: table;
     margin: 0 auto;
     height: 100%;
+    height: calc(100% - 2em);
     > * {
       vertical-align: middle;
       display: table-cell;
