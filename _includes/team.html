@@ -7,7 +7,11 @@
       <img src="/img/team/team_{{ person.portrait }}_2.jpg" alt="{{ person.name }}" />
     </a>
     <div class='person-name'>{{ person.name }}</div>
+    {% if person.team contains "payroll" %}
     <div class='person-role'>{{ person.role | replace:",","<br>" }}</div>
+    {% else %}
+    <div class='person-role'>{{ person.role }}</div>
+    {% endif %}
     <figure class="person-more">
       <div class="person-more-content">
         {% if person.vimeo_id == null %}{{ person.bio | markdownify }}{% endif %}
