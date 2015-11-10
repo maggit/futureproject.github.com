@@ -41,11 +41,20 @@
     font-size: 3.5em;
     font-weight: 800;
     color: $list-grey;
+    white-space: nowrap;
+    overflow: auto;
     * {
       display: inline-block;
       cursor: pointer;
-      padding: 1.5rem 2rem;
+      padding: 1.5rem 1rem;
     }
     .active { color: $list-black;}
+  }
+}
+@media (min-width: 780px) {
+  .listicle.interactive {
+    nav * {
+      padding: 1.5rem 2rem;
+    }
   }
 }
