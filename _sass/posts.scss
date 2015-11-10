@@ -7,6 +7,23 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center center;
+  &[data-motion] {
+    .post-content {
+      position: relative;
+      z-index: 2;
+    }
+    video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: 1;
+      @include transform(translateX(-50%) translateY(-50%));
+    }
+  }
 }
 .centered {
   text-align: center;

@@ -1,4 +1,4 @@
-<article class="post theme--{{ post.theme }}" id="{{ post.title | slugify }}">
+<article class="post theme--{{ post.theme }}" id="{{ post.title | slugify }}" {% if post.video %}data-motion="{{ post.video }}" {% endif %}>
   <header class="post-header">
     <h2>{{ post.title }}</h2>
   </header>
