@@ -1,0 +1,8 @@
+---
+name: Jay Rayford
+role: Community Engagement 
+portait: jay
+layout: plain
+---
+
+Born and raised in Detroit, Jay always had an undying love for his city. By committing his life to networking, being a connector and encouraging residents of Detroit old and new, this opportunity as a Dream Director is a dream come true and an amazing way to use past experiences and grouped resources to push students to their true passion and dreams.

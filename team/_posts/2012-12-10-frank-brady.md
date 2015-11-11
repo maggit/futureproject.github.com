@@ -1,0 +1,8 @@
+---
+name: Frank Brady
+role: Dream Director, New Haven 
+portait: frank
+layout: plain
+---
+
+A long-time fixture of New Haven’s arts and performance scene, Frank is a spoken-word poet who actually found The Future Project when he performed at an event organized by one of our students. As the Dream Director at Wilbur Cross High School, one of the two biggest high schools in New Haven, Frank and his team have taken their vision for the school and scaled it up with school-wide events, giving students a renewed sense of Wilbur Cross pride.

@@ -1,0 +1,8 @@
+---
+name: Tamara Day
+role: Director of Special Projects 
+portait: tamara
+layout: plain
+---
+
+As Director of Special Projects, Tamara is responsible for making The Future Project work as effectively and magically as possible. She accomplishes this by diving in to a multitude of diverse projects across the organization. These include managing some of The Future Project’s most important cross-team endeavors; overseeing planning and execution nationally; and working closely with Andrew to drive fundraising, outreach, and internal cultural initiatives.

@@ -1,0 +1,8 @@
+---
+name: Sophia Chitlik
+role: COO 
+portait: sophia
+layout: plain
+---
+
+Of the things Sophia brings to The Future Project headquarters, campaign energy, glitter, and monkey bread just scratch the surface. She works with Movement Directors to grow the Future Family with new people and partners, and to create a vibrant, supportive ecosystem of possibility across our seven cities. Sophia aspires to train a generation of student organizers, one Future Project at a time. 

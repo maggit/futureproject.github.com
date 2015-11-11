@@ -1,0 +1,16 @@
+---
+---
+<div class="post">
+{% for person in site.data.team %}
+{% if person.team contains 'payroll' %}
+<div class="temp-person">
+  <div class="person-name">{{ person.name }}</div>
+  <div class="person-slug">{{ person.name | slugify }}</div>
+  <div class="person-role">{{ person.role }}</div>
+  <div class="person-bio">{{ person.bio }}</div>
+  <div class="person-portrait">{{ person.portrait }}</div>
+</div>
+{% endif %}
+{% endfor %}
+</div>
+

@@ -11,6 +11,7 @@ defaults:
       type: "pages"
     values:
       layout: "v1"
+permalink: none
 teams:
   leadership:
     id: 'leadership'

@@ -4,7 +4,7 @@ $(function(){
       $(this).append('<video autoplay loop><source src="/img/homepage-video-loop-web.mp4" type="video/mp4"></video>')
     })
   }
-  $('a[rel=player]').on('click', function(event) {
+  $(document).on('click', 'a[rel=player]', function(event) {
     $post = $(this).closest('.post')
     if ($post.length > 0) {
       event.preventDefault()
