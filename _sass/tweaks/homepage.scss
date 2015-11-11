@@ -38,7 +38,9 @@
       text-transform: uppercase;
       text-indent: .5ch;
       -webkit-font-smoothing: antialiased;
-      color: $purple;
+      color: $medium-blue;
+      &.color-1 { color: $purple; }
+      &.color-2 { color: $hover-blue; }
     }
     li {
       display: none;
@@ -81,6 +83,11 @@
         height: 100%;
         max-width: 6em;
         max-height: 6em;
+      }
+      @include animation(fadeIn .3s);
+      display: none;
+      &:nth-child(-n+8) {
+        display: block;
       }
     }
   }
@@ -163,6 +170,9 @@
     #partners {
       li {
         width: 20%;
+        &:nth-child(-n+10) {
+          display: block;
+        }
       }
     }
   }
