@@ -4,14 +4,6 @@
     display: none;
   }
   // Top section, i.e. IMAGINE IF EVERYONE GREW UP
-  #about {
-    font-weight: 800;
-    font-size: 1.35em;
-    overflow: hidden;
-    @include fbs;
-    background-image: url(/img/homepage-about-bg.jpg);
-    background-position: center bottom;
-  }
   #imagine {
     @include fbs;
     background-color: white;
@@ -46,6 +38,7 @@
       text-transform: uppercase;
       text-indent: .5ch;
       -webkit-font-smoothing: antialiased;
+      color: $purple;
     }
     li {
       display: none;
@@ -55,6 +48,41 @@
       @include animation(fadeIn .5s);
     }
     .minichimp { margin-left: 0; }
+  }
+  #about {
+    font-weight: 800;
+    font-size: 1.5em;
+    overflow: hidden;
+    @include fbs;
+    background-image: url(/img/homepage-about-bg.jpg);
+    background-position: center bottom;
+  }
+  #partners {
+    text-align: center;
+    h3 {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2rem;
+    }
+    ul {
+      margin: 0 auto;
+      @include clearfix;
+      list-style: none;
+    }
+    li {
+      margin: 0;
+      float: left;
+      width: 25%;
+      box-sizing: border-box;
+      padding: .5em;
+      img {
+        width: 100%;
+        height: 100%;
+        max-width: 6em;
+        max-height: 6em;
+      }
+    }
   }
   #press {
     background-image: url(/img/homepage-press-bg.jpg);
@@ -130,6 +158,13 @@
     background-image: url(/img/imagine-xl.jpg);
     background-position: left top;
     background-size: auto 110%;
+  }
+  .page--index {
+    #partners {
+      li {
+        width: 20%;
+      }
+    }
   }
 }
 @media (min-width: 1300px) {
