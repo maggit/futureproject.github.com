@@ -1,0 +1,41 @@
+.case-studies {
+  list-style: none;
+  margin: 0 auto;
+  @include clearfix;
+  width: calc(100% + 1em);
+  position: relative;
+  left: -1em;
+}
+.case-study {
+  margin: 0 0 0 1em;;
+  width: calc(50% - 1em);
+  float: left;
+  text-align: center;
+  img { margin: 0; }
+}
+.case-study-info {
+  font-size: .75em;
+  background: $base-border-color;
+  padding: 1em;
+  %headings {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  border-bottom-left-radius: $base-border-radius;
+  border-bottom-right-radius: $base-border-radius;
+}
+.case-study-title {
+  margin-bottom: 0;
+}
+@media(min-width: 780px) {
+  .case-study {
+    width: calc(33.3333333% - 1em);
+  }
+}
+@media(min-width: 1280px) {
+  .case-study {
+    width: calc(25% - 1em);
+  }
+}

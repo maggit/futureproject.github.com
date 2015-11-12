@@ -1,6 +1,11 @@
 defaults:
   -
     scope:
+      path: "case-studies"
+      type: "posts"
+    values:
+      layout: "case-study"
+    scope:
       path: ""
       type: "posts"
     values:
