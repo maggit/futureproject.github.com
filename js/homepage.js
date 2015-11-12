@@ -42,7 +42,7 @@ $(function(){
     var timer = window.setInterval(function(){
       var $images = $partnerImages.find('li')
       var $bullet = $images.random(10, $images.length)
-      var $target = $images.random(0, 10)
+      var $target = $images.not(":nth-child(3)").random(0, 9)
       swap($bullet, $target)
     }, 1000)
   }

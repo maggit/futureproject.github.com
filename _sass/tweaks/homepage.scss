@@ -173,6 +173,11 @@
         &:nth-child(-n+10) {
           display: block;
         }
+        &:nth-child(3) {
+          img {
+            @include transform(scale(1.5));
+          }
+        }
       }
     }
   }
