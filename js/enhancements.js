@@ -9,3 +9,4 @@ layout: null
 {% include_relative team_videos.js %}
 {% include_relative research.js %}
 {% include_relative motion.js %}
+{% include_relative stories.js %}

@@ -27,6 +27,14 @@
       {% endfor %}
     </ul>
   </section>
+  <section class="menu-item stories-menu-item">
+    <a class='top-level-link {% if page.url contains 'stories' %}active{% endif %}' href="/stories">Stories</a>
+    <ul class="sub-nav team-menu-item">
+      {% for post in site.categories.stories %}
+        <li class='sub-nav-item'><a href="/stories/#{{ post.title | slugify }}" class="{{ post.title | slugify }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
   <section class="menu-item get-involved-menu-item">
     <a class='top-level-link {% if page.url contains 'involved' %}active{% endif %}' href="#site-footer">Get Involved</a>
     <ul class="sub-nav">
