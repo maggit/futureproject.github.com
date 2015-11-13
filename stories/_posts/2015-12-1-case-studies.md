@@ -1,9 +1,9 @@
 ---
 theme: white
 ---
-<ul class="case-studies">
+<ul class="case-studies-list">
 {% for post in site.data.case-studies %}
-  <li class="case-study">
+  <li class="case-study-list-item">
     <a class="case-study-icon" href="{{post.url}}">
       <img src="/img/case-studies/{{post.icon}}" alt="{{post.title}}" />
     </a>
