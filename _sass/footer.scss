@@ -3,7 +3,7 @@
   @include linear-gradient(#2b2b35, $dark-blue);
   color: white;
   font-size: .8em;
-  padding: 1em;
+  padding: 2em 1em;
   .menu {
     @include clearfix;
     width: 100%;
@@ -43,6 +43,21 @@
     display: none;
     padding: 2em 1em;
     background: transparent;
+  }
+  .social-menu-item {
+    display: block;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,.15);
+    border-bottom: 1px solid rgba(255,255,255,.15);
+    margin-top: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    .sub-nav li {
+      display: inline-block;
+      padding: 0 1em;
+    }
   }
 }
 

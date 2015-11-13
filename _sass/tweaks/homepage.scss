@@ -39,6 +39,8 @@
       text-indent: .5ch;
       -webkit-font-smoothing: antialiased;
       color: $medium-blue;
+      overflow: hidden;
+      text-overflow: ellipsis;
       &.color-1 { color: $purple; }
       &.color-2 { color: $hover-blue; }
     }
@@ -80,7 +82,7 @@
       padding: .5em;
       img {
         width: 100%;
-        height: 100%;
+        height: auto;
         max-width: 6em;
         max-height: 6em;
       }
