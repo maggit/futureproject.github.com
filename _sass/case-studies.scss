@@ -30,12 +30,12 @@
   margin-bottom: 0;
 }
 @media(min-width: 780px) {
-  .case-study {
+  .case-study-list-item {
     width: calc(33.3333333% - 1em);
   }
 }
 @media(min-width: 1280px) {
-  .case-study {
+  .case-study-list-item {
     width: calc(25% - 1em);
   }
 }
