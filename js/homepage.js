@@ -6,16 +6,6 @@ jQuery.fn.random = function(lowerLimit, upperLimit) {
 }
 
 $(function(){
-  //rotate Imagine If... quotes on the homepage
-  $('.page--index #imagine').each(function(){
-    var $list = $(this).find('ul')
-    var dreamTimer = window.setInterval(function(){
-      var $dream = $list.children().first().nextAll().random()
-      colorClass = "color-" + Math.floor(Math.random()*3).toString()
-      $list.prepend($dream.clone().attr('class', colorClass))
-      $dream.remove()
-    }, 2000)
-  })
   //rotate press quotes
   if (window.matchMedia("(min-width: 780px)").matches) {
     $('.page--index #press').each(function(){

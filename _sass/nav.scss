@@ -72,12 +72,6 @@
     margin-bottom: .66667em;
     display: block;
   }
-  .unfinished {
-    border-left: 1px solid red;
-  }
-  .draft {
-    border-left: 1px solid $brand-yellow;
-  }
   .the-method-part-ii { display: none !important; }
 }
 
@@ -93,11 +87,10 @@
     }
     .top-level-link {
       font-size: 15px;
-      line-height: 19px;
       margin-bottom: 0;
       padding: 0 1.5em;
       border-top: 5px solid transparent;
-      line-height: 55px;
+      line-height: 50px;
     }
     .top-level-link.active {
       border-top: 5px solid $text-blue;

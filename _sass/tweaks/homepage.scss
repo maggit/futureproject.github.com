@@ -3,55 +3,57 @@
   #the-container .primary-nav .minichimp {
     display: none;
   }
-  // Top section, i.e. IMAGINE IF EVERYONE GREW UP
+  // Top section, i.e. imagine IF EVERYONE GREW UP
   #imagine {
     @include fbs;
-    background-color: white;
-    background-image: url(/img/imagine-background.jpg);
+    background-color: rgb(246,246,246);
+    background-image: url(/img/homepage-student-3.jpg);
     background-position: center top;
     background-size: 100% auto;
-    @include background-image(linear-gradient(rgba(255,255,255,0) 30%, rgba(255,255,255,1) 50%),url(/img/imagine-background.jpg));
-    padding-top: 16em;
-    input.email {
-      background-color: $base-border-color;
+    padding-top: 67%;
+    box-sizing: border-box;
+    text-align: center;
+    button:not(:hover) {
+      background-color: #24598e;
     }
-    h1, h2, h3, h4 {
+    %headings {
       margin: 0;
     }
     .post-content {
-      max-width: 320px;
+      position: relative;
+      z-index: 2;
+      max-width: 360px;
     }
-    ul {
-      list-style: none;
-      margin: -1em auto 2em;
-      border-bottom: .25rem solid $base-font-color;
+    h2 {
+      font-weight: 300;
     }
-    li {
-      list-style: none;
-      font-size: 4em;
-      white-space: nowrap;
-      font-family: 'have_heart';
-      font-style: italic;
-      font-weight: bold;
-      line-height: 1;
-      margin: 0;
-      text-transform: uppercase;
-      text-indent: .5ch;
-      -webkit-font-smoothing: antialiased;
-      color: $medium-blue;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      &.color-1 { color: $purple; }
-      &.color-2 { color: $hover-blue; }
-    }
-    li {
-      display: none;
-    }
-    li:first-child {
+    em {
+      font-weight: 800;
+      font-size: 2em;
+      margin-bottom: .2rem;
       display: block;
-      @include animation(fadeIn .5s);
+      color: $text-blue;
+      font-style: normal;
     }
-    .minichimp { margin-left: 0; }
+    p {
+      color: rgba(0,0,0,.6);
+      background: rgba(246,246,246,.75);
+      outline: 5px solid rgba(246,246,246,.75);
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      left: 0;
+      top: 0;
+      height: 0;
+      margin-top: 40%;
+      padding-bottom: 65%;
+      width: 100%;
+      z-index: 1;
+      pointer-events: none;
+      @include linear-gradient(rgba(246,246,246,0), rgba(246,246,246,1) 90%);
+    }
   }
   #about {
     font-weight: 800;
@@ -132,29 +134,30 @@
 @media (min-width: 480px) {
   .page--index {
     #imagine {
+      font-size: .75em;
+      background-position: calc(50% - 180px) bottom;
+      padding-top: 2rem;
+      padding-left: 40%;
+      text-align: left;
+      background-size: auto 100%;
       .post-content {
-        max-width: 480px;
+        margin-left: 0;
       }
-      li { font-size: 5em; }
+      .minichimp {
+        margin-left: 0;
+      }
+      &:after {
+        display: none;
+      }
     }
   }
 }
 @media (min-width: 640px) {
   .page--index {
     #imagine {
-      padding-left: 30%;
-      padding-top: 6em;
-      background-image: url(/img/imagine-lg.jpg);
-      background-size: auto 100%;
-      background-position: left top;
-      .post-content {
-        margin: 0;
-      }
-    }
-    #about {
-      p {
-        font-size: 1.5em;
-      }
+      padding-top: 4rem;
+      padding-left: 50%;
+      background-image: url(/img/homepage-student-3-lg.jpg);
     }
     #press {
       background-image: url(/img/homepage-press-bg-xl.jpg);
@@ -162,13 +165,32 @@
   }
 }
 @media (min-width: 1024px) {
-  .page--index #imagine {
-    padding-left: 50%;
-    background-image: url(/img/imagine-xl.jpg);
-    background-position: left top;
-    background-size: auto 110%;
-  }
   .page--index {
+    #imagine {
+      font-size: 1em;
+      min-height: calc(100vh - 60px);
+      background-position: calc(50% - 240px) bottom;
+      display: table;
+      width: 100%;
+      p {
+        font-weight: 300;
+      }
+      h2 {
+        font-size: 3em;
+        em { text-align: center; }
+      }
+      .post-content {
+        display: table-cell;
+        height: 100%;
+        vertical-align: middle;
+        * { max-width: 480px; }
+      }
+    }
+    #about {
+      p {
+        font-size: 1.5em;
+      }
+    }
     #partners {
       li {
         width: 20%;
@@ -187,13 +209,19 @@
 @media (min-width: 1300px) {
   .page--index {
     #imagine {
-      background-image: url(/img/homepage-header-xl.jpg);
-      background-position: calc(50% - 220px) top;
+      background-position: calc(50% - 360px) bottom;
     }
     #press {
       padding-top: 800px;
       @include background-image(linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 80%, rgba(255,255,255,1) 100%), url(/img/homepage-press-bg-xl.jpg));
       background-size: 1280px auto;
+    }
+  }
+}
+@media (min-height: 1024px) {
+  .page--index {
+    #imagine {
+      min-height: 40vw;
     }
   }
 }
