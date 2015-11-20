@@ -12,6 +12,9 @@
   }
   .menu {
     display: none;
+    .get-involved-menu-item, .social-menu-item {
+      display: none;
+    }
   }
   .menu-trigger, .donate-trigger {
     position: absolute;
@@ -25,6 +28,26 @@
   }
   .menu-trigger {
     left: 0;
+    span {
+      display: inline-block;
+      height: .5em;
+      width: 1em;
+      border-top: 2px solid;
+      border-bottom: 2px solid;
+      @include transform(translateY(0.5px));
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -1px;
+        border-top: 2px solid;
+      }
+    }
   }
   .donate-trigger{
     right: 0;
@@ -35,6 +58,28 @@
   .top-level-link {
     font-weight: bold;
     color: $base-bold-color;
+  }
+  &.expanded {
+    .menu {
+      display: block;
+      background: white;
+      position: fixed;
+      z-index: 10;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      @include animation(expand .3s);
+      @include transform-origin(center top);
+      a {
+        line-height: 3;
+        border-top: 1px solid $base-border-color;
+        margin: 0;
+        padding: 0;
+        &:hover {
+          color: $text-blue;
+        }
+      }
+    }
   }
 }
 .primary-nav-content {
@@ -64,10 +109,6 @@
 }
 .menu {
   font-weight: bold;
-  section {
-    border-collapse: collapse;
-    display: table-cell;
-  }
   .top-level-link {
     margin-bottom: .66667em;
     display: block;
@@ -84,6 +125,10 @@
       display: table;
       margin-left: 8em;
       table-layout: fixed;
+      section {
+        border-collapse: collapse;
+        display: table-cell;
+      }
     }
     .top-level-link {
       font-size: 15px;
@@ -159,7 +204,7 @@
       position: absolute;
       top: 3px;
       right: 100px;
-      width: 240px;
+      width: 200px;
       font-size: 12px;
       input, .btn {
         padding: .6em;
