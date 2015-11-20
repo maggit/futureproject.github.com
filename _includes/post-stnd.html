@@ -5,4 +5,11 @@
   <section class="post-content">
     {{ post.content }}
   </section>
+  {% if post.images %}
+  <section class="post-images">
+    {% for image in post.images %}
+    <img src="{{ image }}" alt="{{ post.title }}" />
+    {% endfor %}
+  </section>
+  {% endif %}
 </article>

@@ -6,6 +6,15 @@ jQuery.fn.random = function(lowerLimit, upperLimit) {
 }
 
 $(function(){
+  // rotate student photos
+  var $studentPhotos = $('#imagine .post-images')
+  if ($studentPhotos.length > 0) {
+    var timer = window.setInterval(function(){
+      var $student = $studentPhotos.children().random(1)
+      $studentPhotos.prepend($student.clone())
+      $student.remove()
+    }, 4000)
+  }
   //rotate press quotes
   if (window.matchMedia("(min-width: 780px)").matches) {
     $('.page--index #press').each(function(){

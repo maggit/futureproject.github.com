@@ -5,11 +5,7 @@
   }
   // Top section, i.e. imagine IF EVERYONE GREW UP
   #imagine {
-    @include fbs;
-    background-color: rgb(246,246,246);
-    background-image: url(/img/homepage-student-3.jpg);
-    background-position: center top;
-    background-size: 100% auto;
+    background: rgb(246,246,246);
     padding-top: 67%;
     box-sizing: border-box;
     text-align: center;
@@ -40,19 +36,35 @@
       background: rgba(246,246,246,.75);
       outline: 5px solid rgba(246,246,246,.75);
     }
-    &:after {
-      position: absolute;
-      content: '';
+    .post-images {
       display: block;
+      position: absolute;
       left: 0;
       top: 0;
-      height: 0;
-      margin-top: 40%;
-      padding-bottom: 65%;
       width: 100%;
       z-index: 1;
       pointer-events: none;
-      @include linear-gradient(rgba(246,246,246,0), rgba(246,246,246,1) 90%);
+      img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: none;
+        @include animation(fadeIn .3s);
+      }
+      img:first-child {
+        display: block;
+      }
+      &:after {
+        @include linear-gradient(rgba(246,246,246,0) 40%, rgba(246,246,246,1) 90%);
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     }
   }
   #about {
@@ -135,7 +147,6 @@
   .page--index {
     #imagine {
       font-size: .75em;
-      background-position: calc(50% - 180px) bottom;
       padding-top: 2rem;
       padding-left: 40%;
       text-align: left;
@@ -146,8 +157,19 @@
       .minichimp {
         margin-left: 0;
       }
-      &:after {
-        display: none;
+      .post-images {
+        height: 100%;
+        width: auto;
+        left: 50%;
+        margin-left: -380px;
+        img {
+          height: 100%;
+          width: auto;
+          position: absolute;
+        }
+        &:after {
+          display: none;
+        }
       }
     }
   }
@@ -157,7 +179,9 @@
     #imagine {
       padding-top: 4rem;
       padding-left: 50%;
-      background-image: url(/img/homepage-student-3-lg.jpg);
+      .post-images {
+        margin-left: -440px;
+      }
     }
     #press {
       background-image: url(/img/homepage-press-bg-xl.jpg);
@@ -169,7 +193,6 @@
     #imagine {
       font-size: 1em;
       min-height: calc(100vh - 60px);
-      background-position: calc(50% - 240px) bottom;
       display: table;
       width: 100%;
       p {
@@ -184,6 +207,9 @@
         height: 100%;
         vertical-align: middle;
         * { max-width: 480px; }
+      }
+      .post-images {
+        margin-left: -640px;
       }
     }
     #about {
@@ -209,7 +235,6 @@
 @media (min-width: 1300px) {
   .page--index {
     #imagine {
-      background-position: calc(50% - 360px) bottom;
     }
     #press {
       padding-top: 800px;
