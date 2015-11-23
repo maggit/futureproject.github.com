@@ -14,6 +14,7 @@ coverage
 .ruby-version
 .ruby-gemset
 .sass-cache
+.sass-cache/
 tmp/*
 .jekyll-metadata
 /vendor
