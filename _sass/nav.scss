@@ -12,6 +12,7 @@
   }
   .menu {
     display: none;
+    height: 100%;
     .get-involved-menu-item, .social-menu-item {
       display: none;
     }
@@ -109,7 +110,6 @@
 }
 .menu {
   font-weight: bold;
-  height: 100%;
   .top-level-link {
     margin-bottom: .66667em;
     display: block;
