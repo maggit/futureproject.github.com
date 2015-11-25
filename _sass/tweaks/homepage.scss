@@ -9,6 +9,7 @@
     padding-top: 67%;
     box-sizing: border-box;
     text-align: center;
+    overflow: hidden;
     button:not(:hover) {
       background-color: #24598e;
     }
@@ -148,9 +149,8 @@
     #imagine {
       font-size: .75em;
       padding-top: 2rem;
-      padding-left: 44%;
+      padding-left: 30%;
       text-align: left;
-      background-size: auto 100%;
       .post-content {
         margin-left: 0;
       }
@@ -161,7 +161,7 @@
         height: 100%;
         width: auto;
         left: 50%;
-        margin-left: -380px;
+        margin-left: -500px;
         img {
           height: 130%;
           width: auto;
@@ -244,7 +244,16 @@
     }
   }
 }
-@media (min-height: 960px) {
+@media (min-height: 801px) and (max-height: 900px) and (min-width: 1024px) {
+  .page--index {
+    #imagine {
+      .post-images {
+        margin-left: -800px;
+      }
+    }
+  }
+}
+@media (min-height: 900px) {
   .page--index {
     #imagine {
       min-height: 35vw;
