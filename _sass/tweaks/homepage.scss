@@ -10,6 +10,7 @@
     box-sizing: border-box;
     text-align: center;
     overflow: hidden;
+    -webkit-font-smoothing: antialiased;
     button:not(:hover) {
       background-color: #24598e;
     }
