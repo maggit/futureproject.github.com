@@ -37,8 +37,8 @@
     thead th {
       img {
         width: 100%;
-        margin-top: -10.5em;
-        max-width: 24em;
+        max-width: 16em;
+        margin-top: -5em;
       }
       &:nth-child(odd) {
         background: darken($base-border-color, 3%);
@@ -113,6 +113,15 @@
     }
   }
 }
+@media (min-width: 640px) {
+  .page--program-index {
+    .post#the-method-part-ii {
+      thead th img {
+        margin-top: -8em;
+      }
+    }
+  }
+}
 
 @media (min-width: 780px) {
   .page--program-index {
@@ -134,7 +143,7 @@
       thead th {
         img {
           width: 100%;
-          margin-top: -11em;
+          /*margin-top: -11em;*/
         }
       }
     }
@@ -179,6 +188,12 @@
     .post#the-method {
       padding-top: 10em;
       background-size: auto 90%;
+    }
+    .post#the-method-part-ii {
+      thead th img {
+        max-width: 24em;
+        margin-top: -11em;
+      }
     }
     .post#results {
       li {
