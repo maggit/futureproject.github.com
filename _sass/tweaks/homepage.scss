@@ -148,7 +148,7 @@
     #imagine {
       font-size: .75em;
       padding-top: 2rem;
-      padding-left: 40%;
+      padding-left: 44%;
       text-align: left;
       background-size: auto 100%;
       .post-content {
@@ -163,9 +163,10 @@
         left: 50%;
         margin-left: -380px;
         img {
-          height: 100%;
+          height: 130%;
           width: auto;
           position: absolute;
+          margin-top:-60px;
         }
         &:after {
           display: none;
@@ -178,7 +179,7 @@
   .page--index {
     #imagine {
       padding-top: 4rem;
-      padding-left: 50%;
+      padding-left: 53%;
       .post-images {
         margin-left: -440px;
       }
@@ -209,7 +210,7 @@
         * { max-width: 480px; }
       }
       .post-images {
-        margin-left: -640px;
+        margin-left: -700px;
       }
     }
     #about {
