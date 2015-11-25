@@ -1,12 +1,10 @@
 .page--about-index {
   #about {
     @include fbs;
-    background-image: url(/img/about-header.jpg);
-    background-size: contain;
-    background-position: left bottom;
-    .post-content {
-      > * { padding-left: 20%; }
-    }
+    background-image: url(/img/about-header-xl.jpg);
+    background-size: 100% auto;
+    background-position: center top;
+    padding-top: 50%;
     .post-header {
       display: none;
     }
@@ -48,9 +46,10 @@
 @media (min-width: 780px) {
   .page--about-index {
     #about {
+      background-size: contain;
+      padding-top: 8em;
       .post-content > * { padding-left: 30%; }
-      background-image: url(/img/about-header-xl.jpg);
-      background-position: -300px bottom;
+      background-position: -260px bottom;
     }
     #the-problem {
       ol { height: 23rem; padding-left:2.75rem}
