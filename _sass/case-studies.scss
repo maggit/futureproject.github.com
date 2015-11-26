@@ -40,7 +40,7 @@
     width: calc(25% - 1em);
   }
 }
-// CASE STUDIES PERMALINKS
+// CASE STUDY PERMALINKS
 .case-study {
   background: white;
   article {
@@ -115,6 +115,23 @@
     }
     blockquote:after {
       content: "”";
+    }
+  }
+  .case-study-stat {
+    display: table;
+    width: 100%;
+    padding-bottom: 1em;
+    * {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    h6 {
+      font-size: 3em;
+      padding-right: 1rem;
+      color: $purple;
+    }
+    p {
+      width: 100%;
     }
   }
 }

@@ -7,12 +7,17 @@
     </header>
     <section>
       {{ page.content | markdownify }}
-      {% if page.media && page.media.type.contains 'video' %}
-      <div class="video">
-        <div class="video-player">
-          <iframe src="{{ page.media.link }}" seamless/></iframe>
-        </div>
-      </div>
+      {% if page.media %}
+        {% if page.media.type == 'video' %}
+          <div class="video">
+            <div class="video-player">
+              <iframe src="{{ page.media.link }}" seamless/></iframe>
+            </div>
+          </div>
+        {% elsif page.media.type == 'link' %}
+          <h3>Project Link:</h3>
+          <p><a href="{{ page.media.link }}">{{ page.media.link }}</a></p>
+        {% endif %}
       {% endif %}
     </section>
     <aside>
@@ -43,6 +48,17 @@
           {% for skill in page.skills %}
             <h6>{{ skill.name }}</h6>
             <p>{{ skill.description }}</p>
+          {% endfor %}
+        </li>
+        {% endif %}
+        {% if page.stats %}
+        <li class="case-study-stats">
+          <label>stats</label>
+          {% for stat in page.stats %}
+            <div class="case-study-stat">
+              <h6>{{ stat.number }}</h6>
+              <p>{{ stat.description }}</p>
+            </div>
           {% endfor %}
         </li>
         {% endif %}
