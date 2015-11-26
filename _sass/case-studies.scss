@@ -1,3 +1,4 @@
+// CASE STUDIES INDEX
 .case-studies-list {
   list-style: none;
   margin: 0 auto;
@@ -37,5 +38,103 @@
 @media(min-width: 1280px) {
   .case-study-list-item {
     width: calc(25% - 1em);
+  }
+}
+// CASE STUDIES PERMALINKS
+.case-study {
+  background: white;
+  article {
+    max-width: 1280px;
+    margin: 0 auto;
+    @include clearfix;
+  }
+  header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2em;
+    h1 { display: none; }
+    img {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  section {
+    max-width: 70ch;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 1em;
+    p {
+      line-height: 1.5;
+    }
+    p:first-child::first-letter {
+      font-size: 4em;
+      font-weight: 800;
+      float: left;
+      margin-right: .5rem;
+      line-height: 1;
+      margin-top: -.25rem;
+    }
+    p {
+      margin-bottom: 2em;
+    }
+  }
+  aside {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+    li {
+      border-left: 5px solid $purple;
+      padding: 1em;
+      background: $base-border-color;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+      %headings {
+        margin-bottom: 0;
+        text-transform: capitalize;
+        line-height: 1.4;
+      }
+      label {
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: .5em;
+        display: block;
+        &:after {
+          content: ':';
+        }
+      }
+      blockquote {
+        margin-bottom: 1em;
+      }
+    }
+  }
+  .case-study-quotes {
+    blockquote:before {
+      content: "“";
+    }
+    blockquote:after {
+      content: "”";
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .case-study {
+    section {
+      float: left;
+      width: 66%;
+      margin: 0;
+      max-width: 66%;
+    }
+    aside {
+      font-size: .75em;
+      float: right;
+      width: 33%;
+      margin: 0;
+      li {
+        margin-bottom: 2em;
+      }
+    }
   }
 }

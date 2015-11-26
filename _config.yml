@@ -1,11 +1,6 @@
 defaults:
   -
     scope:
-      path: "case-studies"
-      type: "posts"
-    values:
-      layout: "case-study"
-    scope:
       path: ""
       type: "posts"
     values:
@@ -16,6 +11,12 @@ defaults:
       type: "pages"
     values:
       layout: "v1"
+  -
+    scope:
+      path: "case-studies"
+      type: "posts"
+    values:
+      layout: "case-study"
 permalink: none
 teams:
   leadership:

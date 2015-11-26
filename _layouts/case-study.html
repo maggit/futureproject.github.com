@@ -1,4 +1,54 @@
 {% include site-header.html %}
-  {{ content }}
+  <div class="case-study">
+    <article>
+    <header>
+      <h1>{{ page.title }}</h1>
+      <img src="{{ page.banner }}" alt="{{ page.title }}" />
+    </header>
+    <section>
+      {{ page.content | markdownify }}
+      {% if page.media && page.media.type.contains 'video' %}
+      <div class="video">
+        <div class="video-player">
+          <iframe src="{{ page.media.link }}" seamless/></iframe>
+        </div>
+      </div>
+      {% endif %}
+    </section>
+    <aside>
+      <ul>
+        <li class="case-study-person-info">
+          <h3>{{ page.title }}</h3>
+          <p>{{ page.person_role }}</p>
+        </li>
+        {% if page.project_name %}
+        <li class="case-study-project-info">
+          <label>Project</label>
+          <h3>{{ page.project_name }}</h3>
+          <p>{{ page.project_description }}</p>
+        </li>
+        {% endif %}
+        {% if page.quotes %}
+        <li class="case-study-quotes">
+          <label>Quotes</label>
+          {% for quote in page.quotes %}
+            <h6>{{ quote.label }}:</h6>
+            <blockquote>{{ quote.quote }}</blockquote>
+          {% endfor %}
+        </li>
+        {% endif %}
+        {% if page.skills %}
+        <li class="case-study-skills">
+          <label>Skills</label>
+          {% for skill in page.skills %}
+            <h6>{{ skill.name }}</h6>
+            <p>{{ skill.description }}</p>
+          {% endfor %}
+        </li>
+        {% endif %}
+      </ul>
+    </aside>
+    </article>
+  </div>
 {% include site-footer.html %}
 
