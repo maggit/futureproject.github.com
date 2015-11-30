@@ -2,7 +2,7 @@
 theme: white
 ---
 <ul class="case-studies-list">
-{% for post in site.categories.case-studies %}
+{% for post in site.categories.case-studies reversed %}
   <li class="case-study-list-item">
     <a class="case-study-icon" href="{{post.url}}">
       <img src="{{post.icon}}" alt="{{post.title}}" />

@@ -26,6 +26,11 @@
   }
   border-bottom-left-radius: $base-border-radius;
   border-bottom-right-radius: $base-border-radius;
+  * {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 .case-study-title {
   margin-bottom: 0;
