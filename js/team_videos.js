@@ -1,4 +1,6 @@
 // show videos instead of bios where applicable
 $(function(){
-  $('a.person-photos').futurebox()
+  $(document).futurebox({
+    selector: 'a.person-photos'
+  })
 })
