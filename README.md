@@ -8,6 +8,7 @@ To push changes, you must be a member of the [futureproject](http://github.com/f
 ## Getting set up for development
 
 1. Clone the repository.
+
       git clone https://github.com/futureproject/futureproject.github.com.git
 
 2. Install some ruby gems you’ll need for development.
