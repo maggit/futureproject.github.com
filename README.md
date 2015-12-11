@@ -11,6 +11,7 @@ To push changes, you must be a member of the [futureproject](http://github.com/f
   ```
   git clone https://github.com/futureproject/futureproject.github.com.git
   ```
+
 2. Install some ruby gems you’ll need for development.
   ```
   bundle install
@@ -36,15 +37,21 @@ To push changes, you must be a member of the [futureproject](http://github.com/f
   ```
 
 7. Sync other people’s changes to the master branch (if any) into yours.
-    git pull origin master
-    git rebase master
+  ```
+  git pull origin master
+  git rebase master
+  ```
 
 8. Merge your changes into the master branch.
-    git checkout master
-    git merge my_branch master
+  ```
+  git checkout master
+  git merge my_branch master
+  ```
 
 9. Push to production.
-    git push origin master
+  ```
+  git push origin master
+  ```
 
 
 ## Site Structure
