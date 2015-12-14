@@ -62,3 +62,8 @@ The [Method](http://www.thefutureproject.org/program/#the-method) post on the [P
 
 The [Research](http://www.thefutureproject.org/program/#research) post on the [Program](http://www.thefutureproject.org/program/) page is a good example of a liquid template that loops over data from the [Research](https://github.com/futureproject/futureproject.github.com/tree/master/research/_posts) directory.
 
+The [Team](http://www.thefutureproject.org/team) page is the most strangely structured on the site, because its data lives in two places:
+
+1. The spreadsheet at "_data/team.csv" controls which people appear on the page and in what order.
+2. The posts in "team/_posts" store the bio and/or video for each team member, which site visitors see when they click an employee portrait.
+
