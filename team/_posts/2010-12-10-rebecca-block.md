@@ -1,7 +1,7 @@
 ---
 name: Rebecca Block
-role: VP Research and Evaluation, Florida 
-portait: none
+role: VP Research and Evaluation
+portait: becca
 layout: plain
 ---
 
