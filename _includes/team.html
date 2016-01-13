@@ -7,7 +7,7 @@
       <img src="/img/team/team_{{ person.portrait }}_1.jpg" alt="{{ person.name }}" />
       <img src="/img/team/team_{{ person.portrait }}_2.jpg" alt="{{ person.name }}" />
     </a>
-    {% else if person.team.contains 'payroll' %}
+    {% elsif person.team.contains 'payroll' %}
     <a href="/team/{{ person.name | slugify }}.html" class='person-photos img-flip'>
       <img src="/img/team/team_{{ person.portrait }}_1.jpg" alt="{{ person.name }}" />
       <img src="/img/team/team_{{ person.portrait }}_2.jpg" alt="{{ person.name }}" />
