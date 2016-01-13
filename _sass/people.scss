@@ -3,6 +3,7 @@
   max-width: 1280px;
   margin: 0 auto;
 }
+
 .person {
   float: left;
   width: 50%;
@@ -34,9 +35,19 @@
       z-index: 100;
     }
   }
-  .img-flip {
+  .person-photos {
     height: 0;
     padding-bottom: 72%;
+    position: relative;
+    img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      height: auto;
+    }
   }
   .person-name {
     font-weight: 700;
