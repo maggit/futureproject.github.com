@@ -3,8 +3,6 @@ www.thefutureproject.org
 
 This site is built with [Jekyll](http://jekyllrb.com/), and hosted on [GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages/).
 
-To push changes, you must be a member of the [futureproject](http://github.com/futureproject) organization.
-
 ## Getting set up for development
 
 1. Clone the repository.
