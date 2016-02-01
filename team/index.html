@@ -7,7 +7,7 @@ title: Team
 
 {% for team in site.teams %}
 <div class="post theme--white">
-  <div class="team people" id="{{team[1].id}}">
+  <div id="{{team[1].id}}">
     <div class='post-header'><h3>{{ team[1].label }}</h3></div>
     {% assign team_name = team[1].id %}{% include team.html %}
   </div>
