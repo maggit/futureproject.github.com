@@ -1,0 +1,30 @@
+<div class='team-list'>
+{% for person in site.data.team %}
+  {% if person.team contains team_name %}
+  <div class="person {{ person.team }}">
+    {% if person.vimeo_id %}
+    <a href="//player.vimeo.com/video/{{ person.vimeo_id }}?autoplay=1" class='person-photos img-flip'>
+      <img src="/img/team/team_{{ person.portrait }}_1.jpg" alt="{{ person.name }}" />
+      <img src="/img/team/team_{{ person.portrait }}_2.jpg" alt="{{ person.name }}" />
+    </a>
+    {% elsif person.team.contains 'payroll' %}
+    <a href="/team/{{ person.name | slugify }}.html" class='person-photos img-flip'>
+      <img src="/img/team/team_{{ person.portrait }}_1.jpg" alt="{{ person.name }}" />
+      <img src="/img/team/team_{{ person.portrait }}_2.jpg" alt="{{ person.name }}" />
+    </a>
+    {% else %}
+      <div class='person-photos'>
+        <img src="/img/team/team_{{ person.portrait }}_1.jpg" alt="{{ person.name }}" />
+      </div>
+    {% endif %}
+    <div class='person-name'>{{ person.name }}</div>
+    {% if person.team contains "payroll" %}
+    <div class='person-role'>{{ person.role | replace:",","<br>" }}</div>
+    {% else %}
+    <div class='person-role'>{{ person.role }}</div>
+    {% endif %}
+  </div>
+  {% endif %}
+{% endfor %}
+{% assign team = nil %}
+</div>

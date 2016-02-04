@@ -1,0 +1,8 @@
+{% for team in site.teams %}
+<div class="post theme--white post-team {% if team_name != team[1].id %}hide-team {% endif %}{{team[1].id}}">
+  <div id="{{team[1].id}}">
+<!--    <div class='post-header'><h3>{{ team[1].label }}</h3></div> -->
+    {% assign team_name = team[1].id %}{% include team-list.html %}
+  </div>
+</div>
+{% endfor %}
