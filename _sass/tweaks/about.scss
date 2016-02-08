@@ -1,4 +1,4 @@
-.page--about-index {
+.page--about {
   #about {
     @include fbs;
     background-image: url(/img/about-header-xl.jpg);
@@ -44,7 +44,7 @@
   }
 }
 @media (min-width: 780px) {
-  .page--about-index {
+  .page--about {
     #about {
       background-size: contain;
       padding-top: 8em;
@@ -57,7 +57,7 @@
   }
 }
 @media (min-width: 1024px) {
-  .page--about-index {
+  .page--about {
     #about {
       background-image: url(/img/about-header-xl.jpg);
       background-position: calc(50% - 180px) bottom;
@@ -71,7 +71,7 @@
   }
 }
 @media (min-width: 1280px) {
-  .page--about-index {
+  .page--about {
     #our-mission {
       img {
         left: 50%;

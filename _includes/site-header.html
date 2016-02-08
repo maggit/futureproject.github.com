@@ -11,5 +11,5 @@
     <link rel="shortcut icon" href="/img/favicon.png" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="/css/screen.css?v{{ site.time | date: '%m%d%y%H%M%S' }}" />
   </head>
-  <body class="page--{{ page.url | remove:'html' | slugify }}">
+  <body class="page--{{ page.title | slugify}}">
     <div id="the-container">

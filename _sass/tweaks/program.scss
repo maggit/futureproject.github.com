@@ -1,4 +1,4 @@
-.page--program-index {
+.page--program {
   .post-nav-item--the-method-part-ii {
     display: none;
   }
@@ -114,7 +114,7 @@
   }
 }
 @media (min-width: 640px) {
-  .page--program-index {
+  .page--program {
     .post#the-method-part-ii {
       thead th img {
         margin-top: -8em;
@@ -124,7 +124,7 @@
 }
 
 @media (min-width: 780px) {
-  .page--program-index {
+  .page--program {
     .post--lede {
       background-image: url(/img/program-header.jpg);
     }
@@ -162,7 +162,7 @@
   }
 }
 @media (min-width: 1024px) {
-  .page--program-index {
+  .page--program {
     .post--lede {
       padding-top: 8em;
       background-size: auto 100%;
