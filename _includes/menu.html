@@ -19,14 +19,6 @@
       {% endfor %}
     </ul>
   </section>
-  <section class="menu-item team-menu-item">
-    <a class='top-level-link {% if page.url contains 'team' %}active{% endif %}' href="/team">Team</a>
-    <ul class="sub-nav team-menu-item">
-      {% for team in site.teams %}
-      <li class='sub-nav-item {{ team[1].id | slugify }}'><a href="/team/#{{ team[1].id | slugify }}">{{ team[1].label }}</a></li>
-      {% endfor %}
-    </ul>
-  </section>
   <section class="menu-item stories-menu-item">
     <a class='top-level-link {% if page.url contains 'stories' %}active{% endif %}' href="/stories">Stories</a>
     <ul class="sub-nav">
