@@ -1,4 +1,4 @@
-.people {
+.team-list {
   @include clearfix;
   max-width: 1280px;
   margin: 0 auto;
@@ -50,9 +50,9 @@
     }
   }
   .person-name {
-    font-weight: 700;
+    font-weight: 800;
     height: 1.2em;
-    white-space: nowrap;
+    letter-spacing: 0px
   }
   .person-role {
     @extend .caps;

@@ -3,8 +3,6 @@ www.thefutureproject.org
 
 This site is built with [Jekyll](http://jekyllrb.com/), and hosted on [GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages/).
 
-To push changes, you must be a member of the [futureproject](http://github.com/futureproject) organization.
-
 ## Getting set up for development
 
 1. Clone the repository.
@@ -29,28 +27,22 @@ To push changes, you must be a member of the [futureproject](http://github.com/f
   git checkout -b my_branch
   ```
 
-5. Code.
+5. Build a feature.
 
 6. Commit your changes to your branch.
   ```
   git add . && git commit -m “very important changes”
   ```
 
-7. Sync other people’s changes to the master branch (if any) into yours.
+8. Sync other people’s changes (if any) into your branch.
   ```
   git pull origin master
   git rebase master
   ```
 
-8. Merge your changes into the master branch.
+9. If that rebase didn't break everything, push your branch to Github for review.
   ```
-  git checkout master
-  git merge my_branch master
-  ```
-
-9. Push to production.
-  ```
-  git push origin master
+  git push origin my_branch
   ```
 
 

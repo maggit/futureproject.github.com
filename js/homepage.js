@@ -17,7 +17,7 @@ $(function(){
   }
   //rotate press quotes
   if (window.matchMedia("(min-width: 780px)").matches) {
-    $('.page--index #press').each(function(){
+    $('.page--home #press').each(function(){
       var $t = $(this)
       $t.addClass('rotating')
       var $quotes = $t.find('ul')
