@@ -69,6 +69,7 @@
       top: 60px;
       left: 0;
       width: 100%;
+      height: auto;
       @include animation(expand .3s);
       @include transform-origin(center top);
       a {
