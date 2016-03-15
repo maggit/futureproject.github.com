@@ -160,7 +160,7 @@
       }
       .post-images {
         height: 100%;
-        width: auto;
+        overflow: hidden;
         left: 50%;
         margin-left: -500px;
         img {
