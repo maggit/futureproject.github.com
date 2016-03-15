@@ -36,7 +36,7 @@
     p {
       color: rgba(0,0,0,.6);
       background: rgba(246,246,246,.75);
-      outline: 5px solid rgba(246,246,246,.75);
+      box-shadow: 0 0 0 5px rgba(246,246,246,.75);
     }
     .post-images {
       display: block;
