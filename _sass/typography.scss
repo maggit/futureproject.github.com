@@ -55,10 +55,19 @@ h3 { font-size: 1.66667em; }
 h4 { font-size: 1.5em; }
 h5 { font-size: 1.25em; }
 
-
-@media(min-width: 780px) {
+@media (max-width: 799px) {
+  h1 { font-size: 34px; }
+  p { font-size: 16px; }
+}
+@media(min-width: 800px) {
   *:target {
     padding-top: 6em;
   }
+  h1 { font-size: 60px; }
+  p { font-size: 18px; }
 }
 
+@media (min-width: 2000px) {
+  h1 { font-size: 60px; }
+  p { font-size: 20px; }
+}
