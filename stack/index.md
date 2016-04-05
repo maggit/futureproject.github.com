@@ -6,17 +6,17 @@ layout: type
 This document describes the necessary parts of our IT system, how they should fit together, and the plan for making it happen.
 
 <figure>
-  <img src="/images/map-no-plumbing.jpg" alt="The Stack">
-  <figcaption>The Stack</figcaption>
+  <img src="map-no-plumbing.png" alt="The Stack">
+  <figcaption>Components</figcaption>
 </figure>
 
 <figure>
-  <img src="/images/map-w-plumbing.jpg" alt="The Stack">
-  <figcaption>The Stack, with Plumbing</figcaption>
+  <img src="map-w-plumbing.png" alt="The Stack">
+  <figcaption>Information Flow</figcaption>
 </figure>
 
 <figure>
-  <img src="/images/map-no-plumbing.jpg" alt="The Stack">
+  <img src="timeline.png" alt="The Stack">
   <figcaption>Timeline & Budget</figcaption>
 </figure>
 
@@ -35,13 +35,13 @@ Providing fast, networked hardware to the entire staff is what makes the rest of
 - Fixing a bug for one person's device will fix it for everyone.
 
 ### Costs
-- Leasing: $40k/yr
+- Device Leasing: $40k/yr
 - IT Support: $60k/yr
-- LTE Data: $60k/yr
-- Total: $160,000 annual
+- LTE Data: $40k/yr
+- Total: $140,000 annual
 
 ### Setup Time
-- 1 month
+- 2 months
 
 Internal Comms
 --------------
@@ -103,7 +103,7 @@ We need to organize people into projects and teams, assign work, and track progr
 - For any strategic goals we set, we'll actually know how we're doing
 
 ### Costs
-- $12k/yr
+- Asana: $15k/yr
 
 ### Time
 - 1 month
@@ -162,7 +162,7 @@ We need to track our work with students, and use the data to make our work bette
 - Prompt qualitative and quantitative reflection on the work
 
 ### Costs
-$600/yr
+- Server: $1k/yr
 
 ### Time
 - 2 months
@@ -180,7 +180,7 @@ Sometimes, you just need to put some files in folders. This is Google Suite (Dri
 - Google Apps, pretty much
 
 ### Costs
-Google Apps: Free!
+- Google Apps: Free!
 
 ### Time
 - 2 weeks (cleanup and organize what's already there)
@@ -200,10 +200,11 @@ Gotta keep in touch with at least a few people who don't work at The Future Proj
 - Interacting with outside humans
 
 ### Costs
-Mailchimp: $2k/yr
-Phone/FIOS: $1k/yr
-Gmail: Free
-Total: $3k/yr
+- Mailchimp: $2k/yr
+- Phone/FIOS: $1k/yr
+- Misc: $2k/yr
+- Gmail: Free
+- Total: $5k/yr
 
 ### Time
 - 2 weeks
@@ -224,7 +225,7 @@ We need one place to track donors, volunteers, potential hires, and other people
 - We'll be able to convert volunteers into employees or donors.
 
 ### Costs
-Airtable: $5k/yr
+Airtable: $10k/yr
 
 ### Setup Time
 - 3 months
@@ -243,7 +244,7 @@ Every part of the IT system will send data to the Status Board, which will confi
 - Single place to find other parts of the system
 
 ### Costs
-- Data Server: $120/year
+- Server: $1k/year
 
 ### Time
 - 2 months
