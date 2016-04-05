@@ -6,17 +6,17 @@ layout: type
 This document describes the necessary parts of our IT system, how they should fit together, and the plan for making it happen.
 
 <figure>
-  <img src="map-no-plumbing.png" alt="The Stack">
+  <img src="TFPIT-1.png" alt="IT Components">
   <figcaption>Components</figcaption>
 </figure>
 
 <figure>
-  <img src="map-w-plumbing.png" alt="The Stack">
+  <img src="TFPIT-2.png" alt="Information Flow">
   <figcaption>Information Flow</figcaption>
 </figure>
 
 <figure>
-  <img src="timeline.png" alt="The Stack">
+  <img src="TFPIT-3.png" alt="IT Timeline and Budget">
   <figcaption>Timeline & Budget</figcaption>
 </figure>
 
