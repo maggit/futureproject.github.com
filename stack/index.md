@@ -3,21 +3,26 @@ title: The IT Stack
 layout: type
 ---
 
-This document describes the necessary parts of our IT system, how they should fit together, and the plan for making it happen.
+This document describes the parts of our IT system, how they should fit together, and the plan for making it happen.
+
+Note that the components described below are functional ideas, not specific pieces of
+software. Theoretically, we could find one app to do all these things. In real
+life, no--but as we investigate what's on the market, we won't needlessly multiply
+entities.
 
 <figure>
-  <img src="TFPIT-1.png" alt="IT Components">
   <figcaption>Components</figcaption>
+  <img src="TFPIT-1.png" alt="IT Components">
 </figure>
 
 <figure>
-  <img src="TFPIT-2.png" alt="Information Flow">
   <figcaption>Information Flow</figcaption>
+  <img src="TFPIT-2.png" alt="Information Flow">
 </figure>
 
 <figure>
-  <img src="TFPIT-3.png" alt="IT Timeline and Budget">
   <figcaption>Timeline & Budget</figcaption>
+  <img src="TFPIT-3.png" alt="IT Timeline and Budget">
 </figure>
 
 Hardware
@@ -30,15 +35,15 @@ Providing fast, networked hardware to the entire staff is what makes the rest of
 ### Benefits
 - We can run software, which it turns out is impossible without computers.
 - We can run *powerful* software, which is impossible without powerful computers.
-- We can hire people who aren't wealthy enough to buy their own computers.
 - We can give our work and home lives separate contexts.
+- We can hire people who aren't wealthy enough to buy their own computers.
 - Fixing a bug for one person's device will fix it for everyone.
 
 ### Costs
 - Device Leasing: $40k/yr
 - IT Support: $60k/yr
 - LTE Data: $40k/yr
-- Total: $140,000 annual
+- Total: $140k/yr
 
 ### Setup Time
 - 2 months
@@ -82,7 +87,7 @@ We need a canonical list of who works for TFP, what they're like, and what (at a
 - We only need to keep *one* list of employees, not a dozen.
 
 ### Costs
-- $12k/yr
+- $15k/yr
 
 ### Time
 - 3 weeks
