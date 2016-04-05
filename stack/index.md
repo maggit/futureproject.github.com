@@ -7,8 +7,7 @@ This document describes the parts of our IT system, how they should fit together
 
 Note that the components described below are functional ideas, not specific pieces of
 software. Theoretically, we could find one app to do all these things. In real
-life, no--but as we investigate what's on the market, we won't needlessly multiply
-entities.
+life, no--but as we investigate what's on the market, we'll make minimalism a priority.
 
 <figure>
   <figcaption>Components</figcaption>
