@@ -10,18 +10,36 @@ software. Theoretically, we could find one app to do all these things. In real
 life, no--but as we investigate what's on the market, we'll make minimalism a priority.
 
 <figure>
-  <figcaption>Components</figcaption>
+<figcaption>Components, Costs, and Personnel</figcaption>
+</figure>
+
+|Component              |Annual Cost      |Setup Time   |Ideal Team
+|-----------------------|-----------------|-------------|----------
+|Hardware               | $100,000        |2 months     |Chris, New Hire
+|Int. Comms             | $15,000         |3 months     |Chris, Sarah Z
+|CRM                    | $10,000         |3 months     |Jill, Jeff, Chris
+|Proj. Mgmt             | $15,000         |1 month      |Kanya, Chris, Sophia
+|Staff Directory        | $15,000         |1 month      |Hayley, Sophia, Chris
+|Knowledge Base         | $5,000          |2 months     |Sarah Z, Mica, Troy, Joseph, Chris
+|Finance/Payroll        | $50,000         |3 months     |CFO, Sophia, Chris, Hayley
+|Ext. Comms             | $65,000         |1 month      |Andrew, Sophia, Chris
+|Status Board           | $1,000          |1 month      |Chris, Andrew, Kanya
+|Logbook                | $1,000          |2 months     |Chris, New Hire, Joseph
+|Hire Dev (for Logbook) | $100,000        |1 months     |Hayley, Chris, Kanya, Andrew
+|Hire Data Manager      | $70,000         |1 month      |Hayley, Jill, Chris, Kanya, Andrew
+|Hire IT Manager        | $70,000         |1 month      |Hayley, Chris, Kanya, Andrew
+|**Total**              | **$517,000**    |**22 months**|
+
+<hr>
+
+<figure>
+  <figcaption>Component Map</figcaption>
   <img src="TFPIT-1.png" alt="IT Components">
 </figure>
 
 <figure>
   <figcaption>Information Flow</figcaption>
   <img src="TFPIT-2.png" alt="Information Flow">
-</figure>
-
-<figure>
-  <figcaption>Timeline & Budget</figcaption>
-  <img src="TFPIT-3.png" alt="IT Timeline and Budget">
 </figure>
 
 Hardware
@@ -40,9 +58,9 @@ Providing fast, networked hardware to the entire staff is what makes the rest of
 
 ### Costs
 - Device Leasing: $40k/yr
-- IT Support: $60k/yr
 - LTE Data: $40k/yr
-- Total: $140k/yr
+- Office Buildout: $20k
+- Total: $100k/yr (first year), $80k/yr (subsequent years)
 
 ### Setup Time
 - 2 months
@@ -131,8 +149,8 @@ We need to keep track of what we know and how we work, in a place we can browse 
 ### Time
 - 2 months
 
-Accounting
-----------
+Finance/Payroll
+---------------
 We need to track money coming and going, rigorously enough to satisfy the IRS, and intelligently enough to cut down on data entry.
 
 ### Primary users
@@ -146,7 +164,8 @@ We need to track money coming and going, rigorously enough to satisfy the IRS, a
 - Potentially cost-saving, if we can nix Expensify and ADP
 
 ### Costs
-TODO: Ask Hayley!
+- TODO: ??
+- $50k/yr
 
 ### Time
 - 3 months
@@ -207,11 +226,12 @@ Gotta keep in touch with at least a few people who don't work at The Future Proj
 - Mailchimp: $2k/yr
 - Phone/FIOS: $1k/yr
 - Misc: $2k/yr
+- BlueJeans (videoconferencing): $60k/yr
 - Gmail: Free
-- Total: $5k/yr
+- Total: $65k/yr
 
 ### Time
-- 2 weeks
+- 1 month
 
 CRM
 ---
