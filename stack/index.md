@@ -45,13 +45,13 @@ Components, Costs, and Personnel
 |Staff Directory        | $15,000         |1 month      |Hayley, Sophia, Chris
 |Knowledge Base         | $5,000          |2 months     |Sarah Z, Mica, Troy, Joseph, Chris
 |Finance/Payroll        | $50,000         |3 months     |CFO, Sophia, Chris, Hayley
-|Ext. Comms             | $65,000         |1 month      |Andrew, Sophia, Chris
+|Ext. Comms             | $69,000         |1 month      |Andrew, Sophia, Chris
 |Status Board           | $1,000          |1 month      |Chris, Andrew, Kanya
 |Logbook                | $1,000          |2 months     |Chris, New Hire, Joseph
 |Hire Dev (for Logbook) | $100,000        |1 months     |Hayley, Chris, Kanya, Andrew
 |Hire Data Manager      | $70,000         |1 month      |Hayley, Jill, Chris, Kanya, Andrew
 |Hire IT Manager        | $70,000         |1 month      |Hayley, Chris, Kanya, Andrew
-|**Total**              | **$517,000**    |**22 months**|
+|**Total**              | **$521,000**    |**22 months**|
 
 <figure>
   <figcaption>Component Map</figcaption>
@@ -277,8 +277,9 @@ Gotta keep in touch with at least a few people who don't work at The Future Proj
 - Phone/FIOS: $1k/yr
 - Misc: $2k/yr
 - BlueJeans (videoconferencing): $60k/yr
+- Ruby Receptionist: $3,120/yr
 - Gmail: Free
-- Total: $65k/yr
+- Total: $69k/yr
 
 #### Time
 - 1 month
