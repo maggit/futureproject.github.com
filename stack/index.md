@@ -102,8 +102,8 @@ We need a better-organized, more transparent system than email. It must also be 
 - Voice calls without using personal phone numbers (or personal phone minutes!)
 
 #### Costs
-- Slack: $10k/yr
-- Custom Slack integrations: $5k/yr
+- e.g. Slack: $10k/yr
+- AI Bots for automated comms: $5k/yr
 - Hangouts: $0
 - Total: $15,000/yr
 
@@ -125,7 +125,7 @@ We need one place to track donors, volunteers, potential hires, and other people
 - We'll be able to convert volunteers into employees or donors.
 
 #### Costs
-Airtable: $10k/yr
+e.g. Airtable: $10k/yr
 
 #### Setup Time
 - 3 months
@@ -168,7 +168,7 @@ We need to organize people into projects and teams, assign work, and track progr
 - For any strategic goals we set, we'll actually know how we're doing
 
 #### Costs
-- Asana: $15k/yr
+- e.g Asana: $15k/yr
 
 #### Time
 - 1 month
@@ -189,7 +189,7 @@ and search. Think Wikipedia meets Quora.
 - We can replace some in-person trainings with digital systems.
 
 #### Costs
-- $8k/yr
+- e.g. Kifi $8k/yr
 
 #### Time
 - 2 months
@@ -273,10 +273,10 @@ Gotta keep in touch with at least a few people who don't work at The Future Proj
 - Interacting with outside humans
 
 #### Costs
-- Mailchimp: $2k/yr
+- e.g. Mailchimp: $2k/yr
 - Phone/FIOS: $1k/yr
 - Misc: $2k/yr
-- BlueJeans (videoconferencing): $60k/yr
+- e.g. BlueJeans (videoconferencing): $60k/yr
 - Ruby Receptionist: $3,120/yr
 - Gmail: Free
 - Total: $69k/yr
