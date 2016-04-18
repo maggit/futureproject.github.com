@@ -303,4 +303,18 @@ Every part of the IT system will send data to the Status Board, which will confi
 
 ****
 
-## User Summary
+## User Summary - (Who Uses What?)
+
+|                       |Executive    |Fundraising    |Field    |Learning   |Operations   |Movement
+|-----------------------|-------------|---------------|---------|-----------|-------------|--------
+|Hardware               |√            |√              |√        |√          |√            |√
+|Int. Comms             |√            |√              |√        |√          |√            |√
+|CRM                    |√            |√              |√        |           |             |√
+|Proj. Mgmt             |√            |√              |√        |√          |√            |√
+|Staff Directory        |√            |√              |√        |√          |√            |√
+|Knowledge Base         |√            |√              |√        |√          |√            |√
+|Finance/Payroll        |             |               |         |           |√            | 
+|Ext. Comms             |√            |√              |√        |√          |√            |√
+|Status Board           |√            |√              |√        |√          |√            |√
+|Logbook                |             |√              |√        |√          |             | 
+
