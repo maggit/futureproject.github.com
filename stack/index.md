@@ -45,13 +45,13 @@ Components, Costs, and Personnel
 |Staff Directory        | $15,000         |1 month      |Hayley, Sophia, Chris
 |Knowledge Base         | $5,000          |2 months     |Sarah Z, Mica, Troy, Joseph, Chris
 |Finance/Payroll        | $50,000         |3 months     |CFO, Sophia, Chris, Hayley
-|Ext. Comms             | $65,000         |1 month      |Andrew, Sophia, Chris
+|Ext. Comms             | $69,000         |1 month      |Andrew, Sophia, Chris
 |Status Board           | $1,000          |1 month      |Chris, Andrew, Kanya
 |Logbook                | $1,000          |2 months     |Chris, New Hire, Joseph
 |Hire Dev (for Logbook) | $100,000        |1 months     |Hayley, Chris, Kanya, Andrew
 |Hire Data Manager      | $70,000         |1 month      |Hayley, Jill, Chris, Kanya, Andrew
 |Hire IT Manager        | $70,000         |1 month      |Hayley, Chris, Kanya, Andrew
-|**Total**              | **$517,000**    |**22 months**|
+|**Total**              | **$521,000**    |**22 months**|
 
 <figure>
   <figcaption>Component Map</figcaption>
@@ -102,8 +102,8 @@ We need a better-organized, more transparent system than email. It must also be 
 - Voice calls without using personal phone numbers (or personal phone minutes!)
 
 #### Costs
-- Slack: $10k/yr
-- Custom Slack integrations: $5k/yr
+- e.g. Slack: $10k/yr
+- AI Bots for automated comms: $5k/yr
 - Hangouts: $0
 - Total: $15,000/yr
 
@@ -125,7 +125,7 @@ We need one place to track donors, volunteers, potential hires, and other people
 - We'll be able to convert volunteers into employees or donors.
 
 #### Costs
-Airtable: $10k/yr
+e.g. Airtable: $10k/yr
 
 #### Setup Time
 - 3 months
@@ -168,7 +168,7 @@ We need to organize people into projects and teams, assign work, and track progr
 - For any strategic goals we set, we'll actually know how we're doing
 
 #### Costs
-- Asana: $15k/yr
+- e.g Asana: $15k/yr
 
 #### Time
 - 1 month
@@ -189,7 +189,7 @@ and search. Think Wikipedia meets Quora.
 - We can replace some in-person trainings with digital systems.
 
 #### Costs
-- $8k/yr
+- e.g. Kifi $8k/yr
 
 #### Time
 - 2 months
@@ -273,12 +273,13 @@ Gotta keep in touch with at least a few people who don't work at The Future Proj
 - Interacting with outside humans
 
 #### Costs
-- Mailchimp: $2k/yr
+- e.g. Mailchimp: $2k/yr
 - Phone/FIOS: $1k/yr
 - Misc: $2k/yr
-- BlueJeans (videoconferencing): $60k/yr
+- e.g. BlueJeans (videoconferencing): $60k/yr
+- Ruby Receptionist: $3,120/yr
 - Gmail: Free
-- Total: $65k/yr
+- Total: $69k/yr
 
 #### Time
 - 1 month
@@ -303,4 +304,18 @@ Every part of the IT system will send data to the Status Board, which will confi
 
 ****
 
-## User Summary
+## User Summary - (Who Uses What?)
+
+|                       |Executive    |Fundraising    |Field    |Learning   |Operations   |Movement
+|-----------------------|-------------|---------------|---------|-----------|-------------|--------
+|Hardware               |√            |√              |√        |√          |√            |√
+|Int. Comms             |√            |√              |√        |√          |√            |√
+|CRM                    |√            |√              |√        |           |             |√
+|Proj. Mgmt             |√            |√              |√        |√          |√            |√
+|Staff Directory        |√            |√              |√        |√          |√            |√
+|Knowledge Base         |√            |√              |√        |√          |√            |√
+|Finance/Payroll        |             |               |         |           |√            | 
+|Ext. Comms             |√            |√              |√        |√          |√            |√
+|Status Board           |√            |√              |√        |√          |√            |√
+|Logbook                |             |√              |√        |√          |             | 
+
