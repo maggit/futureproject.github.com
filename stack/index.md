@@ -11,17 +11,23 @@ so look out.
 **Phase I** began in January, and was about mapping the IT needs of employees from
 all over, including:
 
-- Sallome
-- Christian
-- Sarah Z
-- Ali
-- Becca
-- Joseph
-- Hayley
-- Kleaver
-- Anjali
-- Jill
-- Paul
+- **Dream Directors**
+  - Sallome
+  - Christian
+  - Sarah Z
+  - Kleaver
+- **Ops**
+  - Ali
+  - Hayley
+- **Learning**
+  - Becca
+  - Joseph
+- **Finance & Fundraising**
+  - Jill
+  - Paul
+- ** Executive **
+  - Zac
+  - Sophia
 
 **Phase II** began this month, and was about synthesizing what we'd learned into
 a comprehensive set of components. These are described below.
@@ -38,7 +44,7 @@ Components, Costs, and Personnel
 
 |Component              |Annual Cost      |Setup Time   |Ideal Team
 |-----------------------|-----------------|-------------|----------
-|Hardware               | $100,000        |2 months     |Chris, New Hire
+|Hardware               | $100,000        |2 months     |Chris, IT Technician (New Hire)
 |Int. Comms             | $15,000         |3 months     |Chris, Sarah Z
 |CRM                    | $10,000         |3 months     |Jill, Jeff, Chris
 |Proj. Mgmt             | $15,000         |1 month      |Kanya, Chris, Sophia
@@ -50,7 +56,7 @@ Components, Costs, and Personnel
 |Logbook                | $1,000          |2 months     |Chris, New Hire, Joseph
 |Hire Dev (for Logbook) | $100,000        |1 months     |Hayley, Chris, Kanya, Andrew
 |Hire Data Manager      | $70,000         |1 month      |Hayley, Jill, Chris, Kanya, Andrew
-|Hire IT Manager        | $70,000         |1 month      |Hayley, Chris, Kanya, Andrew
+|Hire IT Technician     | $70,000         |1 month      |Hayley, Chris, Kanya, Andrew
 |**Total**              | **$521,000**    |**22 months**|
 
 <figure>
@@ -200,7 +206,9 @@ and intelligently enough to cut down on data entry.
 
 It's worth noting that our current tools work pretty well for us here, and the
 main value we can add is to make them talk to each other more efficiently, so we
-spend less time preparing budgets, expense reports, and visualizations.
+spend less time preparing budgets, expense reports, and visualizations by hand.
+We want to free the humans on our finance team to spend more time planning and
+analyzing.
 
 #### Primary users
 - Finance team
