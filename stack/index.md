@@ -25,7 +25,7 @@ all over, including:
 - **Finance & Fundraising**
   - Jill
   - Paul
-- ** Executive **
+- **Executive**
   - Zac
   - Sophia
 
