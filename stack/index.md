@@ -342,7 +342,7 @@ Every part of the IT system will send data to the Status Board, which will confi
 ## Decisions to Make
 
 ### re: Architecture
-- Are we definitely committed to centralizing IT decisions?
+- Are we committed to centralizing IT decisions?
 - If so, can we centralize decisions without centralizing the budget?
 
 ### re: Equipment
