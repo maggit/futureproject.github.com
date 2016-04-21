@@ -3,6 +3,15 @@ title: The IT Stack
 layout: type
 ---
 
+## Table of Contents
+- [Introduction](#introduction)
+- [Components, Costs, Personnel](#components-costs-and-personnel)
+- [Components in Detail](#components-in-detail)
+- [User Summary](#user-summary---who-uses-what)
+- [Decisions](#decisions-to-make)
+
+## Introduction
+
 We're on a mission to strategically apply technology across The Future Project.
 Our digital toolkit in years past has been haphazard and bad. Getting it right
 for next year will require up to three new full-time hires and a lot of money,
