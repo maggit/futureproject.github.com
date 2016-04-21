@@ -45,18 +45,18 @@ Components, Costs, and Personnel
 |Component              |Annual Cost      |Setup Time   |Ideal Team
 |-----------------------|-----------------|-------------|----------
 |Hardware               | $100,000        |2 months     |Chris, IT Technician (New Hire)
-|Int. Comms             | $15,000         |3 months     |Chris, Sarah Z
+|Int. Comms             | $15,000         |3 months     |Chris, Kanya, Sarah Z, Hayley
 |CRM                    | $10,000         |3 months     |Jill, Jeff, Chris
 |Proj. Mgmt             | $15,000         |1 month      |Kanya, Chris, Sophia
 |Staff Directory        | $15,000         |1 month      |Hayley, Sophia, Chris
 |Knowledge Base         | $5,000          |2 months     |Sarah Z, Mica, Troy, Joseph, Chris
 |Finance/Payroll        | $50,000         |3 months     |CFO, Sophia, Chris, Hayley
-|Ext. Comms             | $69,000         |1 month      |Andrew, Sophia, Chris
-|Status Board           | $1,000          |1 month      |Chris, Andrew, Kanya
+|Ext. Comms             | $69,000         |1 month      |Sophia, Daria, Chris
+|Status Board           | $1,000          |1 month      |Chris, Leadership Team
 |Logbook                | $1,000          |2 months     |Chris, New Hire, Joseph
 |Hire Dev (for Logbook) | $100,000        |1 months     |Hayley, Chris, Kanya, Andrew
-|Hire Data Manager      | $70,000         |1 month      |Hayley, Jill, Chris, Kanya, Andrew
-|Hire IT Technician     | $70,000         |1 month      |Hayley, Chris, Kanya, Andrew
+|Hire Data Manager      | $70,000         |1 month      |Hayley, Jill, Jeff, Chris, Kanya
+|Hire IT Technician     | $70,000         |1 month      |Hayley, Chris, Kanya
 |**Total**              | **$521,000**    |**22 months**|
 
 <figure>
@@ -326,4 +326,29 @@ Every part of the IT system will send data to the Status Board, which will confi
 |Ext. Comms             |√            |√              |√        |√          |√            |√
 |Status Board           |√            |√              |√        |√          |√            |√
 |Logbook                |             |√              |√        |√          |             | 
+
+
+***
+
+## Decisions to Make
+
+### re: Architecture
+- Are we definitely committed to centralizing IT decisions?
+- If so, can we centralize decisions without centralizing the budget?
+
+### re: Equipment
+- Are we committed to buying/leasing hardware?
+- If so, do we buy or do we lease instead?
+- Do we outsource tech support or do we hire someone instead?
+
+### re: Priorities
+- We must either (a) invest in actually being a software company, or (b) stop
+trying to develop consumer-grade software in-house.
+- What are the three most *urgent* components?
+- What are the three most *important* components?
+- How many components can we work on at once?
+
+### re: Training
+- When do we have to start training staff on how to use this stuff?
+- Who is responsible for running this training?
 
