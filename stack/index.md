@@ -128,6 +128,8 @@ We need a better-organized, more transparent system than email. It must also be 
 ### CRM
 We need one place to track donors, volunteers, potential hires, and other people in the communities we engage.
 
+Picking the right CRM is a huge decision. Training our staff to use it will be hard, too. But we can't build a movement without one.
+
 #### Primary Users
 - Movement Team
 - Fundraising
@@ -138,6 +140,7 @@ We need one place to track donors, volunteers, potential hires, and other people
 - We'll know our communication history with everyone in our network. This means that Jill, for example, could pull up a donor file and know his/her history of communication with Andrew.
 - We'll be able to make connections on behalf of our students.
 - We'll be able to convert volunteers into employees or donors.
+- We'll have an organized set of paths people can follow to get involved with TFP, and help build our movement.
 
 #### Costs
 e.g. Airtable: $10k/yr
@@ -352,7 +355,7 @@ Every part of the IT system will send data to the Status Board, which will confi
 
 ### re: Priorities
 - We must either (a) invest in actually being a software company, or (b) stop
-trying to develop consumer-grade software in-house.
+trying to develop consumer-grade software in-house. What does this mean for Logbook?
 - What are the three most *urgent* components?
 - What are the three most *important* components?
 - How many components can we work on at once?
