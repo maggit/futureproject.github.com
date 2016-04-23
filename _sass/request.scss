@@ -1,0 +1,151 @@
+.page--request {
+  background: url(/img/dreambus-background.jpg);
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.request-header {
+  text-transform: uppercase;
+  max-width: 1240px;
+  margin-top: 1.5em;
+  letter-spacing: 3px;
+  text-align: left;
+}
+.request-header * {
+  font-size: 14px;
+  display: inline-block;
+  background: white;
+  color: #33CDFA;
+  padding: 1em 2em;
+  margin-left: -2em;
+  line-height: 1;
+  font-weight: 400;
+}
+.request-container {
+  padding: 1em;
+  > %headings, > p {
+    max-width: 50%;
+    padding-right: 2rem;
+    box-sizing: border-box;
+  }
+}
+.request-text {
+  margin: 0 auto;
+}
+.form-content input[type=text], input[type=email], textarea {
+  margin-bottom: 12px;
+  margin-top: 6px;
+  font-size: 16px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:10px 10px;
+  background:none;
+  background-image:none;
+  border:2px solid #E3E5E5;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+  &:focus {
+    outline:0;
+    border-color:#C5C6C7;
+  }
+}
+.form-content textarea {
+  border:2px solid #C5C6C7;
+  resize: vertical;
+}
+.form-content label {
+  font-size:14px;
+}
+.submit-div{
+  width: 50%;
+  margin-left: 50%;
+}
+@media screen and (min-width: 780px ) {
+  .request-container {
+    margin: 0 auto;
+    height: 100%;
+  }
+  .main-container {
+    float: left;
+    max-width: 120ch;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  .left-column {
+    width: 54%;
+    margin-right: 2%;
+    float: left;
+    h2 {
+      font-size: 34px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .wrap-request-text{
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+  .right-column {
+    margin-left: 2%;
+    width: 38%;
+    float: left;
+  }
+  .top-row {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    > div {
+      float:left;
+      width:48%;
+      margin-right:4%;
+      &:last-child {
+        margin:0;
+      }
+    }
+  }
+  .form-content {
+    display: block;
+    background: rgba(255,255,255,0.4);
+    padding: 30px;
+  }
+  .form-content-wrapper{
+    border-radius: 0;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .page--request {
+    background-image: url(/img/dreambus-background.jpg);
+    overflow: visible;
+  }
+  .form-content-wrapper{
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .form-content {
+    display: block;
+    background: #F5FBFD;
+    padding: 30px;
+  }
+  .left-column {
+    h2 {
+      font-size: 34px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}The Future Project</title>
+    <meta name="description" content="The Future Project is a national movement to empower the next generation to build the future, one dream at a time.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="/css/screen.css?v{{ site.time | date: '%m%d%y%H%M%S' }}" />
+  </head>
+  <body class="page--{{ page.title | slugify}}">
+    <div class="request-container">
+      <article>
+        <header class="request-header">
+          <h1>{{ page.title }}</h1>
+        </header>
+        <section>
+          {{ page.content | markdownify }}
+        </section>
+      </article>
+    </div>
+
+    <link rel="stylesheet" href="//cloud.typography.com/7365874/729708/css/fonts.css" />
+    <script src="/js/jquery-2.1.4.min.js"></script>
+    <script src="/js/enhancements.js?v{{ site.time | date: '%m%d%y%H%M%S' }}"></script>
+    <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35246062-1']);
+    _gaq.push(['_setDomainName', 'thefutureproject.org']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+  </body>
+</html>
